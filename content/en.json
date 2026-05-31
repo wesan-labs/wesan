@@ -1,0 +1,1248 @@
+{
+  "_meta": {
+    "lang": "en",
+    "version": "1.0.0",
+    "updated": "2026-05-24"
+  },
+
+  "common": {
+    "brand": "Wesan",
+    "tagline": "The house under which the next century is built",
+    "founded": "EST. MMXXVI",
+    "location": "İZMİR",
+    "year": "2026",
+    "footerCopyright": "© 2026 Wesan · İzmir",
+    "footerEst": "EST · MMXXVI",
+    "footerStatus": "All systems normal"
+  },
+
+  "nav": {
+    "links": [
+      { "href": "/about", "label": "About" },
+      { "href": "/divisions", "label": "Divisions" },
+      { "href": "/mission", "label": "Mission" },
+      { "href": "/newsroom", "label": "Newsroom" },
+      { "href": "/careers", "label": "Careers" }
+    ],
+    "search": "Search",
+    "searchPlaceholder": "Search pages, names, topics…",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "blurb": "The house under which the next century is built. Software now. Studio next. Industries later.",
+    "columns": [
+      {
+        "heading": "Divisions",
+        "links": [
+          { "href": "/software", "label": "Software" },
+          { "href": "/studio", "label": "Studio" },
+          { "href": "/industries", "label": "Industries" }
+        ]
+      },
+      {
+        "heading": "Products",
+        "links": [
+          { "href": "/software", "label": "Friday" },
+          { "href": "/software", "label": "Dante" },
+          { "href": "/software", "label": "Notch" }
+        ]
+      },
+      {
+        "heading": "Company",
+        "links": [
+          { "href": "/about", "label": "About" },
+          { "href": "/mission", "label": "Mission" },
+          { "href": "/now", "label": "Now" },
+          { "href": "/newsroom", "label": "Newsroom" },
+          { "href": "/careers", "label": "Careers" },
+          { "href": "/contact", "label": "Contact" }
+        ]
+      },
+      {
+        "heading": "Resources",
+        "links": [
+          { "href": "/investors", "label": "Investors" },
+          { "href": "/reports", "label": "Field reports" },
+          { "href": "/research", "label": "Research notes" },
+          { "href": "/calendar", "label": "Calendar" },
+          { "href": "/trust", "label": "Trust & security" },
+          { "href": "/press", "label": "Press kit" },
+          { "href": "/legal", "label": "Legal" },
+          { "href": "/sitemap", "label": "Sitemap" }
+        ]
+      }
+    ]
+  },
+
+  "pages": {
+    "home": {
+      "hero": {
+        "tags": [
+          { "label": "EST. MMXXVI", "variant": "default" },
+          { "label": "İZMİR → LONDON", "variant": "accent" }
+        ],
+        "fig": "FIG 01 / 09 · WESAN",
+        "title": "To dwell in the\nnext century,\nbuild the structure first.",
+        "lead": "Wesan is the house under which the next century is built. Software in early beta today, studio and industries in the long horizon. Each division allowed to take the time it needs.",
+        "ctas": [
+          { "href": "/divisions", "label": "Explore the divisions", "variant": "solid" },
+          { "href": "/mission", "label": "Read the mission", "variant": "default" }
+        ]
+      },
+      "heroPhoto": {
+        "tone": "architecture",
+        "ratio": "21/9",
+        "caption": "· A WIDE HORIZON · İZMİR, MAY 2026",
+        "label": "FIG 01 / 09",
+        "overlay": "A piece of infrastructure, photographed from a distance. No people, no logos — just the structure itself."
+      },
+      "telemetry": [
+        { "value": 3, "label": "DIVISIONS" },
+        { "value": 3, "label": "PRODUCTS SHIPPING" },
+        { "value": 2026, "label": "YEAR ONE" },
+        { "value": 100, "suffix": " YR", "label": "HORIZON" }
+      ],
+      "marquee": {
+        "label": "BUILT TO STANDARDS WE TAKE SERIOUSLY",
+        "items": [
+          "ISO 9001", "SOC 2 TYPE II", "CE MARK", "IEC 61508", "ISO 27001",
+          "GDPR · EU", "EN 50128", "AS9100", "PED 2014/68/EU",
+          "EXPORT CONTROL · DUAL-USE", "ITAR-READY", "İSTANBUL CHAMBER OF COMMERCE"
+        ]
+      },
+      "manifesto": {
+        "num": "02",
+        "label": "A SENTENCE FROM US",
+        "body": "We build the things that have to be built once and used for a century — and we build the companies that build them. One person, three rooms, this year. That is the design, not the limitation."
+      },
+      "divisionsHead": {
+        "num": "03",
+        "label": "THE THREE DIVISIONS",
+        "title": "Three divisions. One roof.",
+        "sub": "Each card is a doorway. Each division stands on its own brand, hires its own people, picks its own fights."
+      },
+      "bento": [
+        {
+          "href": "/software", "size": "b-1", "tone": "workstation",
+          "arr": "01 / SHIPPING →",
+          "label": "DIVISION 01",
+          "title": "Software", "titleSize": 44,
+          "desc": "Three apps. One principle: consolidation. Friday is the agent runtime, Dante is one app for six trackers, Notch is the daily log.",
+          "tags": ["FRIDAY", "DANTE", "NOTCH"]
+        },
+        {
+          "href": "/studio", "size": "b-2", "tone": "stage",
+          "arr": "02 / FORMING →",
+          "label": "DIVISION 02",
+          "title": "Studio",
+          "desc": "Games and interactive video. Ships when the work is done — not before."
+        },
+        {
+          "href": "/industries", "size": "b-3", "tone": "industrial",
+          "arr": "03 / PLANNED →",
+          "label": "DIVISION 03",
+          "title": "Industries",
+          "desc": "Aerospace, defense, heavy hardware. The work that takes a decade."
+        },
+        {
+          "href": "/mission", "size": "b-4", "tone": "dawn",
+          "arr": "READ MORE →",
+          "label": "THE ROOF",
+          "title": "One company. Three rooms. A century's work.", "titleSize": 36,
+          "desc": "Read the mission — what we mean when we say \"the next century.\""
+        }
+      ],
+      "newsroomHead": {
+        "num": "04",
+        "label": "LATEST WORK",
+        "title": "From the newsroom",
+        "viewAllHref": "/newsroom",
+        "viewAllLabel": "View all"
+      },
+      "newsroomSlugs": ["friday-v018", "wesan-studio-forming", "notch-public-beta"],
+      "founderLetter": {
+        "label": "A LETTER · FROM THE FOUNDER",
+        "quote": "We are not in a hurry, and we are not slow. We work on the timescale of the things we're building. If a thing should last a century, then the company that builds it should act like one. That is what we are trying to be.",
+        "ctaHref": "/mission",
+        "ctaLabel": "Read the mission"
+      }
+    },
+
+    "mission": {
+      "tags": [
+        { "label": "WESAN MISSION", "variant": "accent" },
+        { "label": "WRITTEN MAY 2026", "variant": "default" }
+      ],
+      "title": "What we mean when we say\n\"the next century.\"",
+      "body": [
+        { "kind": "p", "lead": true, "text": "There is a kind of company that is good at being a company — at growing, optimising, returning capital. There is another kind of company that is good at the work. Both are needed; they are not the same thing." },
+        { "kind": "p", "text": "Wesan is in the second category, by choice and by design. We are organised so that three different kinds of long-horizon work — software, interactive media, and eventually heavy industry — can each have a fair chance of being done well. Some of that work will not pay back inside a decade. Some of it might not pay back at all. We took that into account when we set the building up." },
+        { "kind": "p", "text": "We chose the name <em>Wesan</em> — Old English, \"to be\" — because we wanted a verb that didn't promise anything specific. The name doesn't tell you what we make. It tells you we intend to stay." },
+        { "kind": "h2", "text": "Solo today, by design." },
+        { "kind": "p", "text": "Wesan is one person right now. That is the design, not the limitation. Three products in beta — Friday, Dante, Notch — run by the same hand, on the same calendar, under the same standard. This is only possible because the tools have caught up: AI lets one engineer hold what used to need five. Wesan is built to take that leverage seriously — and to keep being honest about what it is the day before the second person joins, and the day after." },
+        { "kind": "p", "text": "Friday is built with Friday. Dante is built with Friday. The compounding is real, and it is the whole reason this structure can begin with one person and still mean to last a century." },
+        { "kind": "figure", "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantheon_section_sphere.svg", "alt": "Pantheon section showing the 43.3 m sphere inscribed in the dome and rotunda — geometric proof of the building's permanence.", "caption": "FIG · the Pantheon's geometry, 43.3 m across, is the same standard 1900 years on.", "credit": "Diagram: Cmglee, Wikimedia Commons, CC BY-SA 3.0." },
+        { "kind": "h2", "text": "Three commitments." },
+        { "kind": "p", "text": "<strong>One.</strong> Patient time. Every division gets the runway it needs to do the work — without quarterly pressure, without short-cycle metrics. The point is to remove fear from the engineering room." },
+        { "kind": "p", "text": "<strong>Two.</strong> Real autonomy. The roof exists to protect the rooms, not to give them orders. Software ships when it's ready. Studio ships when the work is done. Industries waits as long as it has to. Each division sets its own roadmap, hires its own people, picks its own fights." },
+        { "kind": "p", "text": "<strong>Three.</strong> Plain reporting. Once a year, in April, every division publishes what worked, what didn't, and what it spent. Not a marketing report. A field report." },
+        { "kind": "hr" },
+        { "kind": "quote", "text": "We are not in a hurry, and we are not slow. We work on the timescale of the things we're building. If a thing should last a century, then the company that builds it should act like one. That is what we are trying to be." },
+        { "kind": "sign", "text": "— BEKİRCAN AKYUZ, FOUNDER · İZMİR, MAY 2026" }
+      ],
+      "continue": {
+        "label": "CONTINUE",
+        "links": [
+          { "href": "/about", "label": "The founder →" },
+          { "href": "/newsroom", "label": "Annual field reports →" },
+          { "href": "/about", "label": "Governance →" }
+        ]
+      }
+    },
+
+    "now": {
+      "head": {
+        "num": "—",
+        "label": "WHAT'S HAPPENING RIGHT NOW",
+        "title": "A short note from the founder, updated monthly."
+      },
+      "tags": [
+        { "label": "UPDATED · MAY 2026", "variant": "accent" },
+        { "label": "NEXT UPDATE · JUNE", "variant": "default" }
+      ],
+      "lead": "Everything is parallel right now. Friday in early beta, Dante in TestFlight, this site getting its bones — no single focus, just a lot of small fronts being worked.",
+      "thisMonth": {
+        "heading": "What I am doing this month",
+        "items": [
+          { "n": "01", "text": "Friday — pushing the beta closer to public release. A few early users testing, free for now, no monetization yet." },
+          { "n": "02", "text": "Dante — finishing TestFlight, prepping App Store submission. Subscriptions wired up via RevenueCat, four tiers." },
+          { "n": "03", "text": "Wesan — this site, the brand, getting the structure right before anything else has to scale." },
+          { "n": "04", "text": "Preparing the move to London for Q3. The work doesn't stop in transit." }
+        ]
+      },
+      "divisions": {
+        "heading": "Where the divisions stand",
+        "cards": [
+          { "label": "SOFTWARE", "body": "Friday in early beta (free, few users). Dante in TestFlight, soon on App Store. Notch — small daily habit tracker, in development." },
+          { "label": "STUDIO", "body": "Idea, not yet started. Will form once the software division earns its keep." },
+          { "label": "INDUSTRIES", "body": "Long-term horizon. No timeline yet. The work that takes a decade — written down, not started." }
+        ]
+      },
+      "onMyMind": {
+        "heading": "One thing on my mind",
+        "body": "How to do three products well, alone, without choosing one. The honest answer is: I'm not sure. Everything I read says focus. Everything I want to build says don't pick yet. Let's see who wins."
+      },
+      "sign": "— BEKİRCAN AKYUZ · İZMİR · MAY 2026",
+      "convention": "This page follows the <a class=\"link\" href=\"https://nownownow.com\" target=\"_blank\" rel=\"noreferrer\">/now page</a> convention. One per month, no more."
+    },
+
+    "careers": {
+      "head": {
+        "num": "01",
+        "label": "WORK AT WESAN",
+        "title": "There are a few people we're quietly looking for.",
+        "sub": "Wesan is small on purpose. We post a role only when we know exactly who we want to fill it — the team, the division, the work in the first six months, and what success looks like."
+      },
+      "industriesNote": "INDUSTRIES HIRING OPENS 2027 · <a href=\"#\" style=\"text-decoration: underline\">JOIN THE WAITING LIST</a>",
+      "whatYouGet": {
+        "eyebrow": "WHAT YOU'LL GET",
+        "title": "A 10-year runway.<br />A small team.<br />A problem worth your decade.",
+        "paragraphs": [
+          "Compensation that reflects seniority, not stage. Real ownership in the division you join, not just in the roof.",
+          "Healthcare and parental leave the way they should be: paid, generous, never a negotiation.",
+          "And — the part you'll feel most — a working week that isn't structured around looking busy."
+        ]
+      },
+      "detail": {
+        "telemetryLabels": ["DIVISION", "TEAM", "COMMITMENT", "BASE"],
+        "responsibilitiesHead": { "num": "01", "label": "THE WORK", "title": "What this role owns." },
+        "firstSixHead": { "num": "02", "label": "FIRST SIX MONTHS", "title": "A real plan, not a wish.", "sub": "What success looks like, broken down by month, so you and we both know what we are agreeing to." },
+        "requirementsLabel": "REQUIREMENTS",
+        "niceLabel": "NICE TO HAVE · NOT REQUIRED",
+        "compHead": { "num": "03", "title": "COMPENSATION · TEAM · REPORTING" },
+        "applyHead": { "num": "04", "label": "HOW TO APPLY", "title": "One email. Five steps." },
+        "applyBody": "Send a short note to <span class=\"mono\" style=\"color: var(--ink)\">hello@wesan.co</span> with the subject line <em>\"Application · {{name}}\"</em>. Include:",
+        "applyChecklist": [
+          "Who you are, in three sentences.",
+          "Three things you have shipped, with links.",
+          "What you would want to build at Wesan in your first year.",
+          "The dumbest thing you would change about Friday / Dante / Notch / Studio (pick one)."
+        ],
+        "applyFooter": "WE READ EVERY ONE. REPLY WITHIN ONE WEEK, EVEN IF THE ANSWER IS NO.",
+        "otherHead": { "num": "05", "label": "OTHER OPEN ROLES", "title": "Four more, in case this one isn't yours." }
+      }
+    },
+
+    "contact": {
+      "head": {
+        "num": "01",
+        "label": "REACH US",
+        "title": "There are three\ngood ways.",
+        "sub": "Pick the one that fits. We answer all three."
+      },
+      "channels": [
+        { "label": "PRESS", "addr": "press@wesan.co", "hint": "Anything quotable. Reply within 24h." },
+        { "label": "PARTNERSHIPS", "addr": "partner@wesan.co", "hint": "Direct line to division leads. Reply within a week." },
+        { "label": "EVERYTHING ELSE", "addr": "hello@wesan.co", "hint": "We read it. We probably reply. Sometimes it takes a while." }
+      ],
+      "officesHead": { "num": "02", "label": "WHERE WE ARE", "title": "One desk now. Two soon." },
+      "offices": [
+        {
+          "label": "İZMİR · NOW",
+          "lines": ["Bekircan Akyuz", "Home office — by appointment only", "İzmir · Türkiye"],
+          "telemetry": [["LAT", "38.4192°N"], ["LON", "27.1287°E"], ["TZ", "UTC+3"]]
+        },
+        {
+          "label": "LONDON · Q3 2026",
+          "lines": ["Wesan", "Relocating to London", "Summer 2026", "United Kingdom"],
+          "telemetry": [["LAT", "51.5074°N"], ["LON", "0.1278°W"], ["TZ", "UTC+0"]]
+        }
+      ],
+      "stamp": "A contact page should be findable in 5 seconds and useful in 30. We hope this one is."
+    },
+
+    "newsroomIndex": {
+      "head": {
+        "num": "01",
+        "label": "NEWSROOM",
+        "title": "Newsroom",
+        "sub": "Every release Wesan or its divisions have published, in reverse chronological order. No infinite scroll. The archive ends."
+      },
+      "filters": ["ALL", "WESAN", "SOFTWARE", "STUDIO", "INDUSTRIES"],
+      "yearLabel": "YEAR · 2026",
+      "featuredLabel": "FEATURED",
+      "releaseLabel": "RELEASE",
+      "readCta": "Read the release",
+      "pressLabel": "PRESS →",
+      "endLabel": "END OF ARCHIVE · 2026"
+    },
+
+    "newsroomDetail": {
+      "backLabel": "← ALL RELEASES",
+      "releaseLabel": "RELEASE",
+      "featuredLabel": "FEATURED",
+      "relatedLabel": "RELATED",
+      "pressLabel": "PRESS",
+      "olderLabel": "← OLDER",
+      "newerLabel": "NEWER",
+      "backToList": "Back to the newsroom"
+    },
+
+    "about": {
+      "head": {
+        "num": "01",
+        "label": "ABOUT WESAN",
+        "title": "One company. Three rooms. Built by a small group with a long view.",
+        "sub": "Wesan is a holding for long-horizon work. We are organised so that three different kinds of company — software, studio, industries — can each take the time they need to do their work well."
+      },
+      "founder": {
+        "eyebrow": "FOUNDER",
+        "name": "Bekircan Akyuz",
+        "photo": { "tone": "workstation", "ratio": "4/5", "label": "FOUNDER · 2026", "caption": "BEKİRCAN AKYUZ · İZMİR" },
+        "lead": "Engineer by self-teaching, founder by need. I started Wesan because the work I wanted to do didn't fit cleanly in any of the rooms that already existed.",
+        "paragraphs": [
+          "Background in mathematics — formal degree, then everything after that taught to myself. Five-plus years writing software across products and tools I needed. Wesan is the first thing I have started that I want to finish.",
+          "Currently in İzmir, moving to London Q3 2026. Writes occasionally on the <a href=\"/software\" class=\"link\">Software</a> division's notes when something is worth saying."
+        ],
+        "social": [
+          { "icon": "twitter", "label": "@bekircan", "href": "#" },
+          { "icon": "github", "label": "github", "href": "#" },
+          { "icon": "mail", "label": "reach me", "href": "/contact" }
+        ]
+      },
+      "story": {
+        "head": { "num": "02", "label": "THE STORY", "title": "How we got here, very briefly." },
+        "timeline": [
+          ["BEFORE", "Mathematics degree. Then five-plus years teaching myself software while building things people used."],
+          ["2024–2025", "Built Friday (coding agent) and Dante (daily tracker) in parallel. Realised they needed a roof, not separate launches."],
+          ["2026 · JAN", "Wesan starts taking shape on paper. The structure first, the products under it."],
+          ["2026 · MAY", "Three software products in beta. Studio and Industries written down as long-term."],
+          ["2026 · Q3", "Moving to London. Operations stay distributed; the founder relocates."],
+          ["—", "The next century."]
+        ]
+      },
+      "governance": {
+        "head": { "num": "03", "label": "GOVERNANCE", "title": "How decisions get made." },
+        "cards": [
+          ["THE ROOF", "Wesan is in formation as a private holding. The founder is the sole decision-maker today. Formal entity registration follows once the structure is settled."],
+          ["THE ROOMS", "Each division is being scoped to operate independently — its own brand, its own roadmap, its own runway. Today this is one person with three rooms in mind."],
+          ["THE BOOKS", "Annual field reports, intended for April, every year, on this site. The first report — April 2027 — will be the first real one. Honest, even if small."]
+        ]
+      },
+      "numbers": {
+        "eyebrow": "WESAN BY THE NUMBERS · MAY 2026",
+        "items": [
+          { "label": "DIVISIONS · PLANNED", "value": 3 },
+          { "label": "PRODUCTS · IN BETA", "value": 3 },
+          { "label": "PEOPLE", "value": 1 },
+          { "label": "YEARS · OPERATING", "value": 0 }
+        ]
+      }
+    },
+
+    "divisions": {
+      "head": {
+        "num": "01",
+        "label": "OUR DIVISIONS",
+        "title": "Three companies. Three different timescales. One standard.",
+        "sub": "Each division operates independently — its own leadership, its own balance sheet, its own facilities. What they share is the room in which they were started, and the patience we ask of them."
+      },
+      "rows": [
+        {
+          "spine": "01 / SOFTWARE",
+          "title": "Software",
+          "statusTag": { "label": "EARLY BETA", "variant": "status-on" },
+          "desc": "The apps and tools. Each product is its own brand — they share the engineering standard and the long runway. Today: solo development; tomorrow: small teams.",
+          "products": [
+            "<strong>Friday</strong> — agent runtime",
+            "<strong>Dante</strong> — one app, six trackers",
+            "<strong>Notch</strong> — habits as a daily log"
+          ],
+          "meta": ["STARTED 2026", "3 PRODUCTS · BETA", "İZMİR"],
+          "image": { "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SLR_cross_section.svg", "alt": "Technical cross-section — workstation calm" },
+          "cta": { "href": "/software", "label": "software", "variant": "solid" },
+          "alt": false,
+          "mediaSide": "right"
+        },
+        {
+          "spine": "02 / STUDIO",
+          "title": "Studio",
+          "statusTag": { "label": "IDEA", "variant": "accent" },
+          "desc": "Games, interactive video — the work that lives between art and software. Not started yet. Will form once the software division earns its runway.",
+          "products": [
+            "<em>Project 01</em> — narrative game (drafted)",
+            "<em>Project 02</em> — short-film series (drafted)"
+          ],
+          "meta": ["NOT STARTED", "AFTER SOFTWARE", "TBD"],
+          "stage": { "label": "[ STAGE PLAN · OVERHEAD ]", "tagline": "a dim room with a camera" },
+          "cta": { "href": "/studio", "label": "studio", "variant": "solid" },
+          "alt": true,
+          "mediaSide": "left"
+        },
+        {
+          "spine": "03 / INDUSTRIES",
+          "title": "Industries",
+          "statusTag": { "label": "LONG-TERM", "variant": "dashed" },
+          "desc": "The heavy work. Aerospace, defense, hardware that lives outdoors. No timeline yet — written down so the roof is built tall enough for it. The work that takes a decade needs to wait its turn.",
+          "products": [
+            "<em>Aerospace</em> — orbital + cislunar",
+            "<em>Defense</em> — autonomy",
+            "<em>Heavy hardware</em>"
+          ],
+          "meta": ["NO TIMELINE", "AFTER STUDIO"],
+          "dashedProducts": true,
+          "image": { "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saturn_v_schematic.svg", "alt": "Heavy-lift vehicle schematic", "dim": true },
+          "cta": { "href": "/industries", "label": "soon", "variant": "ghost-dashed" },
+          "alt": false,
+          "mediaSide": "right"
+        }
+      ],
+      "closing": {
+        "eyebrow": "ORDER · INTENTIONAL",
+        "body": "Software first because it ships. Studio next because it's earned the runway. Industries last because the work takes a decade and we're honest about it."
+      }
+    },
+
+    "software": {
+      "hero": {
+        "tags": [{ "label": "SOFTWARE · A WESAN DIVISION", "variant": "accent" }],
+        "fig": "01 / 03 · DIVISIONS",
+        "title": "Software for the people who do the work.",
+        "photo": { "tone": "workstation", "ratio": "21/8", "caption": "A QUIET WORKSTATION AT FIRST LIGHT · İZMİR", "label": "FIG · SOFTWARE" }
+      },
+      "telemetry": [["DIVISION", "SOFTWARE"], ["STATUS", "EARLY BETA"], ["PRODUCTS", "03 IN BETA"], ["BASE", "İZMİR"]],
+      "manifesto": "Three apps, one principle: consolidation. Friday consolidates the coding agents you already use. Dante consolidates the six trackers nobody wants open at once. Notch consolidates the discipline of a daily log. Each one for a real person doing a real job. Solo development today; small teams tomorrow.",
+      "productsHead": { "num": "02", "label": "PRODUCTS · IN BETA", "title": "Three apps, in the shaping." },
+      "products": [
+        { "name": "Friday", "version": "v0.x", "url": "friday.run", "tagline": "Agent runtime, not another agent", "meta": "macOS · Linux · Windows · Mobile companion", "desc": "A daemon that runs your coding agents. Claude Code today, others tomorrow. Detach, attach, ship from anywhere — terminal, desktop, or phone. BYOM, free during beta.", "status": "BETA" },
+        { "name": "Dante", "version": "v0.x", "url": "danteapp.co", "tagline": "One app, six trackers", "meta": "iOS · iPad", "desc": "Tasks, workouts, nutrition, supplements, spending, habits — consolidated into one quiet surface. Turkish food + supplement database built in. Local-first. TestFlight now, App Store soon.", "status": "TESTFLIGHT" },
+        { "name": "Notch", "version": "v0.x", "url": "notch.dev", "tagline": "Habits, in the discipline of a daily log", "meta": "iOS · Mac", "desc": "A habit tracker built for people who already keep a log somewhere. One screen, one tap, end-of-day review. No streaks-as-pressure, no notifications. Just the checkmark, done quietly.", "status": "WIP" }
+      ],
+      "releaseLogHead": { "num": "03", "label": "2026 RELEASE LOG" },
+      "releases": [
+        ["2026.05.18", "FRIDAY", "Early beta opens", "invite-only, free", "SHIPPED", "#4ade80"],
+        ["2026.05.04", "DANTE", "TestFlight beta opens", "iOS, all-in-one tracker", "SHIPPED", "#4ade80"],
+        ["2026.04.22", "NOTCH", "v0.x early build", "habit tracker · iOS", "WIP", "#fbbf24"],
+        ["2026.Q3", "DANTE", "App Store submission", "public launch target", "PLANNED", "#8c9098"],
+        ["2026.Q3", "FRIDAY", "Public beta · macOS", "wider invite", "PLANNED", "#8c9098"],
+        ["2026.Q4", "NOTCH", "TestFlight beta opens", "first 100 testers", "PLANNED", "#8c9098"]
+      ],
+      "principlesHead": { "num": "04", "label": "HOW WE WORK", "title": "The standard the apps share." },
+      "principles": [
+        ["SHIP WHEN READY", "No quarterly roadmap. A release ships the morning the work is done — sometimes that's next Tuesday, sometimes it's next year."],
+        ["THE DIFF IS THE CONTRACT", "Every change a user can see is something they can refuse. We don't silently rewrite preferences, accounts, or files."],
+        ["SMALL TEAMS, LONG ROPES", "Each product has 3–6 people. They own the codebase, the customers, and the calendar. No matrix, no headcount theatre."]
+      ],
+      "footerStamp": { "eyebrow": "SOFTWARE IS A WESAN DIVISION", "line": "Started 2026 · İzmir · 3 products in beta" }
+    },
+
+    "studio": {
+      "hero": {
+        "tags": [{ "label": "STUDIO · A WESAN DIVISION", "variant": "accent" }],
+        "fig": "02 / 03 · DIVISIONS",
+        "title": "The work that sits between art and software.",
+        "photo": { "tone": "stage", "ratio": "21/8", "caption": "A DARK STAGE, ONE LIGHT, ONE CAMERA", "label": "FIG · STUDIO" }
+      },
+      "telemetry": [["DIVISION", "STUDIO"], ["STATUS", "IDEA"], ["FIRST DEMO", "TBD"], ["BASE", "TBD"]],
+      "manifesto": "Wesan Studio is the room where games, interactive video, and the kind of digital work that is more art than tool will live. We don't have a release schedule. We have a first demo, in Q4, on a small stage.",
+      "projectsHead": { "num": "02", "label": "IN FORMATION", "title": "Two projects, neither announced." },
+      "projects": [
+        {
+          "code": "PROJECT 01", "name": "A narrative game",
+          "desc": "A single-player game about return, set in a fictional Anatolian coastal town in the year after a small earthquake. We hope it takes about eight hours to play. We are giving it three years.",
+          "meta": ["ENGINE · CUSTOM", "TARGET · 2028", "TEAM · 6"],
+          "href": "/studio-01"
+        },
+        {
+          "code": "PROJECT 02", "name": "A short-film series",
+          "desc": "Six interactive shorts, ten minutes each. Documentary form, fictional subject. Built to be watched once and then opened up — every viewer follows a different thread the second time.",
+          "meta": ["FORMAT · WEB", "TARGET · 2027", "TEAM · 4"],
+          "href": "/studio-02"
+        }
+      ],
+      "principlesHead": { "num": "03", "label": "HOW THE STUDIO WORKS", "title": "Patience is the only schedule." },
+      "principles": [
+        ["NO QUARTERLY", "We don't set release dates we don't believe in. The studio ships when the thing is done; nobody is ever the first to learn the date."],
+        ["SMALL CREWS", "Each project carries 4–8 people, end-to-end. The same hand that designs the world writes the dialogue and edits the trailer."],
+        ["ART OVER PRESSURE", "The studio is funded from the holding, not from the calendar. Nothing about the room is structured to reward looking busy."]
+      ],
+      "footerStamp": { "eyebrow": "STUDIO IS A WESAN DIVISION", "line": "Forming · 2026 · İstanbul · First demo Q4" }
+    },
+
+    "industries": {
+      "hero": {
+        "tags": [{ "label": "INDUSTRIES · A WESAN DIVISION", "variant": "accent" }],
+        "fig": "03 / 03 · DIVISIONS",
+        "title": "The heavy work. On the horizon, not at the door.",
+        "photo": { "tone": "industrial", "ratio": "21/8", "caption": "A WIDE INDUSTRIAL HORIZON · ON THE EDGE OF WHAT WE BUILD", "label": "FIG · INDUSTRIES" }
+      },
+      "telemetry": [["DIVISION", "INDUSTRIES"], ["STATUS", "PLANNED"], ["FIRST FACILITY", "2027"], ["BASE", "TBD"]],
+      "manifesto": "Industries is the room that isn't built yet. Aerospace, defense systems, heavy hardware — the work that takes a decade, the kind of company that you announce once and run for thirty years. We will start it when we are ready to commit to it for that long.",
+      "sectorsHead": { "num": "02", "label": "WHAT INDUSTRIES WILL COVER", "title": "Three sectors. One discipline." },
+      "sectors": [
+        { "code": "01 · AEROSPACE", "name": "Orbital + cislunar", "desc": "Launch services, in-space logistics, eventually the structures that live on the moon. We start with the most boring part: getting things into orbit reliably.", "start": "AFTER 2028" },
+        { "code": "02 · DEFENSE", "name": "Autonomous systems", "desc": "Ground, sea, air. The kinds of platforms that protect crews instead of replacing them. Sold only to governments we would be proud to name.", "start": "AFTER 2029" },
+        { "code": "03 · HEAVY", "name": "Industrial hardware", "desc": "Robotics for the work no one volunteers for — ports, mines, agricultural infrastructure. Built to last twenty years, not two.", "start": "AFTER 2027" }
+      ],
+      "roadmapHead": { "num": "03", "label": "ROADMAP", "title": "The timeline we mean it about." },
+      "roadmap": [
+        ["2026 — TODAY", "A single person, a notebook, and the patience to wait."],
+        ["2026 Q4", "First quiet hire: an engineering principal who has shipped at scale."],
+        ["2027", "First facility leased. Heavy hardware prototype work begins. No announcements until something is real."],
+        ["2028", "First aerospace contract — if and only if the team is genuinely ready."],
+        ["2030", "Defense work begins, with public criteria for which customers we will accept."],
+        ["2035", "Industries is half the company by headcount. Software and Studio still standing."]
+      ],
+      "footerStamp": { "eyebrow": "INDUSTRIES IS A WESAN DIVISION", "line": "Planned · first facility 2027" }
+    },
+
+    "studio01": {
+      "backLabel": "← STUDIO",
+      "tags": [{ "label": "PROJECT 01 · FORMING", "variant": "accent" }],
+      "subFig": "UNTITLED · WORKING NAME",
+      "title": "A game about return.",
+      "photo": { "tone": "stage", "ratio": "21/8", "caption": "A FICTIONAL ANATOLIAN COASTAL TOWN · THE YEAR AFTER A SMALL EARTHQUAKE", "label": "REFERENCE · NOT FINAL" },
+      "telemetry": [["PROJECT", "01"], ["STATUS", "FORMING"], ["TARGET", "2028 · 3-YEAR"], ["TEAM", "6"]],
+      "premise": [
+        "A single-player game about return, set in a fictional Anatolian coastal town in the year after a small earthquake. You come home. The town is mostly still standing. The people are still here. The story is what you do with that fact.",
+        "We hope it takes about eight hours to play. We are giving it three years. The smaller scope is on purpose — this is the studio's first project, and we want to ship something we are proud of, on the timescale of a real human life."
+      ],
+      "answersHead": { "num": "02", "label": "WORKING ANSWERS", "title": "Where we are on the big questions.", "sub": "Answers below will change. We will date this page as they do." },
+      "answers": [
+        ["GENRE", "Narrative adventure, in the lineage of Kentucky Route Zero, Disco Elysium, and the quieter parts of Outer Wilds."],
+        ["PERSPECTIVE", "Third-person, fixed camera, hand-painted environments. No combat. No fail states beyond the social."],
+        ["PLATFORMS", "PC and Mac on day one. Consoles in the year after release. No mobile, no cloud-streaming, no live-service hook."],
+        ["LANGUAGE", "Written in English and Turkish in parallel — not a localisation, a co-authoring. Other languages from the community after."],
+        ["DURATION", "About eight hours, one playthrough. We will not pad it. We will not gate it. New game plus only if it actually adds something."],
+        ["PRICE", "Premium, one-time, around $30. No DLC plans. We are not running a season."]
+      ],
+      "libraryHead": { "num": "03", "label": "THE LIBRARY", "title": "Books, films, and games on the team's shelf." },
+      "libraryBooks": {
+        "label": "BOOKS",
+        "items": [
+          "Yusuf Atılgan · <em>Aylak Adam</em>",
+          "Sait Faik · <em>Stories from a Hospitable Sea</em>",
+          "Italo Calvino · <em>Invisible Cities</em>",
+          "Ursula K. Le Guin · <em>The Dispossessed</em>",
+          "John Berger · <em>And Our Faces, My Heart, Brief as Photos</em>"
+        ]
+      },
+      "libraryFilms": {
+        "label": "FILMS & GAMES",
+        "items": [
+          "Nuri Bilge Ceylan · <em>Once Upon a Time in Anatolia</em>",
+          "Theo Angelopoulos · <em>Landscape in the Mist</em>",
+          "Cardboard Computer · <em>Kentucky Route Zero</em>",
+          "Mobius Digital · <em>Outer Wilds</em>",
+          "Hayao Miyazaki · <em>Spirited Away</em>"
+        ]
+      },
+      "timelineEyebrow": "TIMELINE · BEST CASE",
+      "timeline": [
+        ["2026 · NOW", "Director hiring. Engine choice. First two writers in.", "IN PROGRESS"],
+        ["2026 · Q4", "Vertical slice — one location, one hour of play, end-to-end.", "SCHEDULED"],
+        ["2027", "Full pre-production. Cast and voice. Soundtrack collaborator announced.", "PLANNED"],
+        ["2028 · H1", "Closed beta with about 200 players.", "PLANNED"],
+        ["2028 · H2", "Release. Print & ship a small physical edition for the people who waited.", "TARGET"]
+      ],
+      "ctaEyebrow": "WAIT LIST",
+      "ctaTitle": "If you want to know when we have something to show.",
+      "ctaBody": "We will write to wait-list members exactly twice: once when the vertical slice is ready to play, and once at release. No newsletter. No teasers.",
+      "ctaEmail": "studio@wesan.co",
+      "ctaSubject": "Project 01 wait list"
+    },
+
+    "studio02": {
+      "backLabel": "← STUDIO",
+      "tags": [{ "label": "PROJECT 02 · FORMING", "variant": "accent" }],
+      "subFig": "UNTITLED SHORTS · WORKING TITLE",
+      "title": "Six shorts, ten minutes each. Watch once. Open it up.",
+      "photo": { "tone": "dawn", "ratio": "21/8", "caption": "DOCUMENTARY FORM · FICTIONAL SUBJECT · INTERACTIVE", "label": "STUDIO · PROJECT 02" },
+      "telemetry": [["PROJECT", "02"], ["STATUS", "FORMING"], ["TARGET", "2027"], ["TEAM", "4"]],
+      "premise": [
+        "Six interactive shorts, ten minutes each. Documentary form, fictional subject. Built to be watched once and then opened up — every viewer follows a different thread the second time.",
+        "The format is film first, software second. You don't have to interact to watch it. But if you do, the camera turns. The interview shifts. The thread you missed appears in the margin. It is built for the web, not for a streaming service — it lives at its own URL and we hope it stays there."
+      ],
+      "shortsHead": { "num": "02", "label": "THE SIX SHORTS", "title": "Working list, in working order.", "sub": "None of these titles are final. Three of them probably will not survive the year. That's the point of a working list." },
+      "shorts": [
+        ["01", "THE FIRST FERRY", "A morning on the Bosphorus, with three people who take it every day, who don't know each other."],
+        ["02", "THE LAST CALL", "A pay phone in a village square in Edirne that still works, used now mostly by tourists."],
+        ["03", "A SMALL BAKERY · 4AM", "The hour before bread rises. The pace, the silence, the radio."],
+        ["04", "THE COURIER", "Twelve hours with a Yemeksepeti driver, told in twelve cuts."],
+        ["05", "AN ATTIC IN BEYOĞLU", "What a family has saved, what they have thrown out, in a hundred-year apartment."],
+        ["06", "BACK ACROSS THE BRIDGE", "A return. The shape of the city seen from the other side."]
+      ],
+      "formatHead": { "num": "03", "label": "THE FORMAT", "title": "What \"interactive\" actually means here." },
+      "format": [
+        ["FIRST PASS", "A linear ten-minute film. No menus, no choices, no UI. You can close the laptop and walk away. That is the work."],
+        ["SECOND PASS", "A second viewing reveals threads in the margin — a longer interview, a different cut, a photograph that wasn't in the film. You decide what to follow."],
+        ["NO RANDOMNESS", "Every viewer who chooses the same path sees the same thing. We did not build a generative film. We built a film with side doors."],
+        ["OWNERSHIP", "Each short releases free at its own URL, available to download as a single MP4 with subtitles. The interactive layer is optional, the file is the truth."]
+      ],
+      "timelineEyebrow": "TIMELINE",
+      "timeline": [
+        ["2026 · NOW", "Director and cinematographer in. First short in pre-production.", "IN PROGRESS"],
+        ["2026 · Q4", "Short 01 · THE FIRST FERRY — public release at its own URL.", "TARGET"],
+        ["2027", "Shorts 02–06, one every two months. Open release on the day each is finished.", "PLANNED"],
+        ["2027 · END", "A single archive page collecting all six. A small physical edition for festivals.", "TARGET"]
+      ],
+      "ctaEyebrow": "WHEN THE FIRST SHORT IS UP",
+      "ctaTitle": "We'll announce on the newsroom, once. Then leave it online.",
+      "ctaHref": "/newsroom",
+      "ctaLabel": "Newsroom"
+    },
+
+    "calendar": {
+      "head": { "num": "01", "label": "CALENDAR · PUBLIC EVENTS", "title": "The things we do in public.", "sub": "Wesan is quiet by design. When we do show up — to give a talk, run a demo, or publish a report — it goes here, in advance. Usually three or four times a year." },
+      "events": [
+        { "when": "2026.06.18", "weekday": "THU", "time": "19:00 UTC+3", "where": "İZMİR · ALSANCAK", "type": "TALK", "title": "Building a holding-in-formation, alone, in 2026", "who": "Bekircan Akyuz", "lede": "A short talk in İzmir. Open to the public, RSVP required. Drinks after. Date tentative — confirm via email.", "cta": "RSVP", "status": "TENTATIVE" },
+        { "when": "TBD", "weekday": "—", "time": "—", "where": "ONLINE · TBD", "type": "DEMO", "title": "Friday · public beta demo + Q&A", "who": "Bekircan Akyuz", "lede": "An online demo of Friday when the public beta opens wider. Live walkthrough, then open Q&A. Date posted here when set.", "cta": "REMIND ME", "status": "TENTATIVE" },
+        { "when": "TBD", "weekday": "—", "time": "—", "where": "TBD", "type": "SHOWING", "title": "Wesan Studio · first prototype showing (when the studio forms)", "who": "Future team", "lede": "Studio is still an idea. When it forms and the first prototype is ready, the showing will be small and announced here. Until then, this is a placeholder.", "cta": "—", "status": "NOT YET" },
+        { "when": "2027.04.15", "weekday": "THU", "time": "09:00 UTC+3", "where": "PUBLISHED ONLINE", "type": "REPORT", "title": "First annual field reports · year 2026", "who": "All divisions", "lede": "The first annual field reports drop. One per division, plus a roof-level report. No event, just publishing. Read them in your own time.", "cta": "REMIND ME", "status": "SCHEDULED" }
+      ],
+      "footnote": "FOUR EVENTS · 2026 · ARCHIVE BEGINS 2027",
+      "speakBlock": {
+        "eyebrow": "SOMETHING WE FORGOT?",
+        "title": "If you'd like us to speak at your event —",
+        "body": "We say yes to about one in five. We don't speak at conferences with a paid stage, sponsored panels, or ten-minute keynotes — but if your event has a real audience and an hour for a real conversation, write to us.",
+        "email": "hello@wesan.co"
+      }
+    },
+
+    "reports": {
+      "head": { "num": "01", "label": "ANNUAL FIELD REPORTS", "title": "Once a year, in April, every division publishes what it did.", "sub": "Not a marketing report. A field report — what worked, what didn't, what we spent, what we learned. The full archive will live on this page. The first report is due April 2027." },
+      "missionQuoteEyebrow": "FROM THE MISSION",
+      "missionQuote": "Once a year, in April, every division publishes what worked, what didn't, and what it spent. Not a marketing report. A field report.",
+      "missionAttr": "— WESAN MISSION · COMMITMENT 03 · WRITTEN MAY 2026",
+      "structureHead": { "num": "02", "label": "STRUCTURE", "title": "What every field report contains." },
+      "structure": [
+        ["01", "NUMBERS", "Revenue, costs, headcount, runway. Round numbers only, not management accounts."],
+        ["02", "WORK", "What we shipped, what we abandoned, what we tried and learned from."],
+        ["03", "PEOPLE", "Who joined, who left, why. With consent, in plain words."],
+        ["04", "NEXT YEAR", "What we plan to do, what we plan to stop, what we are unsure about."]
+      ],
+      "archiveHead": { "num": "03", "label": "ARCHIVE", "title": "The reports themselves.", "sub": "The 2026 report will be published in April 2027. Below is the schedule of what to expect when." },
+      "archive": [
+        ["2026", "WESAN · HOLDING", "APR 2027", "— · —", "PENDING", "var(--ink-3)"],
+        ["2026", "SOFTWARE", "APR 2027", "— · —", "PENDING", "var(--ink-3)"],
+        ["2026", "STUDIO", "APR 2027", "— · —", "PENDING", "var(--ink-3)"],
+        ["2026", "INDUSTRIES", "APR 2027", "— · brief", "PENDING (BRIEF · NOT YET FOUNDED)", "var(--ink-4)"]
+      ],
+      "archiveFooter": "FIRST REPORT · APRIL 2027 · ARCHIVE BEGINS HERE",
+      "subscribeBlock": {
+        "eyebrow": "WHEN A REPORT DROPS",
+        "title": "You can be the first to read it.",
+        "body": "We don't run a newsletter. But each report is announced on our newsroom, on X, and via RSS on the day it drops. No reminders, no follow-ups — one signal, on one day a year."
+      }
+    },
+
+    "trust": {
+      "head": { "num": "01", "label": "TRUST & SECURITY", "title": "Plain answers to the hard questions.", "sub": "Wesan is small and self-financed. We don't have a SOC 2 report yet, because no customer has needed one. When the first one does — and they will — we will get one. This page is where we'll publish it." },
+      "tags": [{ "label": "VERSION · 2026.05", "variant": "accent" }, { "label": "REVIEWED QUARTERLY", "variant": "default" }],
+      "todayHead": { "num": "02", "label": "WHAT WE DO TODAY", "title": "The minimum, done well." },
+      "today": [
+        ["IDENTITY", "Hardware security keys (WebAuthn) required for every employee with access to production. No SMS, no TOTP. SSO via Workspace, with break-glass procedures documented and tested quarterly."],
+        ["ENCRYPTION", "TLS 1.3 in transit, AES-256 at rest. Customer data encrypted with per-tenant keys; key rotation is automated, ninety-day cycle, no manual touch."],
+        ["NETWORK", "No public SSH. Bastion-only access, audited. Production lives in eu-central-1 and eu-west-1 (AWS). No instance has both ingress and egress to the open internet."],
+        ["CODE", "Every production change is a reviewed pull request. We do not push directly to main. Deploy keys are short-lived (8 hours) and tied to a specific build artifact, not a human."],
+        ["INCIDENT RESPONSE", "Sev-1 incidents are paged within five minutes; the founder is on the rotation. Post-incident reports are written within seven days, public for our own products, available under NDA for B2B."],
+        ["BACKUPS", "Daily encrypted backups, retained 30 days. Quarterly restore tests, results published internally. We have never had to restore from backup in production. Yet."]
+      ],
+      "gapsHead": { "num": "03", "label": "WHAT WE DON'T HAVE YET", "title": "Honest about the gaps." },
+      "gaps": [
+        ["SOC 2", "Not started. We will engage an auditor the first time a B2B customer requires it. Estimated 6 months from start to Type I report.", "PLANNED"],
+        ["ISO 27001", "Not started. Will follow SOC 2 by approximately 12 months if there is European enterprise demand.", "PLANNED"],
+        ["HIPAA · BAA", "Not applicable today. We don't handle PHI; if a product ever does, we will go through the full process and disclose here.", "N/A"],
+        ["FedRAMP", "Not started. Will be required for any U.S. federal work in Industries. Multi-year process.", "FUTURE"],
+        ["BUG BOUNTY", "Not run. We accept disclosed vulnerabilities at security@wesan.co and respond within 5 business days. A formal bounty program will start in 2027.", "INFORMAL"],
+        ["PEN-TEST", "Internal red-team quarterly. External pen-test scheduled annually starting Q3 2026.", "SCHEDULED"]
+      ],
+      "subprocessorsHead": { "num": "04", "label": "SUBPROCESSORS", "title": "Who else touches our customers' data." },
+      "subprocessors": [
+        ["AWS", "Compute · storage · network", "All", "EU-CENTRAL-1 · EU-WEST-1"],
+        ["Cloudflare", "CDN · DDoS mitigation", "Request metadata", "Global"],
+        ["Fastmail", "Corporate email", "Email · contacts", "EU (Sydney for archives)"],
+        ["Stripe", "Billing", "Payment metadata · billing email", "Global"],
+        ["Sentry", "Error reporting", "Stack traces · device metadata", "EU"]
+      ],
+      "subprocessorsFooter": "* Material changes to this list are announced at least 30 days in advance via newsroom and direct notice to active B2B customers.",
+      "vulnBlock": {
+        "eyebrow": "REPORT A VULNERABILITY",
+        "title": "security@wesan.co",
+        "body": "PGP key: <span class=\"mono\" style=\"color: var(--paper)\">0xA8F4 9D2C C7E1 88B2</span> · we acknowledge within 24 hours and aim for a fix in 5 business days for Sev-1.",
+        "safe": "SAFE HARBOR · GOOD-FAITH RESEARCH WELCOME · NO LEGAL ACTION FOR VULNERABILITIES DISCLOSED HERE"
+      }
+    },
+
+    "legal": {
+      "head": { "num": "01", "label": "LEGAL", "title": "The fine print. Plain language. No tricks.", "sub": "Wesan operates under Turkish company law. The documents below apply to wesan.co and all Wesan division websites. Each product (Friday, Dante, Notch) has its own additional terms; those live on the product's own site." },
+      "tabs": [
+        ["privacy", "Privacy policy"],
+        ["terms", "Terms of use"],
+        ["cookies", "Cookies"],
+        ["trademark", "Trademarks"],
+        ["dpa", "DPA · for business"]
+      ],
+      "docs": {
+        "privacy": {
+          "title": "Privacy policy", "updated": "2026.05.23",
+          "body": [
+            ["In one sentence", "We collect as little as possible, store it as briefly as possible, share it with as few people as possible."],
+            ["What we collect", "When you visit wesan.co we collect the standard request log (IP, user-agent, page visited, timestamp). We use this only to find bugs and detect abuse. Logs are kept 30 days, then deleted."],
+            ["What we do not collect", "No tracking pixels. No third-party analytics on this site. No cookies that survive the session. No advertising identifiers, ever."],
+            ["When you write to us", "Emails sent to press@, partner@, or hello@wesan.co are stored in our mail provider (Fastmail, in the EU). We keep correspondence for as long as we are talking; we delete threads on request."],
+            ["When you apply for a job", "Applications go to a separate tracker. We keep them for 12 months after the role closes, then delete. You can ask for deletion at any time at hello@wesan.co."],
+            ["Your rights", "If you are in the EU, EEA, UK, or Türkiye: you have the right to access, correct, export, or delete any data we hold about you. Write to hello@wesan.co — we reply within 14 days, usually faster."],
+            ["Changes", "We will date the top of this page when we change it. If the change is material, we will note it on the homepage for 30 days."]
+          ]
+        },
+        "terms": {
+          "title": "Terms of use", "updated": "2026.05.23",
+          "body": [
+            ["In one sentence", "Browse the site, share the writing, link to anything — just don't pretend to be us, and don't hammer the server."],
+            ["What the site is", "wesan.co is the marketing and information site for Wesan A.Ş. and its divisions. Nothing on this site is a contract, a financial offer, or a regulatory commitment."],
+            ["What you can do", "You can read, share, link, quote, and screenshot anything here. No need to ask. Attribution is appreciated."],
+            ["What you can't do", "Don't impersonate Wesan. Don't scrape the site to train a model without telling us. Don't use the trademarks on a product that isn't ours."],
+            ["No warranties", "The site is provided as-is. We don't promise it will be online every second; we do try."],
+            ["Governing law", "These terms are governed by Turkish law. Disputes go to the İstanbul Anatolian courts."]
+          ]
+        },
+        "cookies": {
+          "title": "Cookies", "updated": "2026.05.23",
+          "body": [
+            ["How many cookies do we use?", "Zero persistent ones. One session cookie if you actively interact with a form, deleted when you close the tab."],
+            ["No banners", "No cookie banner, because there is nothing that requires consent under EU or Turkish law. The session cookie is strictly necessary; that's the only kind we use."],
+            ["No analytics", "We don't use Google Analytics, Plausible, Fathom, or any third-party analytics on this site. We look at the server logs once a week. That's it."],
+            ["When products use cookies", "Friday, Dante, and Notch — when they have web surfaces — use their own cookies, documented on their own privacy pages."]
+          ]
+        },
+        "trademark": {
+          "title": "Trademarks", "updated": "2026.05.23",
+          "body": [
+            ["Wesan® and the W-mark", "Wesan® and the stylised W-mark are registered trademarks of Wesan A.Ş. in Türkiye and pending in the EU, US, and Japan."],
+            ["Product marks", "Friday™, Dante™, and Notch™ are trademarks of Wesan A.Ş. They are not registered yet."],
+            ["Fair use", "You may use the Wesan name and W-mark to refer to our company — in articles, presentations, news. You may not modify them, combine them with another mark, or use them in a way that suggests endorsement."],
+            ["Press kit", "For official versions of the logos, see the press kit at /press."],
+            ["Questions", "If you're not sure whether your use is OK, write to hello@wesan.co. We will reply yes or no, in writing, within a week."]
+          ]
+        },
+        "dpa": {
+          "title": "Data Processing Agreement · for business customers", "updated": "2026.05.23",
+          "body": [
+            ["When this applies", "Only when you (a business) use a Wesan product in a way that has Wesan acting as a data processor for personal data you control. For most uses, this does not apply."],
+            ["Standard contractual clauses", "We sign the EU Standard Contractual Clauses (2021/914) and the UK addendum if your jurisdiction requires it. We do not use binding corporate rules."],
+            ["Sub-processors", "A current list of sub-processors is published at /legal/subprocessors, with at least 30 days' notice before changes. As of May 2026: AWS (eu-central-1, eu-west-1), Fastmail, Stripe."],
+            ["Security", "Encryption at rest and in transit. Hardware security keys mandatory for employees with production access. We will publish our security overview at /trust when the first enterprise customer asks for it."],
+            ["How to sign", "Email partner@wesan.co with your legal entity's name. We send a counter-signed copy within 48 hours."]
+          ]
+        }
+      },
+      "footer": "Questions? Write to <a class=\"link\" href=\"mailto:hello@wesan.co\">hello@wesan.co</a> — we reply within a few days."
+    },
+
+    "investors": {
+      "head": { "num": "01", "label": "INVESTORS · CAPITAL STRUCTURE", "title": "There are no outside investors. There are no plans to raise.", "sub": "This page exists because we are asked, often, who funds Wesan. The answer is short: Wesan funds itself. The longer answer is below." },
+      "structure": [
+        ["HOW WE FUND THE WORK", "Wesan is privately held by its founder. The Software division generates operating cash; that cash is the only source of capital for the company. We do not draw bank lines, we do not have a venture round, and we have not taken any outside equity."],
+        ["WHY IT IS THIS WAY", "Long-horizon work needs runway, not a board meeting. Every division gets a minimum 10-year runway from the holding before any expectation of returning capital. That guarantee is meaningless if a third party can revoke it at the next valuation milestone."],
+        ["WHAT WOULD CHANGE OUR MIND", "In principle, never. In practice — if a sovereign or foundation came forward with capital that matched our timescale and accepted our governance, we would consider it. We have not had that conversation with anyone."]
+      ],
+      "capTableEyebrow": "CAPITAL TABLE · MAY 2026",
+      "capTable": [
+        ["BEKİRCAN AKYUZ", "Founder · sole owner", "100.0%", "100.0%"],
+        ["EMPLOYEE EQUITY", "Reserved for the first hires", "— (planned, not granted)", "0.0%"],
+        ["OUTSIDE INVESTORS", "—", "0.0%", "0.0%"]
+      ],
+      "capTableFooter": "* No formal entity registration yet — Wesan is in formation. Employee equity will be designed when the first hire comes in; no pool exists today.",
+      "principlesHead": { "num": "03", "label": "FINANCIAL PRINCIPLES", "title": "What we do with the money we make." },
+      "principles": [
+        ["ONE", "A division's operating cash funds that division's runway. Software's margin is Software's to spend."],
+        ["TWO", "A division does not subsidise another division indefinitely. Studio and Industries have explicit budgets from the holding, with explicit timelines for being self-sustaining."],
+        ["THREE", "No dividends. Profits are reinvested into the next division until the roof itself is a hundred years older."],
+        ["FOUR", "No share buybacks. Wesan does not have public shares to buy back, and will not create them."],
+        ["FIVE", "No leverage at the holding level. Each division may take on operational debt; the roof carries none."]
+      ],
+      "faqHead": { "num": "04", "label": "WE GET ASKED", "title": "Five questions, five answers." },
+      "faq": [
+        ["Are you really not raising?", "Yes. The structure was set up to make raising hard, on purpose."],
+        ["Could we acquire one of the divisions?", "No. Divisions are not for sale, and the structure does not allow a division to be spun out under outside ownership."],
+        ["Is the founder open to a side conversation?", "No. Every signal would have to come through partner@wesan.co, in writing, and it would be declined. We say this so nobody has to interpret silence."],
+        ["Will you ever IPO?", "Not in the next twenty years. After that, we will see what the next person at the helm thinks."],
+        ["Could a sovereign or foundation fund Industries?", "Only with governance that matched our existing structure — non-controlling, non-voting, non-redeemable. We have not had that conversation."]
+      ]
+    },
+
+    "press": {
+      "head": { "num": "01", "label": "PRESS KIT", "title": "Everything a journalist needs in one place.", "sub": "Logo files, founder photos, fact sheet, and the one-sentence pitch for each division. All assets are free to use, with attribution preferred but not required." },
+      "kitDownload": "Download full kit · ZIP · 14 MB",
+      "contactLabel": "Press contact",
+      "logosHead": { "num": "02", "label": "LOGO + WORDMARK", "title": "Use it big. Use it small. Don't redraw it." },
+      "logos": [
+        { "label": "WORDMARK · DARK ON LIGHT", "file": "wesan-wordmark.svg", "fg": "var(--ink)", "bg": "var(--paper-3)", "markOnly": false },
+        { "label": "WORDMARK · LIGHT ON DARK", "file": "wesan-wordmark-inverted.svg", "fg": "var(--paper)", "bg": "var(--ink)", "markOnly": false },
+        { "label": "MARK ONLY · SQUARE", "file": "wesan-mark.svg", "fg": "var(--ink)", "bg": "var(--paper-3)", "markOnly": true },
+        { "label": "MARK · INVERTED", "file": "wesan-mark-inverted.svg", "fg": "var(--paper)", "bg": "var(--ink)", "markOnly": true }
+      ],
+      "downloadSvgLabel": "DOWNLOAD SVG →",
+      "colorsHead": { "num": "03", "label": "COLOR", "title": "Four colors. That's the whole brand." },
+      "colors": [
+        ["INK", "#0E1116", "var(--ink)", "var(--paper)"],
+        ["PAPER", "#E9EAEC", "var(--paper)", "var(--ink)"],
+        ["SMOKE", "#5B6068", "#5B6068", "var(--paper)"],
+        ["STEEL", "#2C5282", "var(--accent)", "var(--paper)"]
+      ],
+      "typeHead": { "num": "04", "label": "TYPOGRAPHY", "title": "Three families. One voice each." },
+      "typography": [
+        { "fam": "Inter Tight", "use": "DISPLAY · HEADINGS", "sample": "Wesan", "cssFam": "var(--font-display)" },
+        { "fam": "Newsreader", "use": "SERIF · LONG-FORM", "sample": "A century", "cssFam": "var(--font-serif)" },
+        { "fam": "JetBrains Mono", "use": "MONO · TELEMETRY", "sample": "2026.05.23", "cssFam": "var(--font-mono)" }
+      ],
+      "boilerplateHead": { "num": "05", "label": "BOILERPLATE", "title": "Copy this. Edit it as much as you need." },
+      "boilerplate": [
+        { "len": "ONE SENTENCE", "body": "Wesan is a holding-in-formation for long-horizon work — software in early beta now, studio and industries on the long horizon." },
+        { "len": "ONE PARAGRAPH", "body": "Wesan is a private holding-in-formation, started in 2026 by Bekircan Akyuz. It will operate three divisions on different timescales — Software (three products in early beta: Friday, Dante, Notch), Studio (games and interactive video, idea stage), and Industries (heavy work, long-term horizon). Currently solo development from İzmir, moving to London Q3 2026." },
+        { "len": "TWO PARAGRAPHS", "body": "Wesan is a private holding-in-formation, started in 2026 by Bekircan Akyuz to operate three divisions on different timescales: Software (in beta), Studio (idea), and Industries (long-term). The structure is being designed so each division will have the runway it needs to do the work without quarterly pressure — the roof exists to remove fear from the engineering room.\n\nCurrently solo development. Self-financed, no outside investors, no plans to raise. Every year in April starting 2027, each division will publish a field report — what worked, what didn't, what it spent." }
+      ],
+      "factsEyebrow": "FAST FACTS",
+      "factsLeft": [
+        ["Working name", "Wesan"],
+        ["Headquarters", "İzmir, Türkiye · moving to London Q3 2026"],
+        ["Started", "2026"],
+        ["Founder", "Bekircan Akyuz"],
+        ["Status", "Private · self-financed · in formation"],
+        ["Divisions · planned", "3 — Software (active), Studio (idea), Industries (long-term)"]
+      ],
+      "factsRight": [
+        ["Press email", "press@wesan.co"],
+        ["Partnerships", "partner@wesan.co"],
+        ["Site", "wesan.co"],
+        ["Products in beta", "Friday · Dante · Notch"],
+        ["Reporting cadence", "Annual · April (first report 2027)"],
+        ["Trademark", "Wesan™ — registration pending"]
+      ]
+    },
+
+    "sitemap": {
+      "head": { "num": "—", "label": "SITEMAP · EVERY DOOR IN THE BUILDING", "title": "The whole site, in one diagram.", "sub": "Sixteen pages. Five groups. If you can't find what you're looking for, it's probably not here yet." },
+      "groups": [
+        {
+          "label": "01 · THE ROOF",
+          "items": [
+            { "k": "", "l": "Home", "d": "The cathedral page" },
+            { "k": "about", "l": "About", "d": "The founder, the story, the structure" },
+            { "k": "mission", "l": "Mission", "d": "What we mean by \"the next century\"" },
+            { "k": "now", "l": "Now", "d": "What is happening this month" }
+          ]
+        },
+        {
+          "label": "02 · THE ROOMS",
+          "items": [
+            { "k": "divisions", "l": "Divisions · index", "d": "Three rooms, one drawing" },
+            { "k": "software", "l": "01 / Software", "d": "Friday · Dante · Notch" },
+            { "k": "studio", "l": "02 / Studio", "d": "Games and interactive video" },
+            { "k": "industries", "l": "03 / Industries", "d": "Aerospace · defense · heavy hardware" }
+          ]
+        },
+        {
+          "label": "03 · THE BOOKS",
+          "items": [
+            { "k": "newsroom", "l": "Newsroom", "d": "Every release, in order" },
+            { "k": "reports", "l": "Field reports", "d": "Annual · April, every year" },
+            { "k": "investors", "l": "Investors", "d": "Capital structure, finance principles" }
+          ]
+        },
+        {
+          "label": "04 · THE PEOPLE",
+          "items": [
+            { "k": "careers", "l": "Careers", "d": "A few quiet roles, posted only when ready" },
+            { "k": "contact", "l": "Contact", "d": "Three good ways to reach us" }
+          ]
+        },
+        {
+          "label": "05 · THE PAPERWORK",
+          "items": [
+            { "k": "press", "l": "Press kit", "d": "Logos, palette, boilerplate, fast facts" },
+            { "k": "trust", "l": "Trust & security", "d": "What we do today, what we don't yet" },
+            { "k": "legal", "l": "Legal", "d": "Privacy · terms · cookies · trademarks · DPA" }
+          ]
+        }
+      ],
+      "treeEyebrow": "FOR CRAWLERS AND READERS WHO PREFER TEXT",
+      "tree": "wesan.co/\n├── /              Home\n├── /about         About\n├── /mission       Mission\n├── /now           Now\n├── /divisions     Divisions\n│   ├── /software       01 · Software\n│   │   ├── friday.run      Friday\n│   │   ├── dante.app       Dante\n│   │   └── notch.dev       Notch\n│   ├── /studio         02 · Studio  · forming\n│   └── /industries     03 · Industries  · planned 2027+\n├── /newsroom      Newsroom\n├── /reports       Field reports\n├── /investors     Investors\n├── /careers       Careers\n├── /contact       Contact\n├── /press         Press kit\n├── /trust         Trust & security\n├── /legal         Legal\n└── /sitemap       (you are here)"
+    }
+  },
+
+  "collections": {
+    "careers": [
+      {
+        "slug": "staff-engineer-agent-runtime",
+        "div": "SFT",
+        "team": "FRIDAY",
+        "product": "Friday",
+        "name": "Staff Engineer · Agent runtime",
+        "desc": "Rust + TS, distributed systems, you've shipped an agent loop before. PTY sandbox experience a plus.",
+        "where": "REMOTE OK · ENGLISH",
+        "type": "FULL-TIME",
+        "lede": "You will own the loop. The plan/execute/verify state machine that decides when Friday stops, when it re-plans, and how it orchestrates agent runs — that is the work. Solo development today; you'd be #2.",
+        "responsibilities": [
+          "Own the agent loop end-to-end: state machine, scheduler, agent orchestrator, verifier.",
+          "Help design the protocol between daemon and CLI/desktop/mobile clients.",
+          "Drive the PTY sandbox primitives: process isolation, network policies, kill switches.",
+          "Pair with the founder daily for the first three months. After that, divide ownership by area.",
+          "Write the engineering posts that explain how the loop works — internally and publicly."
+        ],
+        "firstSixMonths": [
+          "Month 1: read every line of the existing daemon. Use Friday daily, list every grievance.",
+          "Month 2–3: design the v1.0 protocol with the founder. Land the new daemon scaffolding.",
+          "Month 4–5: cut the agent loop over to the new protocol. Migrate desktop and CLI clients.",
+          "Month 6: open the public beta wider — first 500 users, real feedback loop."
+        ],
+        "requirements": [
+          "8+ years in production systems engineering.",
+          "Rust in production for at least 2 of those years. Comfortable in async Tokio.",
+          "Shipped at least one agent loop, workflow runtime, or background-task system that real users relied on.",
+          "Experience with PTY, IPC, or process supervision (systemd, supervisord, k8s pods, your choice).",
+          "Written technical posts that other engineers read voluntarily."
+        ],
+        "niceToHave": [
+          "TypeScript / SolidJS in clients (Tauri-friendly).",
+          "Compiler / language tooling background.",
+          "Prior open-source maintainership."
+        ],
+        "comp": "Senior staff compensation, structured as runway. Equity in Friday as it forms.",
+        "reportingTo": "Founder",
+        "teamMeta": "Software · Friday · solo development (you'd be #2)"
+      },
+      {
+        "slug": "senior-designer-dante",
+        "div": "SFT",
+        "team": "DANTE",
+        "product": "Dante",
+        "name": "Senior Designer",
+        "desc": "Information design, dense screens, the patience to make six trackers feel like one tool. SwiftUI on iOS.",
+        "where": "REMOTE OK · ENGLISH OR TURKISH",
+        "type": "FULL-TIME",
+        "lede": "Dante is an all-in-one daily tracker. You will own how six different domains — tasks, workouts, nutrition, spending, supplements, habits — share one home screen without feeling like six different apps.",
+        "responsibilities": [
+          "Own information design across all six modules. One mental model, six surfaces.",
+          "Lead the iOS widget design — what one glance shows about today.",
+          "Run weekly self-use sessions: we use Dante every day, find what's wrong, fix it the next morning.",
+          "Design with the iPad in mind — same data, bigger surface.",
+          "Write the design notes that go to TestFlight users with every build."
+        ],
+        "firstSixMonths": [
+          "Month 1: use Dante daily for two weeks. List every grievance.",
+          "Month 2–3: redesign the daily-review screen. Land before the App Store submission.",
+          "Month 4–5: design the iPad-native layout — drag-to-reorder, multi-column.",
+          "Month 6: present a writeup of \"how to design an all-in-one without feeling bloated\"."
+        ],
+        "requirements": [
+          "5+ years in product design, with at least 2 on a consumer iOS app.",
+          "SwiftUI literate — comfortable handing off interaction details that survive implementation.",
+          "Dense-data design instincts — health, finance, productivity apps.",
+          "Writes well. We will ask for a writing sample."
+        ],
+        "niceToHave": [
+          "Knows iPad gestures and Apple Pencil intimately.",
+          "Has shipped a feature where the win was something the user did NOT see."
+        ],
+        "comp": "Senior design band, structured as runway. Equity in Dante as it forms.",
+        "reportingTo": "Founder",
+        "teamMeta": "Software · Dante · solo development (you'd be #2)"
+      },
+      {
+        "slug": "founding-engineer-notch",
+        "div": "SFT",
+        "team": "NOTCH",
+        "product": "Notch",
+        "name": "Founding Engineer",
+        "desc": "Swift, SwiftUI, the discipline to design a tracker that doesn't gamify. Comfortable being the second pair of hands on a small product.",
+        "where": "REMOTE OK · ENGLISH OR TURKISH",
+        "type": "FULL-TIME",
+        "lede": "Notch is a habit tracker built in the discipline of an engineer's daily log. You will be the second engineer — meaning you write the parts the founder is too close to, and you push back on the parts that need pushing back on.",
+        "responsibilities": [
+          "Own the iOS app — SwiftUI, native, fast. Animations that earn their place.",
+          "Help shape what \"habit tracking without gamification\" actually looks like in product.",
+          "Take the early-user feedback loop: read every report, triage weekly.",
+          "Pair with the founder daily for the first three months. After that, split the codebase by area."
+        ],
+        "firstSixMonths": [
+          "Month 1–2: ship v0.x polish — onboarding, widget, daily review screen.",
+          "Month 3: open beta via TestFlight, pull the first hundred users in.",
+          "Month 4–5: macOS companion app — same data, different surface.",
+          "Month 6: v1.0 App Store launch + pricing decision."
+        ],
+        "requirements": [
+          "3+ years in iOS, at least 1 in SwiftUI in production.",
+          "Comfortable with Core Data or SwiftData. HealthKit integration a plus.",
+          "You think about typography, spacing, motion — not just functionality.",
+          "You are okay being the second engineer. Not lead, not founder. Second."
+        ],
+        "niceToHave": [
+          "Has shipped a habit/journal/tracking app before — and learned from it.",
+          "Uses Notch already (TestFlight invite on request)."
+        ],
+        "comp": "Senior craft compensation, structured as runway. Equity in Notch as it forms.",
+        "reportingTo": "Founder",
+        "teamMeta": "Software · Notch · solo development (you'd be #2)"
+      },
+      {
+        "slug": "game-director",
+        "div": "STU",
+        "team": "STUDIO",
+        "product": "Wesan Studio",
+        "name": "Game Director",
+        "desc": "You've directed a shipped game. Indie or AA scale. Hire the team, set the vision, take the time.",
+        "where": "WHEN STUDIO FORMS · TBD",
+        "type": "FULL-TIME",
+        "lede": "You will lead Project 01 — a narrative game set in a fictional Anatolian coastal town. You will pick the engine, hire the team of six, and you will own the calendar. The studio is funded for the long horizon; the only deadline is that the game is good.",
+        "responsibilities": [
+          "Set the creative vision for Project 01. Write the design pillars; defend them when they get pushed on.",
+          "Hire the other five team members — writer, technical artist, programmer, environment artist, composer.",
+          "Run the project end-to-end: from vertical slice in Q4 2026 to release in 2028.",
+          "Be the public face of the studio when the time comes — interviews, festival showings, the things directors do."
+        ],
+        "firstSixMonths": [
+          "Month 1–2: meet every potential team member; read every shortlisted writer; pick the engine.",
+          "Month 3–4: write the design pillars; lock the protagonist and the opening hour.",
+          "Month 5–6: vertical slice for the Q4 prototype showing — one location, one hour, end-to-end."
+        ],
+        "requirements": [
+          "You've directed a shipped game. Indie or AA scale. We don't care about the budget; we care that you finished it.",
+          "You can hire the right people, defend the calendar, and say no to feature creep with grace.",
+          "You read books and watch films outside your medium. We will talk about them in the interview.",
+          "Comfortable living in İstanbul. The studio is on-site."
+        ],
+        "niceToHave": [
+          "You have worked across genres. Narrative is the form, but the craft is broader.",
+          "You speak Turkish, or are eager to."
+        ],
+        "comp": "Senior creative compensation, structured as a 5-year commitment. Real equity in Studio GmbH.",
+        "reportingTo": "Founder, Wesan",
+        "teamMeta": "Studio · forming · target team of 6"
+      },
+      {
+        "slug": "technical-artist",
+        "div": "STU",
+        "team": "STUDIO",
+        "product": "Wesan Studio",
+        "name": "Technical Artist",
+        "desc": "Shaders, lighting, tooling. You bridge the engineering and art rooms and you actually like both.",
+        "where": "WHEN STUDIO FORMS · TBD",
+        "type": "FULL-TIME",
+        "lede": "You sit between the engine programmers and the environment artists. You build the tools that let the art team work fast, you write the shaders that make the world look like itself, and you keep both rooms speaking to each other.",
+        "responsibilities": [
+          "Own the shader library and lighting pipeline for Project 01.",
+          "Build content tools for the art team: level editor extensions, asset-pipeline guards, validation passes.",
+          "Run weekly art reviews with the director and lead artist. Translate art notes into engineering work.",
+          "Profile and optimise the rendering pipeline. Hit the perf budget on target hardware."
+        ],
+        "firstSixMonths": [
+          "Month 1–2: stand up the shader library. Pipe one full location through the lighting model.",
+          "Month 3–4: ship v1 of the art-team tooling. Reduce iteration time by 50%.",
+          "Month 5–6: hit the vertical-slice perf budget on the target console + Mac."
+        ],
+        "requirements": [
+          "5+ years as a TA or graphics engineer on shipped games.",
+          "Shader work (HLSL, GLSL, Slang, take your pick). Lighting model expertise.",
+          "Comfortable in C++ engine code AND in art tools (Houdini, Substance, Blender).",
+          "You enjoy the tooling part. You think a good tool is its own reward."
+        ],
+        "niceToHave": [
+          "Custom engine experience (we are choosing the engine in month 2).",
+          "Worked on narrative games before — you know how light tells a story."
+        ],
+        "comp": "Senior craft compensation. Equity in Studio GmbH.",
+        "reportingTo": "Game Director",
+        "teamMeta": "Studio · forming · target team of 6"
+      }
+    ],
+
+    "newsroom": [
+      {
+        "slug": "friday-v018",
+        "date": "2026.05.18",
+        "who": "SOFTWARE",
+        "what": "Friday opens early beta — agent-native development OS.",
+        "lede": "Friday is in early beta — a daemon-first coding agent that plans, edits, runs and reviews across your repo. Free while it finds its shape. macOS first, Linux + Windows after.",
+        "featured": true,
+        "body": [
+          { "kind": "p", "content": "Friday is in early beta starting today. Daemon-first architecture, Rust core, Tauri + SolidJS desktop, Expo mobile companion. Wraps the Claude Code CLI as the primary agent runtime, with more backends planned." },
+          { "kind": "h", "content": "What it is" },
+          { "kind": "p", "content": "A pair-programmer that lives in the terminal you already have open. It plans the task, edits the files, runs the tests, and shows you a reviewable diff at the end. The loop ends when the work is done — not when the model runs out of patience." },
+          { "kind": "h", "content": "Why daemon-first" },
+          { "kind": "p", "content": "Because the agent loop needs to outlive the editor tab. Friday runs as a background daemon (Rust + tokio + gRPC), with thin clients on desktop, mobile, and CLI. You can detach, walk away, reattach hours later, and the work is where you left it." },
+          { "kind": "h", "content": "How to try" },
+          { "kind": "list", "content": [
+            "Beta invite by request — email hello@wesan.co with the subject \"Friday beta\".",
+            "Free during beta, no payment info needed.",
+            "Real feedback expected — this is a co-build, not a download."
+          ] },
+          { "kind": "quote", "content": "Trust is not a property of the model. It is a property of the loop you build around the model." }
+        ],
+        "links": [
+          { "label": "Friday · landing (soon)", "href": "/software" },
+          { "label": "Request beta access", "href": "mailto:hello@wesan.co?subject=Friday beta" }
+        ],
+        "contact": "press@wesan.co"
+      },
+      {
+        "slug": "wesan-studio-forming",
+        "date": "2026.05.04",
+        "who": "STUDIO",
+        "what": "Wesan Studio is in formation — first prototype shown in Q4.",
+        "lede": "The studio is in formation. Two projects are in early scoping. The first prototype showing is on the calendar for November in İstanbul.",
+        "body": [
+          { "kind": "p", "content": "Wesan Studio — the second division of Wesan — is now in formation. We are hiring the game director and beginning early scoping on two projects, one narrative game and one short-film series." },
+          { "kind": "h", "content": "The two projects" },
+          { "kind": "p", "content": "Project 01 is a single-player game about return, set in a fictional Anatolian coastal town in the year after a small earthquake. We are giving it three years. Target team of six." },
+          { "kind": "p", "content": "Project 02 is a series of six ten-minute interactive shorts. Documentary form, fictional subject. First short due Q4 2026 at its own URL." },
+          { "kind": "h", "content": "The first showing" },
+          { "kind": "p", "content": "On November 21 2026 the studio will hold a small invite-only showing of the first prototype in Galata. The wait list is open. We will reveal what the prototype is on the night." },
+          { "kind": "h", "content": "Hiring" },
+          { "kind": "p", "content": "We are looking for two people: a Game Director (you have shipped a game; indie or AA scale) and a Technical Artist (shaders, lighting, tooling). Both roles are on-site in İstanbul. Both are full-time." }
+        ],
+        "links": [
+          { "label": "Studio · division page", "href": "/studio" },
+          { "label": "Project 01 · narrative game", "href": "/studio-01" },
+          { "label": "Project 02 · short films", "href": "/studio-02" },
+          { "label": "Careers · Game Director", "href": "/careers/game-director" }
+        ],
+        "contact": "studio@wesan.co"
+      },
+      {
+        "slug": "notch-public-beta",
+        "date": "2026.04.22",
+        "who": "SOFTWARE",
+        "what": "Notch opens early beta — a habit tracker in the discipline of an engineer's daily log.",
+        "lede": "Notch is in early beta. Habits, one screen, one tap. No gamification, no streaks-as-pressure — just structure.",
+        "body": [
+          { "kind": "p", "content": "Notch is in early beta starting today. TestFlight only for now; App Store after a few months of real use." },
+          { "kind": "h", "content": "What it is" },
+          { "kind": "p", "content": "A habit tracker built for people who already keep a log somewhere — engineers, writers, researchers. One habit per screen, one tap to mark, one daily review at end of day. The data is local; the file is the truth." },
+          { "kind": "h", "content": "What it is not" },
+          { "kind": "p", "content": "Not a goal app. Not a productivity coach. Doesn't push notifications, doesn't gamify, doesn't make you feel bad for missing a day. Streaks exist but they're not the point — the point is the daily checkmark, done quietly." },
+          { "kind": "h", "content": "How to try" },
+          { "kind": "p", "content": "TestFlight invite by request — email hello@wesan.co with the subject \"Notch beta\". App Store later in 2026." }
+        ],
+        "links": [
+          { "label": "Notch · landing (soon)", "href": "/" },
+          { "label": "Request TestFlight invite", "href": "mailto:hello@wesan.co?subject=Notch beta" }
+        ],
+        "contact": "press@wesan.co"
+      },
+      {
+        "slug": "dante-v06",
+        "date": "2026.03.14",
+        "who": "SOFTWARE",
+        "what": "Dante v0.x — all-in-one daily tracker, TestFlight beta open.",
+        "lede": "Dante is in TestFlight. Tasks, workouts, nutrition, spending, habits — one app instead of seven. iOS first, App Store soon.",
+        "body": [
+          { "kind": "p", "content": "Dante is in TestFlight beta. The idea: stop juggling six apps for the basics of a day. Tasks, workouts, nutrition, spending, habits — all in one place, all local-first, all yours." },
+          { "kind": "h", "content": "What's in the beta" },
+          { "kind": "list", "content": [
+            "Tasks · simple list with daily/weekly split, no bloat.",
+            "Workouts · 2,200+ exercises in the reference library, search by muscle group or equipment.",
+            "Nutrition · 1,300+ foods (Turkish + USDA), full-text search, custom recipes.",
+            "Supplements · 489 products across 52 brands (TR + EU + US references).",
+            "Spending · category tracking, no bank linking needed.",
+            "Habits · daily checks, one tap.",
+            "iOS widget · today's focus, on your home screen."
+          ] },
+          { "kind": "h", "content": "How to try" },
+          { "kind": "p", "content": "TestFlight invite by request — email hello@wesan.co with the subject \"Dante beta\". Bundle ID com.dante.os, runs on iPhone and iPad. App Store target: later this year." }
+        ],
+        "links": [
+          { "label": "Dante · danteapp.co", "href": "https://danteapp.co" },
+          { "label": "Request TestFlight invite", "href": "mailto:hello@wesan.co?subject=Dante beta" }
+        ],
+        "contact": "press@wesan.co"
+      },
+      {
+        "slug": "industries-announced",
+        "date": "2026.02.10",
+        "who": "WESAN",
+        "what": "Industries division announced — first facility planned for 2027.",
+        "lede": "Industries is the third Wesan division. Aerospace, defense, heavy hardware. First facility planned for 2027. Today is the public commitment.",
+        "body": [
+          { "kind": "p", "content": "Today we are announcing the third Wesan division: Industries. Aerospace, defense, and heavy hardware. The first facility is planned for 2027; today is the public commitment that we intend to start." },
+          { "kind": "h", "content": "Why now" },
+          { "kind": "p", "content": "Long-horizon work needs a long-horizon commitment. We could have waited until we had a building, a team, and a prototype — and then announced. But the value of announcing now is signalling intent: to the hires we want, to the partners we will work with, to the regulators whose calendars we will need to fit into." },
+          { "kind": "h", "content": "What it will cover" },
+          { "kind": "p", "content": "Three sectors, in order of likely build-out: heavy industrial hardware first (robotics for ports and mines), then aerospace (orbital + cislunar), then defense (autonomous systems, only for governments we would be proud to name)." },
+          { "kind": "h", "content": "Timeline" },
+          { "kind": "p", "content": "Today is the announcement. Q4 2026 is the first quiet hire — an engineering principal who has shipped at scale. 2027 is the first facility lease. 2028 is the first aerospace contract, if and only if the team is genuinely ready." }
+        ],
+        "links": [
+          { "label": "Industries · division page", "href": "/industries" },
+          { "label": "Mission · 100-year horizon", "href": "/mission" }
+        ],
+        "contact": "press@wesan.co"
+      },
+      {
+        "slug": "wesan-announces-itself",
+        "date": "2026.01.09",
+        "who": "WESAN",
+        "what": "Wesan announces itself.",
+        "lede": "Wesan A.Ş. is registered in İstanbul. Two desks, three divisions, one mission. Today is day one.",
+        "body": [
+          { "kind": "p", "content": "Today, January 9 2026, Wesan starts taking shape. One person, one desk in İzmir. Formal entity registration to follow once the structure is settled." },
+          { "kind": "h", "content": "What we're doing" },
+          { "kind": "p", "content": "Wesan is the house under which the next century is built. Three divisions today: Software (shipping), Studio (forming), Industries (planned). The structure is designed for each division to have a 10-year runway, real autonomy, and plain annual reporting." },
+          { "kind": "h", "content": "Why we wrote a mission" },
+          { "kind": "p", "content": "Because the structure does the work. The mission is published today, in full, on this site. It will be reviewed annually. It will be hard to change." },
+          { "kind": "quote", "content": "We are not in a hurry, and we are not slow. We work on the timescale of the things we're building." },
+          { "kind": "h", "content": "Day one." },
+          { "kind": "p", "content": "Today is day one. The roof is up. The rooms are being built. We will see you in April 2027 for the first field reports." }
+        ],
+        "links": [
+          { "label": "Read the mission", "href": "/mission" },
+          { "label": "The three divisions", "href": "/divisions" },
+          { "label": "About · founder", "href": "/about" }
+        ],
+        "contact": "press@wesan.co"
+      }
+    ]
+  }
+}

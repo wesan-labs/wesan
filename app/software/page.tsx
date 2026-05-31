@@ -1,0 +1,128 @@
+import type { ReactNode } from 'react';
+import { Photo, Telemetry, SectionHead } from '../_components/lib';
+import { getContent, type Tone } from '@/lib/content';
+
+interface Product { name: string; version: string; url: string; tagline: string; meta: string; desc: string; status: string }
+
+interface SoftwareContent {
+  hero: { tags: { label: string; variant: string }[]; fig: string; title: string; photo: { tone: Tone; ratio: string; caption: string; label: string } };
+  telemetry: [string, string][];
+  manifesto: string;
+  productsHead: { num: string; label: string; title: string };
+  products: Product[];
+  releaseLogHead: { num: string; label: string };
+  releases: [string, string, string, string, string, string][];
+  principlesHead: { num: string; label: string; title: string };
+  principles: [string, string][];
+  footerStamp: { eyebrow: string; line: string };
+}
+
+function ProductCard({ p }: { p: Product }) {
+  return (
+    <article className="card" style={{ display: 'flex', flexDirection: 'column', minHeight: '420px' }}>
+      <div className="frame frame-cross" style={{ aspectRatio: '4/3', marginBottom: '20px', background: 'var(--paper)' }}>
+        <span className="mono" style={{ fontSize: '10px', letterSpacing: '0.1em' }}>[ {p.name.toUpperCase()} · UI ]</span>
+      </div>
+      <div className="gap-8 mb-2" style={{ alignItems: 'baseline' }}>
+        <h3 className="h-3" style={{ fontFamily: 'var(--font-display)', fontWeight: 500, fontSize: '24px' }}>{p.name}</h3>
+        <span className="tag">{p.version}</span>
+        <span className="tag status-on" style={{ marginLeft: 'auto' }}>{p.status}</span>
+      </div>
+      <div className="mono mb-4" style={{ fontSize: '11px', color: 'var(--ink-3)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{p.tagline} · {p.meta}</div>
+      <p style={{ fontSize: '14px', color: 'var(--ink-2)', lineHeight: 1.55, marginBottom: '20px', flex: 1 }}>{p.desc}</p>
+      <div className="between">
+        <span className="mono" style={{ fontSize: '11.5px', color: 'var(--accent)' }}>{p.url}</span>
+        <span className="mono" style={{ fontSize: '11px', color: 'var(--ink-3)' }}>→</span>
+      </div>
+    </article>
+  );
+}
+
+export default function SoftwarePage() {
+  const c = (getContent().pages.software as unknown) as SoftwareContent;
+
+  return (
+    <>
+      <section style={{ background: 'var(--ink)', color: 'var(--paper)', position: 'relative' }}>
+        <div className="hero-dark" style={{ maxWidth: '1320px', margin: '0 auto', padding: '64px 32px' }}>
+          <div className="gap-12 mb-8" style={{ alignItems: 'center' }}>
+            {c.hero.tags.map((t) => (
+              <span key={t.label} className={`tag${t.variant === 'accent' ? ' accent' : ''}`} style={{ background: 'transparent' }}>{t.label}</span>
+            ))}
+            <span className="mono" style={{ fontSize: '11px', color: 'var(--ink-4)', letterSpacing: '0.1em', marginLeft: 'auto' }}>{c.hero.fig}</span>
+          </div>
+          <h1 className="h-display" style={{ maxWidth: '20ch', color: 'var(--paper)' }}>{c.hero.title}</h1>
+        </div>
+        <Photo {...c.hero.photo} style={{ borderLeft: 'none', borderRight: 'none' }} />
+      </section>
+
+      <Telemetry items={c.telemetry.map(([k, v]) => [k, v] as [ReactNode, ReactNode])} />
+
+      <section className="section">
+        <div className="container">
+          <p className="serif" style={{ fontSize: '32px', lineHeight: 1.4, letterSpacing: '-0.012em', maxWidth: '36ch' }}>{c.manifesto}</p>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--paper-2)' }}>
+        <div className="container">
+          <SectionHead num={c.productsHead.num} label={c.productsHead.label} title={c.productsHead.title} />
+          <div className="row row-3">
+            {c.products.map((p) => <ProductCard key={p.name} p={p} />)}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--ink)', color: 'var(--ink-5)' }}>
+        <div className="container">
+          <div className="section-label" style={{ color: '#6b6e74' }}>
+            <span className="num" style={{ color: 'var(--paper)', borderColor: 'var(--paper)' }}>{c.releaseLogHead.num}</span>
+            <span>{c.releaseLogHead.label}</span>
+            <span className="rule" style={{ background: '#2a2e36' }} />
+          </div>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'var(--font-mono)', fontSize: '13px' }}>
+            <thead>
+              <tr style={{ color: '#6b6e74', fontSize: '10.5px', textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid #2a2e36' }}>
+                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Date</th>
+                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Product</th>
+                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Release</th>
+                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Notes</th>
+                <th style={{ textAlign: 'right', padding: '14px 0', fontWeight: 400 }}>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {c.releases.map((row, i) => (
+                <tr key={i} style={{ borderBottom: '1px solid #2a2e36' }}>
+                  <td style={{ padding: '16px 0', color: 'var(--paper)' }}>{row[0]}</td>
+                  <td style={{ padding: '16px 0', color: 'var(--paper)' }}>{row[1]}</td>
+                  <td style={{ padding: '16px 0', color: 'var(--paper)' }}>{row[2]}</td>
+                  <td style={{ padding: '16px 0', color: '#8c9098' }}>{row[3]}</td>
+                  <td style={{ padding: '16px 0', textAlign: 'right', color: row[5] }}>{row[4]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHead num={c.principlesHead.num} label={c.principlesHead.label} title={c.principlesHead.title} />
+          <div className="row row-3 mt-8">
+            {c.principles.map(([h, b]) => (
+              <div key={h} className="card">
+                <div className="eyebrow mb-4">{h}</div>
+                <p style={{ fontSize: '14.5px', color: 'var(--ink-2)', lineHeight: 1.6 }}>{b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ textAlign: 'center', background: 'var(--paper-2)' }}>
+        <span className="eyebrow">{c.footerStamp.eyebrow}</span>
+        <p style={{ fontSize: '14px', color: 'var(--ink-3)', marginTop: '8px' }}>{c.footerStamp.line}</p>
+      </section>
+    </>
+  );
+}

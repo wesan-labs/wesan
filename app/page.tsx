@@ -1,66 +1,130 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import { Photo, Counter, Marquee, SectionHead, SpotlightCard } from './_components/lib';
+import { getContent, getNewsBySlugs } from '@/lib/content';
 
-export default function Home() {
+export default function HomePage() {
+  const c = getContent().pages.home;
+  const featured = getNewsBySlugs(c.newsroomSlugs);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <section className="section" style={{ paddingTop: '64px', paddingBottom: '40px' }}>
+        <div className="container">
+          <div className="gap-12 mb-8" style={{ alignItems: 'center', flexWrap: 'wrap' }}>
+            {c.hero.tags.map((t) => (
+              <span key={t.label} className={`tag${t.variant === 'accent' ? ' accent' : ''}`}>{t.label}</span>
+            ))}
+            <span className="eyebrow" style={{ marginLeft: 'auto' }}>{c.hero.fig}</span>
+          </div>
+          <h1 className="h-display mb-6" style={{ maxWidth: '18ch', whiteSpace: 'pre-line' }}>
+            {c.hero.title}
+          </h1>
+          <p className="lead mb-8" style={{ fontSize: '20px' }}>{c.hero.lead}</p>
+          <div className="gap-12">
+            {c.hero.ctas.map((cta) => (
+              <Link key={cta.href} href={cta.href} className={`btn${cta.variant === 'solid' ? ' solid' : ''}`}>
+                {cta.label}{cta.variant === 'solid' ? <> <span className="arr">→</span></> : null}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="container mt-16">
+          <Photo tone={c.heroPhoto.tone} ratio={c.heroPhoto.ratio} caption={c.heroPhoto.caption} label={c.heroPhoto.label}>
+            {c.heroPhoto.overlay && (
+              <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'flex-end', padding: '40px', zIndex: 3 }}>
+                <p className="serif" style={{ fontSize: '26px', color: 'rgba(255,255,255,0.85)', maxWidth: '36ch', lineHeight: 1.35, letterSpacing: '-0.01em' }}>
+                  {c.heroPhoto.overlay}
+                </p>
+              </div>
+            )}
+          </Photo>
+        </div>
+
+        <div className="container mt-4">
+          <div className="telemetry">
+            {c.telemetry.map((t) => (
+              <div key={t.label}>
+                <strong><Counter to={t.value} suffix={t.suffix} /></strong> · {t.label}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Marquee label={c.marquee.label} items={c.marquee.items} />
+
+      <section className="section" style={{ background: 'var(--paper-2)' }}>
+        <div className="container">
+          <SectionHead num={c.manifesto.num} label={c.manifesto.label} title={null} />
+          <p className="serif" style={{ fontSize: '34px', lineHeight: 1.3, letterSpacing: '-0.015em', maxWidth: '32ch' }}>
+            {c.manifesto.body}
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHead
+            num={c.divisionsHead.num}
+            label={c.divisionsHead.label}
+            title={c.divisionsHead.title}
+            sub={c.divisionsHead.sub}
+          />
+          <div className="bento mt-8">
+            {c.bento.map((card) => (
+              <SpotlightCard key={card.href} href={card.href} className={`${card.size} photo ${card.tone}`}>
+                <div className="corners" />
+                <span className="bento-arr">{card.arr}</span>
+                <span className="bento-label">{card.label}</span>
+                <h3 className="bento-title" style={card.titleSize ? { fontSize: `${card.titleSize}px` } : undefined}>{card.title}</h3>
+                <p className="bento-desc" style={card.size === 'b-4' ? { maxWidth: '60ch' } : undefined}>{card.desc}</p>
+                {card.tags && card.tags.length > 0 && (
+                  <div style={{ display: 'flex', gap: '8px', marginTop: '14px', flexWrap: 'wrap' }}>
+                    {card.tags.map((t) => (
+                      <span key={t} className="tag" style={{ background: 'rgba(255,255,255,0.1)', color: 'rgba(255,255,255,0.9)', borderColor: 'rgba(255,255,255,0.3)' }}>{t}</span>
+                    ))}
+                  </div>
+                )}
+              </SpotlightCard>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section" style={{ background: 'var(--paper-2)' }}>
+        <div className="container">
+          <div className="between mb-8">
+            <SectionHead num={c.newsroomHead.num} label={c.newsroomHead.label} title={c.newsroomHead.title} />
+            <Link href={c.newsroomHead.viewAllHref!} className="btn ghost">{c.newsroomHead.viewAllLabel} <span className="arr">→</span></Link>
+          </div>
+          <div className="row row-3">
+            {featured.map((it) => {
+              const tone = it.who === 'STUDIO' ? 'stage' : it.who === 'INDUSTRIES' ? 'industrial' : it.who === 'WESAN' ? 'architecture' : 'workstation';
+              return (
+                <SpotlightCard key={it.slug} href={`/newsroom/${it.slug}`} className="media-link">
+                  <Photo tone={tone} ratio="16/10" style={{ marginBottom: '16px' }} caption={`· ${it.who}`} label={it.date.split('.').slice(1).join('.')} />
+                  <div className="gap-12 mb-2" style={{ alignItems: 'baseline' }}>
+                    <span className="mono" style={{ fontSize: '11px', color: 'var(--ink-3)' }}>{it.date}</span>
+                    <span className="mono" style={{ fontSize: '11px', color: 'var(--accent)', letterSpacing: '0.08em' }}>{it.who}</span>
+                  </div>
+                  <h3 className="serif" style={{ fontSize: '22px', lineHeight: 1.25 }}>{it.what}</h3>
+                </SpotlightCard>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container-narrow" style={{ textAlign: 'center' }}>
+          <span className="eyebrow">{c.founderLetter.label}</span>
+          <p className="serif mt-6 mb-8" style={{ fontSize: '30px', fontStyle: 'italic', lineHeight: 1.45, letterSpacing: '-0.01em' }}>
+            &ldquo;{c.founderLetter.quote}&rdquo;
+          </p>
+          <Link href={c.founderLetter.ctaHref} className="btn">{c.founderLetter.ctaLabel} <span className="arr">→</span></Link>
+        </div>
+      </section>
+    </>
   );
 }
