@@ -18,8 +18,8 @@ interface AboutContent {
   numbers: { eyebrow: string; items: { label: string; value: number }[] };
 }
 
-export default function AboutPage() {
-  const c = (getContent().pages.about as unknown) as AboutContent;
+export default async function AboutPage() {
+  const c = ((await getContent()).pages.about as unknown) as AboutContent;
 
   return (
     <>

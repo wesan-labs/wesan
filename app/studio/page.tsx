@@ -14,8 +14,8 @@ interface StudioContent {
   footerStamp: { eyebrow: string; line: string };
 }
 
-export default function StudioPage() {
-  const c = (getContent().pages.studio as unknown) as StudioContent;
+export default async function StudioPage() {
+  const c = ((await getContent()).pages.studio as unknown) as StudioContent;
 
   return (
     <>

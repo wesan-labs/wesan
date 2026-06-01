@@ -1,7 +1,9 @@
-/* Content loader — single source for all site copy.
-   For now: static JSON import. Later: swap to CMS fetch. */
+/* Content loader — static en.json fallback; Helm CMS overrides when published. */
 
+import { cache } from 'react';
 import en from '../content/en.json';
+import { fetchHelmContent } from './helm';
+import { deepMerge } from './merge';
 
 export type Lang = 'en';
 
@@ -262,30 +264,38 @@ export interface NewsroomDetailLabels {
 
 // --- Loader ---
 
-export function getContent(_lang: Lang = 'en'): ContentBundle {
-  // When CMS lands: switch on lang, fetch, return.
-  return en as unknown as ContentBundle;
-}
+const staticBundle = en as unknown as ContentBundle;
+
+/** Build-time / SSG slug lists — always from committed JSON. */
+export const staticContent = staticBundle;
+
+export const getContent = cache(async (lang: Lang = 'en'): Promise<ContentBundle> => {
+  const remote = await fetchHelmContent(lang);
+  if (!remote) return staticBundle;
+  return deepMerge(staticBundle, remote);
+});
 
 // --- Helpers ---
 
-export function getRole(slug: string, lang: Lang = 'en'): Role | undefined {
-  return getContent(lang).collections.careers.find((r) => r.slug === slug);
+export async function getRole(slug: string, lang: Lang = 'en'): Promise<Role | undefined> {
+  const content = await getContent(lang);
+  return content.collections.careers.find((r) => r.slug === slug);
 }
 
-export function getRoles(lang: Lang = 'en'): Role[] {
-  return getContent(lang).collections.careers;
+export async function getRoles(lang: Lang = 'en'): Promise<Role[]> {
+  return (await getContent(lang)).collections.careers;
 }
 
-export function getNewsItem(slug: string, lang: Lang = 'en'): NewsItem | undefined {
-  return getContent(lang).collections.newsroom.find((i) => i.slug === slug);
+export async function getNewsItem(slug: string, lang: Lang = 'en'): Promise<NewsItem | undefined> {
+  const content = await getContent(lang);
+  return content.collections.newsroom.find((i) => i.slug === slug);
 }
 
-export function getNewsItems(lang: Lang = 'en'): NewsItem[] {
-  return getContent(lang).collections.newsroom;
+export async function getNewsItems(lang: Lang = 'en'): Promise<NewsItem[]> {
+  return (await getContent(lang)).collections.newsroom;
 }
 
-export function getNewsBySlugs(slugs: string[], lang: Lang = 'en'): NewsItem[] {
-  const all = getNewsItems(lang);
+export async function getNewsBySlugs(slugs: string[], lang: Lang = 'en'): Promise<NewsItem[]> {
+  const all = await getNewsItems(lang);
   return slugs.map((s) => all.find((i) => i.slug === s)).filter((x): x is NewsItem => !!x);
 }

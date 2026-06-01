@@ -16,8 +16,8 @@ interface ReportsContent {
   subscribeBlock: { eyebrow: string; title: string; body: string };
 }
 
-export default function ReportsPage() {
-  const c = (getContent().pages.reports as unknown) as ReportsContent;
+export default async function ReportsPage() {
+  const c = ((await getContent()).pages.reports as unknown) as ReportsContent;
 
   return (
     <>

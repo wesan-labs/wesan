@@ -38,8 +38,8 @@ function ProductCard({ p }: { p: Product }) {
   );
 }
 
-export default function SoftwarePage() {
-  const c = (getContent().pages.software as unknown) as SoftwareContent;
+export default async function SoftwarePage() {
+  const c = ((await getContent()).pages.software as unknown) as SoftwareContent;
 
   return (
     <>

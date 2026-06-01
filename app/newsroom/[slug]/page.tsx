@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Photo } from '../../_components/lib';
-import { getContent, getNewsItem, getNewsItems } from '@/lib/content';
+import { getContent, getNewsItem, getNewsItems, staticContent } from '@/lib/content';
 
 export function generateStaticParams() {
-  return getNewsItems().map((i) => ({ slug: i.slug }));
+  return staticContent.collections.newsroom.map((i) => ({ slug: i.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const it = getNewsItem(slug);
+  const it = await getNewsItem(slug);
   if (!it) return { title: 'Release not found · Wesan newsroom' };
   return {
     title: `${it.what} · ${it.who} · Wesan newsroom`,
@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ReleasePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const it = getNewsItem(slug);
+  const it = await getNewsItem(slug);
   if (!it) notFound();
 
-  const items = getNewsItems();
-  const labels = getContent().pages.newsroomDetail;
+  const items = await getNewsItems();
+  const labels = (await getContent()).pages.newsroomDetail;
   const idx = items.findIndex((x) => x.slug === it.slug);
   const prev = idx < items.length - 1 ? items[idx + 1] : null;
   const next = idx > 0 ? items[idx - 1] : null;

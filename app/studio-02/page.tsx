@@ -23,8 +23,8 @@ interface Studio02 {
   ctaLabel: string;
 }
 
-export default function Studio02Page() {
-  const c = (getContent().pages.studio02 as unknown) as Studio02;
+export default async function Studio02Page() {
+  const c = ((await getContent()).pages.studio02 as unknown) as Studio02;
 
   return (
     <>

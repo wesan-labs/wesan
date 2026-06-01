@@ -34,8 +34,8 @@ function OfficeCard({ label, lines, telemetry }: { label: string; lines: string[
   );
 }
 
-export default function ContactPage() {
-  const c = getContent().pages.contact;
+export default async function ContactPage() {
+  const c = (await getContent()).pages.contact;
   const titleNode: ReactNode = c.head.title?.split('\n').map((line, i, a) => (
     <span key={i}>{line}{i < a.length - 1 && <br />}</span>
   ));

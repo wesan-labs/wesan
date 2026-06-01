@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Icon } from './icons';
-import { getContent } from '@/lib/content';
+import { useContent } from '@/lib/content-provider';
 
 export function Wordmark({ size = 18, withCrumb = null }: { size?: number; withCrumb?: string | null }) {
-  const brand = getContent().common.brand;
+  const brand = useContent().common.brand;
   return (
     <Link href="/" className="nav-mark">
       <svg width={size + 4} height={size + 4} viewBox="0 0 28 28" aria-hidden="true">
@@ -24,7 +24,7 @@ export function Wordmark({ size = 18, withCrumb = null }: { size?: number; withC
 }
 
 export function Nav() {
-  const nav = getContent().nav;
+  const nav = useContent().nav;
   const pathname = usePathname() || '/';
   const isDivisionDetail = ['/software', '/studio', '/industries'].includes(pathname);
   const activeKey = isDivisionDetail ? '/divisions' : pathname;
@@ -111,7 +111,7 @@ export function Nav() {
 }
 
 export function Footer() {
-  const c = getContent();
+  const c = useContent();
   const f = c.footer;
 
   return (

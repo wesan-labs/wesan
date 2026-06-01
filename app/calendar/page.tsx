@@ -12,8 +12,8 @@ interface CalendarContent {
 const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 const monthName = (date: string) => months[parseInt(date.split('.')[1], 10) - 1];
 
-export default function CalendarPage() {
-  const c = (getContent().pages.calendar as unknown) as CalendarContent;
+export default async function CalendarPage() {
+  const c = ((await getContent()).pages.calendar as unknown) as CalendarContent;
 
   return (
     <>

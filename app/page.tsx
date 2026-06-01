@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { Photo, Counter, Marquee, SectionHead, SpotlightCard } from './_components/lib';
 import { getContent, getNewsBySlugs } from '@/lib/content';
 
-export default function HomePage() {
-  const c = getContent().pages.home;
-  const featured = getNewsBySlugs(c.newsroomSlugs);
+export default async function HomePage() {
+  const c = (await getContent()).pages.home;
+  const featured = await getNewsBySlugs(c.newsroomSlugs);
 
   return (
     <>

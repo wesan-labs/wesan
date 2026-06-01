@@ -14,8 +14,8 @@ interface TrustContent {
   vulnBlock: { eyebrow: string; title: string; body: string; safe: string };
 }
 
-export default function TrustPage() {
-  const c = (getContent().pages.trust as unknown) as TrustContent;
+export default async function TrustPage() {
+  const c = ((await getContent()).pages.trust as unknown) as TrustContent;
 
   return (
     <>

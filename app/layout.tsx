@@ -3,6 +3,8 @@ import { Inter, Inter_Tight, Newsreader, JetBrains_Mono } from 'next/font/google
 import { Nav, Footer } from './_components/shared';
 import { DraftingFrame } from './_components/lib';
 import { CommandPalette } from './_components/cmdk';
+import { ContentProvider } from '@/lib/content-provider';
+import { getContent } from '@/lib/content';
 import './globals.css';
 
 const inter = Inter({ variable: '--font-inter', subsets: ['latin'] });
@@ -15,15 +17,19 @@ export const metadata: Metadata = {
   description: 'The house under which the next century is built. Wesan — software, studio, industries.',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const content = await getContent();
+
   return (
     <html lang="en" className={`${inter.variable} ${interTight.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <DraftingFrame />
-        <CommandPalette />
-        <Nav />
-        <main style={{ animation: 'fadeIn 0.4s ease forwards' }}>{children}</main>
-        <Footer />
+        <ContentProvider value={content}>
+          <DraftingFrame />
+          <CommandPalette />
+          <Nav />
+          <main style={{ animation: 'fadeIn 0.4s ease forwards' }}>{children}</main>
+          <Footer />
+        </ContentProvider>
         <style>{`@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }`}</style>
       </body>
     </html>

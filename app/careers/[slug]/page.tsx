@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SectionHead } from '../../_components/lib';
-import { getContent, getRole, getRoles } from '@/lib/content';
+import { getContent, getRole, getRoles, staticContent } from '@/lib/content';
 
 export function generateStaticParams() {
-  return getRoles().map((r) => ({ slug: r.slug }));
+  return staticContent.collections.careers.map((r) => ({ slug: r.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const r = getRole(slug);
+  const r = await getRole(slug);
   if (!r) return { title: 'Role not found · Wesan' };
   return {
     title: `${r.name} · ${r.team} · Wesan careers`,
@@ -19,11 +19,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function RolePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const role = getRole(slug);
+  const role = await getRole(slug);
   if (!role) notFound();
 
-  const labels = getContent().pages.careers.detail;
-  const others = getRoles().filter((r) => r.slug !== role.slug);
+  const labels = (await getContent()).pages.careers.detail;
+  const others = (await getRoles()).filter((r) => r.slug !== role.slug);
 
   return (
     <>

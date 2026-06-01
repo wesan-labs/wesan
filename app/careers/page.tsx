@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { SectionHead } from '../_components/lib';
 import { getContent, getRoles } from '@/lib/content';
 
-export default function CareersPage() {
-  const c = getContent().pages.careers;
-  const roles = getRoles();
+export default async function CareersPage() {
+  const c = (await getContent()).pages.careers;
+  const roles = await getRoles();
 
   return (
     <>

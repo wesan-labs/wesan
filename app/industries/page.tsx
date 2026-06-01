@@ -13,8 +13,8 @@ interface IndustriesContent {
   footerStamp: { eyebrow: string; line: string };
 }
 
-export default function IndustriesPage() {
-  const c = (getContent().pages.industries as unknown) as IndustriesContent;
+export default async function IndustriesPage() {
+  const c = ((await getContent()).pages.industries as unknown) as IndustriesContent;
 
   return (
     <>

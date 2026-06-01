@@ -45,8 +45,8 @@ function renderBlock(b: MissionBlock, i: number) {
   }
 }
 
-export default function MissionPage() {
-  const c = getContent().pages.mission;
+export default async function MissionPage() {
+  const c = (await getContent()).pages.mission;
 
   return (
     <>

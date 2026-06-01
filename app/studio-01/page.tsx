@@ -26,8 +26,8 @@ interface Studio01 {
   ctaSubject: string;
 }
 
-export default function Studio01Page() {
-  const c = (getContent().pages.studio01 as unknown) as Studio01;
+export default async function Studio01Page() {
+  const c = ((await getContent()).pages.studio01 as unknown) as Studio01;
 
   return (
     <>

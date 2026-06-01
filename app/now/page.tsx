@@ -1,8 +1,8 @@
 import { SectionHead } from '../_components/lib';
 import { getContent } from '@/lib/content';
 
-export default function NowPage() {
-  const c = getContent().pages.now;
+export default async function NowPage() {
+  const c = (await getContent()).pages.now;
 
   return (
     <>

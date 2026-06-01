@@ -58,8 +58,8 @@ function MediaCell({ row }: { row: DivRow }) {
   return null;
 }
 
-export default function DivisionsPage() {
-  const c = (getContent().pages.divisions as unknown) as DivisionsContent;
+export default async function DivisionsPage() {
+  const c = ((await getContent()).pages.divisions as unknown) as DivisionsContent;
 
   return (
     <>

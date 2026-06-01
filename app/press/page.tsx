@@ -46,8 +46,8 @@ function Lockup({ color, size }: { color: string; size: number }) {
   );
 }
 
-export default function PressPage() {
-  const c = (getContent().pages.press as unknown) as PressContent;
+export default async function PressPage() {
+  const c = ((await getContent()).pages.press as unknown) as PressContent;
 
   return (
     <>

@@ -9,8 +9,8 @@ interface SitemapContent {
   tree: string;
 }
 
-export default function SitemapPage() {
-  const c = (getContent().pages.sitemap as unknown) as SitemapContent;
+export default async function SitemapPage() {
+  const c = ((await getContent()).pages.sitemap as unknown) as SitemapContent;
 
   return (
     <>
