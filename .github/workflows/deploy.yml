@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, ca-serv]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to production
+        env:
+          WESAN_APP_DIR: /var/www/wesan
+          BUN_BIN: /home/canakyuz/.bun/bin/bun
+          PORT: "3002"
+        run: bash deploy/deploy.sh
