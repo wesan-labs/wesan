@@ -148,7 +148,7 @@
         {
           "href": "/mission", "size": "b-4", "tone": "dawn",
           "arr": "READ MORE →",
-          "label": "THE ROOF",
+          "label": "THE MISSION",
           "title": "One company. Three rooms. A century's work.", "titleSize": 36,
           "desc": "Read the mission — what we mean when we say \"the next century.\""
         }
@@ -249,7 +249,7 @@
         "eyebrow": "WHAT YOU'LL GET",
         "title": "A 10-year runway.<br />A small team.<br />A problem worth your decade.",
         "paragraphs": [
-          "Compensation that reflects seniority, not stage. Real ownership in the division you join, not just in the roof.",
+          "Compensation that reflects seniority, not stage. Real ownership in the division you join, not just in the holding.",
           "Healthcare and parental leave the way they should be: paid, generous, never a negotiation.",
           "And — the part you'll feel most — a working week that isn't structured around looking busy."
         ]
@@ -363,9 +363,9 @@
       "governance": {
         "head": { "num": "03", "label": "GOVERNANCE", "title": "How decisions get made." },
         "cards": [
-          ["THE ROOF", "Wesan is in formation as a private holding. The founder is the sole decision-maker today. Formal entity registration follows once the structure is settled."],
-          ["THE ROOMS", "Each division is being scoped to operate independently — its own brand, its own roadmap, its own runway. Today this is one person with three rooms in mind."],
-          ["THE BOOKS", "Annual field reports, intended for April, every year, on this site. The first report — April 2027 — will be the first real one. Honest, even if small."]
+          ["THE HOLDING", "Wesan is in formation as a private holding. The founder is the sole decision-maker today. Formal entity registration follows once the structure is settled."],
+          ["THE DIVISIONS", "Each division is being scoped to operate independently — its own brand, its own roadmap, its own runway. Today this is one person with three divisions in mind."],
+          ["THE REPORTING", "Annual field reports, intended for April, every year, on this site. The first report — April 2027 — will be the first real one. Honest, even if small."]
         ]
       },
       "numbers": {
@@ -422,7 +422,7 @@
           "spine": "03 / INDUSTRIES",
           "title": "Industries",
           "statusTag": { "label": "LONG-TERM", "variant": "dashed" },
-          "desc": "The heavy work. Aerospace, defense, hardware that lives outdoors. No timeline yet — written down so the roof is built tall enough for it. The work that takes a decade needs to wait its turn.",
+          "desc": "The heavy work. Aerospace, defense, hardware that lives outdoors. No timeline yet — written down so the company is built tall enough for it. The work that takes a decade needs to wait its turn.",
           "products": [
             "<em>Aerospace</em> — orbital + cislunar",
             "<em>Defense</em> — autonomy",
@@ -797,7 +797,7 @@
       "principles": [
         ["ONE", "A division's operating cash funds that division's runway. Software's margin is Software's to spend."],
         ["TWO", "A division does not subsidise another division indefinitely. Studio and Industries have explicit budgets from the holding, with explicit timelines for being self-sustaining."],
-        ["THREE", "No dividends. Profits are reinvested into the next division until the roof itself is a hundred years older."],
+        ["THREE", "No dividends. Profits are reinvested into the next division until the company itself is a hundred years older."],
         ["FOUR", "No share buybacks. Wesan does not have public shares to buy back, and will not create them."],
         ["FIVE", "No leverage at the holding level. Each division may take on operational debt; the roof carries none."]
       ],
@@ -862,28 +862,28 @@
     },
 
     "sitemap": {
-      "head": { "num": "—", "label": "SITEMAP · EVERY DOOR IN THE BUILDING", "title": "The whole site, in one diagram.", "sub": "Sixteen pages. Five groups. If you can't find what you're looking for, it's probably not here yet." },
+      "head": { "num": "—", "label": "SITEMAP · EVERY PAGE", "title": "The whole site, in one diagram.", "sub": "Sixteen pages. Five groups. If you can't find what you're looking for, it's probably not here yet." },
       "groups": [
         {
-          "label": "01 · THE ROOF",
+          "label": "01 · COMPANY",
           "items": [
-            { "k": "", "l": "Home", "d": "The cathedral page" },
+            { "k": "", "l": "Home", "d": "The front door" },
             { "k": "about", "l": "About", "d": "The founder, the story, the structure" },
             { "k": "mission", "l": "Mission", "d": "What we mean by \"the next century\"" },
             { "k": "now", "l": "Now", "d": "What is happening this month" }
           ]
         },
         {
-          "label": "02 · THE ROOMS",
+          "label": "02 · DIVISIONS",
           "items": [
-            { "k": "divisions", "l": "Divisions · index", "d": "Three rooms, one drawing" },
+            { "k": "divisions", "l": "Divisions · index", "d": "Three divisions, one drawing" },
             { "k": "software", "l": "01 / Software", "d": "Friday · Dante · Notch" },
             { "k": "studio", "l": "02 / Studio", "d": "Games and interactive video" },
             { "k": "industries", "l": "03 / Industries", "d": "Aerospace · defense · heavy hardware" }
           ]
         },
         {
-          "label": "03 · THE BOOKS",
+          "label": "03 · REPORTING",
           "items": [
             { "k": "newsroom", "l": "Newsroom", "d": "Every release, in order" },
             { "k": "reports", "l": "Field reports", "d": "Annual · April, every year" },
@@ -891,14 +891,14 @@
           ]
         },
         {
-          "label": "04 · THE PEOPLE",
+          "label": "04 · PEOPLE",
           "items": [
             { "k": "careers", "l": "Careers", "d": "A few quiet roles, posted only when ready" },
             { "k": "contact", "l": "Contact", "d": "Three good ways to reach us" }
           ]
         },
         {
-          "label": "05 · THE PAPERWORK",
+          "label": "05 · PAPERWORK",
           "items": [
             { "k": "press", "l": "Press kit", "d": "Logos, palette, boilerplate, fast facts" },
             { "k": "trust", "l": "Trust & security", "d": "What we do today, what we don't yet" },
