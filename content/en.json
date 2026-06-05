@@ -99,7 +99,7 @@
       },
       "telemetry": [
         { "value": 3, "label": "DIVISIONS" },
-        { "value": 3, "label": "PRODUCTS SHIPPING" },
+        { "value": 3, "label": "PRODUCTS · IN BUILD" },
         { "value": 2026, "label": "YEAR ONE" },
         { "value": 100, "suffix": " YR", "label": "HORIZON" }
       ],
@@ -180,7 +180,7 @@
         { "kind": "p", "text": "Wesan is in the second category, by choice and by design. We are organised so that three different kinds of long-horizon work — software, interactive media, and eventually heavy industry — can each have a fair chance of being done well. Some of that work will not pay back inside a decade. Some of it might not pay back at all. We took that into account when we set the building up." },
         { "kind": "p", "text": "We chose the name <em>Wesan</em> — Old English, \"to be\" — because we wanted a verb that didn't promise anything specific. The name doesn't tell you what we make. It tells you we intend to stay." },
         { "kind": "h2", "text": "Solo today, by design." },
-        { "kind": "p", "text": "Wesan is one person right now. That is the design, not the limitation. Three products in beta — Friday, Dante, Notch — run by the same hand, on the same calendar, under the same standard. This is only possible because the tools have caught up: AI lets one engineer hold what used to need five. Wesan is built to take that leverage seriously — and to keep being honest about what it is the day before the second person joins, and the day after." },
+        { "kind": "p", "text": "Wesan is one person right now. That is the design, not the limitation. Three products in build — Friday and Dante in beta, Notch in development — run by the same hand, on the same calendar, under the same standard. This is only possible because the tools have caught up: AI lets one engineer hold what used to need five. Wesan is built to take that leverage seriously — and to keep being honest about what it is the day before the second person joins, and the day after." },
         { "kind": "p", "text": "Friday is built with Friday. Dante is built with Friday. The compounding is real, and it is the whole reason this structure can begin with one person and still mean to last a century." },
         { "kind": "figure", "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantheon_section_sphere.svg", "alt": "Pantheon section showing the 43.3 m sphere inscribed in the dome and rotunda — geometric proof of the building's permanence.", "caption": "FIG · the Pantheon's geometry, 43.3 m across, is the same standard 1900 years on.", "credit": "Diagram: Cmglee, Wikimedia Commons, CC BY-SA 3.0." },
         { "kind": "h2", "text": "Three commitments." },
@@ -374,7 +374,7 @@
         "eyebrow": "WESAN BY THE NUMBERS · JUNE 2026",
         "items": [
           { "label": "DIVISIONS · PLANNED", "value": 3 },
-          { "label": "PRODUCTS · IN BETA", "value": 3 },
+          { "label": "PRODUCTS · IN BUILD", "value": 3 },
           { "label": "PEOPLE", "value": 1 },
           { "label": "YEARS · OPERATING", "value": 0 }
         ]
@@ -399,7 +399,7 @@
             "<strong>Dante</strong> — one app, six trackers",
             "<strong>Notch</strong> — habits as a daily log"
           ],
-          "meta": ["STARTED 2026", "3 PRODUCTS · BETA", "İZMİR"],
+          "meta": ["STARTED 2026", "3 PRODUCTS · IN BUILD", "İZMİR"],
           "image": { "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SLR_cross_section.svg", "alt": "Technical cross-section — workstation calm" },
           "cta": { "href": "/software", "label": "software", "variant": "solid" },
           "alt": false,
@@ -453,7 +453,7 @@
       },
       "telemetry": [["DIVISION", "SOFTWARE"], ["STATUS", "EARLY BETA"], ["PRODUCTS", "03 · IN BUILD"], ["BASE", "İZMİR"]],
       "manifesto": "Three apps, one principle: consolidation. Friday consolidates the coding agents you already use. Dante consolidates the six trackers nobody wants open at once. Notch consolidates the discipline of a daily log. Each one for a real person doing a real job. Solo development today; small teams tomorrow.",
-      "productsHead": { "num": "02", "label": "PRODUCTS · IN BETA", "title": "Three apps, in the shaping." },
+      "productsHead": { "num": "02", "label": "PRODUCTS · IN BUILD", "title": "Three apps, in the shaping." },
       "products": [
         { "name": "Friday", "version": "v0.x", "url": "friday.run", "tagline": "Agent runtime, not another agent", "meta": "macOS · Linux · Windows · Mobile companion", "desc": "A daemon that runs your coding agents. Claude Code today, others tomorrow. Detach, attach, ship from anywhere — terminal, desktop, or phone. BYOM, free during beta.", "status": "BETA" },
         { "name": "Dante", "version": "v0.x", "url": "danteapp.co", "tagline": "One app, six trackers", "meta": "iOS · iPad", "desc": "Tasks, workouts, nutrition, supplements, spending, habits — consolidated into one quiet surface. Turkish food + supplement database built in. Local-first. TestFlight now, App Store soon.", "status": "TESTFLIGHT" },
@@ -474,7 +474,7 @@
         ["THE DIFF IS THE CONTRACT", "Every change a user can see is something they can refuse. We don't silently rewrite preferences, accounts, or files."],
         ["SMALL TEAMS, LONG ROPES", "Each product has 3–6 people. They own the codebase, the customers, and the calendar. No matrix, no headcount theatre."]
       ],
-      "footerStamp": { "eyebrow": "SOFTWARE IS A WESAN DIVISION", "line": "Started 2026 · İzmir · 3 products in beta" }
+      "footerStamp": { "eyebrow": "SOFTWARE IS A WESAN DIVISION", "line": "Started 2026 · İzmir · 3 products in build" }
     },
 
     "studio": {
@@ -840,9 +840,9 @@
       ],
       "boilerplateHead": { "num": "05", "label": "BOILERPLATE", "title": "Copy this. Edit it as much as you need." },
       "boilerplate": [
-        { "len": "ONE SENTENCE", "body": "Wesan is a holding-in-formation for long-horizon work — software in early beta now, studio and industries on the long horizon." },
-        { "len": "ONE PARAGRAPH", "body": "Wesan is a private holding-in-formation, started in 2026 by Bekircan Akyuz. It will operate three divisions on different timescales — Software (three products in early beta: Friday, Dante, Notch), Studio (games and interactive video, idea stage), and Industries (heavy work, long-term horizon). Currently solo development from İzmir, moving to London Q3 2026." },
-        { "len": "TWO PARAGRAPHS", "body": "Wesan is a private holding-in-formation, started in 2026 by Bekircan Akyuz to operate three divisions on different timescales: Software (in beta), Studio (idea), and Industries (long-term). The structure is being designed so each division will have the runway it needs to do the work without quarterly pressure — the roof exists to remove fear from the engineering room.\n\nCurrently solo development. Self-financed, no outside investors, no plans to raise. Every year in April starting 2027, each division will publish a field report — what worked, what didn't, what it spent." }
+        { "len": "ONE SENTENCE", "body": "Wesan is a holding-in-formation for long-horizon work — software in build now, studio and industries on the long horizon." },
+        { "len": "ONE PARAGRAPH", "body": "Wesan is a private holding-in-formation, started in 2026 by Bekircan Akyuz. It will operate three divisions on different timescales — Software (three products in build: Friday and Dante in beta, Notch in development), Studio (games and interactive video, idea stage), and Industries (heavy work, long-term horizon). Currently solo development from İzmir, moving to London Q3 2026." },
+        { "len": "TWO PARAGRAPHS", "body": "Wesan is a private holding-in-formation, started in 2026 by Bekircan Akyuz to operate three divisions on different timescales: Software (in build), Studio (idea), and Industries (long-term). The structure is being designed so each division will have the runway it needs to do the work without quarterly pressure — the roof exists to remove fear from the engineering room.\n\nCurrently solo development. Self-financed, no outside investors, no plans to raise. Every year in April starting 2027, each division will publish a field report — what worked, what didn't, what it spent." }
       ],
       "factsEyebrow": "FAST FACTS",
       "factsLeft": [
@@ -857,7 +857,7 @@
         ["Press email", "press@wesan.co"],
         ["Partnerships", "partner@wesan.co"],
         ["Site", "wesan.co"],
-        ["Products in beta", "Friday · Dante · Notch"],
+        ["Products in build", "Friday · Dante · Notch"],
         ["Reporting cadence", "Annual · April (first report 2027)"],
         ["Trademark", "Wesan™ — registration pending"]
       ]
