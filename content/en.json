@@ -2,7 +2,7 @@
   "_meta": {
     "lang": "en",
     "version": "1.0.0",
-    "updated": "2026-05-24"
+    "updated": "2026-06-05"
   },
 
   "common": {
@@ -93,7 +93,7 @@
       "heroPhoto": {
         "tone": "architecture",
         "ratio": "21/9",
-        "caption": "· A WIDE HORIZON · İZMİR, MAY 2026",
+        "caption": "· A WIDE HORIZON · İZMİR",
         "label": "FIG 01 / 09",
         "overlay": "A piece of infrastructure, photographed from a distance. No people, no logos — just the structure itself."
       },
@@ -209,7 +209,7 @@
       },
       "tags": [
         { "label": "UPDATED · MAY 2026", "variant": "accent" },
-        { "label": "NEXT UPDATE · JUNE", "variant": "default" }
+        { "label": "NEXT UPDATE · LATE JUNE", "variant": "default" }
       ],
       "lead": "Everything is parallel right now. Friday in early beta, Dante in TestFlight, this site getting its bones — no single focus, just a lot of small fronts being worked.",
       "thisMonth": {
@@ -371,7 +371,7 @@
         ]
       },
       "numbers": {
-        "eyebrow": "WESAN BY THE NUMBERS · MAY 2026",
+        "eyebrow": "WESAN BY THE NUMBERS · JUNE 2026",
         "items": [
           { "label": "DIVISIONS · PLANNED", "value": 3 },
           { "label": "PRODUCTS · IN BETA", "value": 3 },
@@ -788,7 +788,7 @@
         ["WHY IT IS THIS WAY", "Long-horizon work needs runway, not a board meeting. Every division gets a minimum 10-year runway from the holding before any expectation of returning capital. That guarantee is meaningless if a third party can revoke it at the next valuation milestone."],
         ["WHAT WOULD CHANGE OUR MIND", "In principle, never. In practice — if a sovereign or foundation came forward with capital that matched our timescale and accepted our governance, we would consider it. We have not had that conversation with anyone."]
       ],
-      "capTableEyebrow": "CAPITAL TABLE · MAY 2026",
+      "capTableEyebrow": "CAPITAL TABLE · JUNE 2026",
       "capTable": [
         ["BEKİRCAN AKYUZ", "Founder · sole owner", "100.0%", "100.0%"],
         ["EMPLOYEE EQUITY", "Reserved for the first hires", "— (planned, not granted)", "0.0%"],
