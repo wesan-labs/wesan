@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Photo, Counter, Marquee, SectionHead, SpotlightCard } from './_components/lib';
+import { Photo, Counter, Marquee, SectionHead, SpotlightCard, Telemetry } from './_components/lib';
 import { getContent, getNewsBySlugs } from '@/lib/content';
 
 export default async function HomePage() {
@@ -42,13 +42,7 @@ export default async function HomePage() {
         </div>
 
         <div className="container mt-4">
-          <div className="telemetry">
-            {c.telemetry.map((t) => (
-              <div key={t.label}>
-                <strong><Counter to={t.value} suffix={t.suffix} /></strong> · {t.label}
-              </div>
-            ))}
-          </div>
+          <Telemetry items={c.telemetry.map((t) => [t.label, <Counter key={t.label} to={t.value} suffix={t.suffix} />])} />
         </div>
       </section>
 

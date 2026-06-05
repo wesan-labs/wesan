@@ -21,7 +21,7 @@ export default async function NowPage() {
         <article className="container-narrow" style={{ fontSize: '17px', lineHeight: 1.75 }}>
           <p className="serif mb-6" style={{ fontSize: '24px', lineHeight: 1.5 }}>{c.lead}</p>
 
-          <h3 className="h-3 mt-12 mb-4" style={{ fontFamily: 'var(--font-display)', fontSize: '20px' }}>
+          <h3 className="h-3 mt-12 mb-4">
             {c.thisMonth.heading}
           </h3>
           <ul style={{ color: 'var(--ink-2)', listStyle: 'none', padding: 0 }}>
@@ -33,7 +33,7 @@ export default async function NowPage() {
             ))}
           </ul>
 
-          <h3 className="h-3 mt-12 mb-4" style={{ fontFamily: 'var(--font-display)', fontSize: '20px' }}>
+          <h3 className="h-3 mt-12 mb-4">
             {c.divisions.heading}
           </h3>
           <div className="row row-3" style={{ gap: '20px' }}>
@@ -45,7 +45,7 @@ export default async function NowPage() {
             ))}
           </div>
 
-          <h3 className="h-3 mt-12 mb-4" style={{ fontFamily: 'var(--font-display)', fontSize: '20px' }}>
+          <h3 className="h-3 mt-12 mb-4">
             {c.onMyMind.heading}
           </h3>
           <p style={{ color: 'var(--ink-2)' }}>{c.onMyMind.body}</p>

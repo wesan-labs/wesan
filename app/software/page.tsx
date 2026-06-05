@@ -80,24 +80,24 @@ export default async function SoftwarePage() {
             <span>{c.releaseLogHead.label}</span>
             <span className="rule" style={{ background: '#2a2e36' }} />
           </div>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: 'var(--font-mono)', fontSize: '13px' }}>
+          <table className="data-table on-dark">
             <thead>
-              <tr style={{ color: '#6b6e74', fontSize: '10.5px', textTransform: 'uppercase', letterSpacing: '0.1em', borderBottom: '1px solid #2a2e36' }}>
-                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Date</th>
-                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Product</th>
-                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Release</th>
-                <th style={{ textAlign: 'left', padding: '14px 0', fontWeight: 400 }}>Notes</th>
-                <th style={{ textAlign: 'right', padding: '14px 0', fontWeight: 400 }}>Status</th>
+              <tr>
+                <th>Date</th>
+                <th>Product</th>
+                <th>Release</th>
+                <th>Notes</th>
+                <th className="right">Status</th>
               </tr>
             </thead>
             <tbody>
               {c.releases.map((row, i) => (
-                <tr key={i} style={{ borderBottom: '1px solid #2a2e36' }}>
-                  <td style={{ padding: '16px 0', color: 'var(--paper)' }}>{row[0]}</td>
-                  <td style={{ padding: '16px 0', color: 'var(--paper)' }}>{row[1]}</td>
-                  <td style={{ padding: '16px 0', color: 'var(--paper)' }}>{row[2]}</td>
-                  <td style={{ padding: '16px 0', color: '#8c9098' }}>{row[3]}</td>
-                  <td style={{ padding: '16px 0', textAlign: 'right', color: row[5] }}>{row[4]}</td>
+                <tr key={i}>
+                  <td>{row[0]}</td>
+                  <td>{row[1]}</td>
+                  <td>{row[2]}</td>
+                  <td className="muted">{row[3]}</td>
+                  <td className="right" style={{ color: row[5] }}>{row[4]}</td>
                 </tr>
               ))}
             </tbody>
