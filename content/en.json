@@ -346,8 +346,6 @@
           "Currently in İzmir, moving to London Q3 2026. Writes occasionally on the <a href=\"/software\" class=\"link\">Software</a> division's notes when something is worth saying."
         ],
         "social": [
-          { "icon": "twitter", "label": "@bekircan", "href": "#" },
-          { "icon": "github", "label": "github", "href": "#" },
           { "icon": "mail", "label": "reach me", "href": "/contact" }
         ]
       },
