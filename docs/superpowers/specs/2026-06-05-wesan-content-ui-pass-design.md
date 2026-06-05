@@ -24,16 +24,24 @@ Two read-only audits (UI + content) ran first. Findings were verified against th
   - newsroom `wesan-announces-itself` lede: removed the claim "Wesan A.Ş. is registered in İstanbul. Two desks…" which **contradicts the post's own body** ("one person, one desk in İzmir, registration to follow") and the investors page ("no formal entity registration yet"). Now: "Wesan starts in İzmir — one desk, three divisions, one mission. Entity registration to follow. Today is day one."
   - software telemetry `"03 IN BETA"` → `"03 · IN BUILD"` — the same page's product badges show BETA/TESTFLIGHT/**WIP**, so "all 3 in beta" was internally false.
 
-## Open decisions — need Bekircan (facts/voice only he owns; NOT auto-applied)
-These were **not** committed; they are proposals awaiting a yes/no:
+## Round 2 — applied (user said "continue in order"; my flagged defaults, all reversible)
+Each default leans on the dominant existing statement or the conservative non-fabricating option.
+- **Dates** (`af75779`): bumped *as-of fact snapshots* (about numbers, cap table → JUNE 2026) and `_meta.updated` (today); undated the decorative hero caption. Kept historical authorship dates (mission/reports "WRITTEN MAY", legal "updated 05.23") and the `/now` "UPDATED · MAY" stamp (truthful last update) — only fixed the overdue promise "NEXT UPDATE · JUNE" → "LATE JUNE". Skipped trust "VERSION 2026.05" (reviewed quarterly, not monthly).
+- **Notch status** (`b5268b3` + follow-up): all aggregate "3 in beta" → "in build" / precise (home, about, divisions, mission, software, press, about-timeline). Notch is in development, not beta. "in build" is the safe umbrella given the source itself disagrees (newsroom April said "early beta", software card says WIP).
+- **Dead socials** (`1baab94`): removed the two `href="#"` entries (twitter/github), kept "reach me → /contact".
+- **Metaphor trim** (`b10163e` + `cmdk`): de-metaphored sitemap group labels + cmdk palette sections (ROOF/ROOMS/BOOKS → COMPANY/DIVISIONS/REPORTING), "cathedral page" → "front door", about governance labels, and stray "roof" in investors/careers/industries. Kept the load-bearing uses (tagline, "Three divisions. One roof.", mission "the roof protects the rooms", manifesto "three rooms").
+- **Global integrity** (`3b3c797`): trademark ® → ™ pending (conservative; legal contradicted press); Studio base TBD → İSTANBUL · FORMING (matches newsroom/careers); studio "Two projects, neither announced" → "both in formation" (self-contradiction); dropped the literal "this is a placeholder" calendar copy.
 
-1. **Stale "as-of" dates** (today is June 5; site is stamped May): `/now` "UPDATED · MAY 2026 / NEXT UPDATE · JUNE" (the promise is now overdue), about "BY THE NUMBERS · MAY 2026", trust "VERSION 2026.05", investors "CAPITAL TABLE · MAY 2026", home hero photo caption "İZMİR, MAY 2026". *Historical* authorship dates (mission "WRITTEN MAY 2026", legal "updated 2026.05.23") should stay — bumping them would falsify history.
-2. **`/now` June refresh** — the page promises monthly updates; June's content needs your real status (I won't fabricate events).
-3. **Notch aggregate status** — many pages say "3 products in beta" but Notch is WIP/in-dev (home telemetry "3 PRODUCTS SHIPPING", about "3 IN BETA", divisions "3 PRODUCTS · BETA", mission "Three products in beta", press boilerplate/facts). Recommend "2 in beta + 1 in development" framing.
-4. **About socials** — `@bekircan` / `github` are `href="#"` (broken). Give real URLs to wire, or drop them.
-5. **Architectural metaphor** — roof/rooms/house/cathedral appears 30+ times; proposal is to cut ~50% (esp. sitemap group labels, investors, careers) and keep it in the tagline + mission.
-6. **Mission body** — circular opener ("a company that is good at being a company"), the "Some of it might not pay back at all" redundancy, and the founder quote duplicated verbatim on home + mission + newsroom.
-7. **Lower-priority global** (outside the 4 pages, batch later): trademark ® vs ™ (legal vs press contradict), Studio base TBD vs İstanbul (telemetry vs newsroom/careers), calendar placeholder events, press kit "Download ZIP · 14 MB" with no asset.
+## Still genuinely open — need Bekircan
+1. **`/now` June content** — I only fixed the overdue promise; the real June update needs your status (won't fabricate events).
+2. **About socials** — give real Twitter/GitHub URLs to restore, or leave removed.
+3. **Press kit assets** — `wesan-wordmark.svg`, `wesan-mark.svg`, the 14 MB ZIP **do not exist in `/public`** (only default CNA SVGs). Every "Download" CTA on /press is non-functional. Add the real files, or switch the copy to "assets on request"? — your call (didn't touch the press download copy).
+4. **Entity "A.Ş." sweep** — fixed the newsroom lede + trademark line, but "Wesan A.Ş." still appears in legal terms/DPA. If truly in-formation, that suffix is premature there too — confirm before I sweep the legal pages.
+5. **Verify my defaults** — trademark ™ (or is it really ® in TR?), Notch beta-vs-dev, Studio İstanbul. Veto any and I revert.
+6. **Mission voice** — I re-read and judged the audit's "circular opener" and "redundant" flags as *defensible rhetoric* — left them. The one real item: the founder quote is verbatim on home + mission; want me to vary one?
+
+## Known pre-existing issues (NOT introduced here)
+- `bun run lint` was already red: 4 × `react-hooks/set-state-in-effect` (cmdk:87, lib:155/228, shared:39) + 3 × `<img>` warnings (divisions/industries/mission). All pre-date this pass. Offer to fix in a separate `chore(lint)` pass.
 
 ## Not doing (YAGNI)
 Mass refactor of all 26 routes; rewriting Bekircan's literary voice unilaterally; the other 4 table pages until their slice comes up.
