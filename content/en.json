@@ -482,9 +482,9 @@
         "title": "The work that sits between art and software.",
         "photo": { "tone": "stage", "ratio": "21/8", "caption": "A DARK STAGE, ONE LIGHT, ONE CAMERA", "label": "FIG · STUDIO" }
       },
-      "telemetry": [["DIVISION", "STUDIO"], ["STATUS", "IDEA"], ["FIRST DEMO", "TBD"], ["BASE", "TBD"]],
+      "telemetry": [["DIVISION", "STUDIO"], ["STATUS", "IDEA"], ["FIRST DEMO", "TBD"], ["BASE", "İSTANBUL · FORMING"]],
       "manifesto": "Wesan Studio is the room where games, interactive video, and the kind of digital work that is more art than tool will live. We don't have a release schedule. We have a first demo, in Q4, on a small stage.",
-      "projectsHead": { "num": "02", "label": "IN FORMATION", "title": "Two projects, neither announced." },
+      "projectsHead": { "num": "02", "label": "IN FORMATION", "title": "Two projects, both in formation." },
       "projects": [
         {
           "code": "PROJECT 01", "name": "A narrative game",
@@ -636,7 +636,7 @@
       "events": [
         { "when": "2026.06.18", "weekday": "THU", "time": "19:00 UTC+3", "where": "İZMİR · ALSANCAK", "type": "TALK", "title": "Building a holding-in-formation, alone, in 2026", "who": "Bekircan Akyuz", "lede": "A short talk in İzmir. Open to the public, RSVP required. Drinks after. Date tentative — confirm via email.", "cta": "RSVP", "status": "TENTATIVE" },
         { "when": "TBD", "weekday": "—", "time": "—", "where": "ONLINE · TBD", "type": "DEMO", "title": "Friday · public beta demo + Q&A", "who": "Bekircan Akyuz", "lede": "An online demo of Friday when the public beta opens wider. Live walkthrough, then open Q&A. Date posted here when set.", "cta": "REMIND ME", "status": "TENTATIVE" },
-        { "when": "TBD", "weekday": "—", "time": "—", "where": "TBD", "type": "SHOWING", "title": "Wesan Studio · first prototype showing (when the studio forms)", "who": "Future team", "lede": "Studio is still an idea. When it forms and the first prototype is ready, the showing will be small and announced here. Until then, this is a placeholder.", "cta": "—", "status": "NOT YET" },
+        { "when": "TBD", "weekday": "—", "time": "—", "where": "TBD", "type": "SHOWING", "title": "Wesan Studio · first prototype showing (when the studio forms)", "who": "Future team", "lede": "Studio is still an idea. When it forms and the first prototype is ready, the showing will be small and announced here.", "cta": "—", "status": "NOT YET" },
         { "when": "2027.04.15", "weekday": "THU", "time": "09:00 UTC+3", "where": "PUBLISHED ONLINE", "type": "REPORT", "title": "First annual field reports · year 2026", "who": "All divisions", "lede": "The first annual field reports drop. One per division, plus a roof-level report. No event, just publishing. Read them in your own time.", "cta": "REMIND ME", "status": "SCHEDULED" }
       ],
       "footnote": "FOUR EVENTS · 2026 · ARCHIVE BEGINS 2027",
@@ -758,7 +758,7 @@
         "trademark": {
           "title": "Trademarks", "updated": "2026.05.23",
           "body": [
-            ["Wesan® and the W-mark", "Wesan® and the stylised W-mark are registered trademarks of Wesan A.Ş. in Türkiye and pending in the EU, US, and Japan."],
+            ["Wesan™ and the W-mark", "Wesan™ and the stylised W-mark are trademarks of Wesan, with registration pending in Türkiye, the EU, US, and Japan."],
             ["Product marks", "Friday™, Dante™, and Notch™ are trademarks of Wesan A.Ş. They are not registered yet."],
             ["Fair use", "You may use the Wesan name and W-mark to refer to our company — in articles, presentations, news. You may not modify them, combine them with another mark, or use them in a way that suggests endorsement."],
             ["Press kit", "For official versions of the logos, see the press kit at /press."],
