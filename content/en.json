@@ -244,7 +244,7 @@
         "title": "There are a few people we're quietly looking for.",
         "sub": "Wesan is small on purpose. We post a role only when we know exactly who we want to fill it — the team, the division, the work in the first six months, and what success looks like."
       },
-      "industriesNote": "INDUSTRIES HIRING OPENS 2027 · <a href=\"#\" style=\"text-decoration: underline\">JOIN THE WAITING LIST</a>",
+      "industriesNote": "INDUSTRIES HIRING OPENS 2027 · <a href=\"mailto:hello@wesan.co?subject=Industries waiting list\" style=\"text-decoration: underline\">JOIN THE WAITING LIST</a>",
       "whatYouGet": {
         "eyebrow": "WHAT YOU'LL GET",
         "title": "A 10-year runway.<br />A small team.<br />A problem worth your decade.",
@@ -451,7 +451,7 @@
         "title": "Software for the people who do the work.",
         "photo": { "tone": "workstation", "ratio": "21/8", "caption": "A QUIET WORKSTATION AT FIRST LIGHT · İZMİR", "label": "FIG · SOFTWARE" }
       },
-      "telemetry": [["DIVISION", "SOFTWARE"], ["STATUS", "EARLY BETA"], ["PRODUCTS", "03 IN BETA"], ["BASE", "İZMİR"]],
+      "telemetry": [["DIVISION", "SOFTWARE"], ["STATUS", "EARLY BETA"], ["PRODUCTS", "03 · IN BUILD"], ["BASE", "İZMİR"]],
       "manifesto": "Three apps, one principle: consolidation. Friday consolidates the coding agents you already use. Dante consolidates the six trackers nobody wants open at once. Notch consolidates the discipline of a daily log. Each one for a real person doing a real job. Solo development today; small teams tomorrow.",
       "productsHead": { "num": "02", "label": "PRODUCTS · IN BETA", "title": "Three apps, in the shaping." },
       "products": [
@@ -1225,7 +1225,7 @@
         "date": "2026.01.09",
         "who": "WESAN",
         "what": "Wesan announces itself.",
-        "lede": "Wesan A.Ş. is registered in İstanbul. Two desks, three divisions, one mission. Today is day one.",
+        "lede": "Wesan starts in İzmir — one desk, three divisions, one mission. Entity registration to follow. Today is day one.",
         "body": [
           { "kind": "p", "content": "Today, January 9 2026, Wesan starts taking shape. One person, one desk in İzmir. Formal entity registration to follow once the structure is settled." },
           { "kind": "h", "content": "What we're doing" },
