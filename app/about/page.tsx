@@ -11,7 +11,7 @@ interface AboutContent {
     photo: { tone: 'workstation'; ratio: string; label: string; caption: string };
     lead: string;
     paragraphs: string[];
-    social: { icon: 'twitter' | 'github' | 'mail'; label: string; href: string }[];
+    social: { icon: 'github' | 'linkedin' | 'mail'; label: string; href: string }[];
   };
   story: { head: { num: string; label: string; title: string }; timeline: [string, string][] };
   governance: { head: { num: string; label: string; title: string }; cards: [string, string][] };
@@ -50,7 +50,7 @@ export default async function AboutPage() {
                   const inner = (<><Icon name={s.icon} size={13} /> {s.label}</>);
                   return isInternal
                     ? <Link key={s.label} href={s.href} className="btn ghost">{inner}</Link>
-                    : <a key={s.label} href={s.href} className="btn ghost">{inner}</a>;
+                    : <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="btn ghost">{inner}</a>;
                 })}
               </div>
             </div>

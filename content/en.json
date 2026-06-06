@@ -346,6 +346,8 @@
           "Currently in İzmir, moving to London Q3 2026. Writes occasionally on the <a href=\"/software\" class=\"link\">Software</a> division's notes when something is worth saying."
         ],
         "social": [
+          { "icon": "github", "label": "github", "href": "https://github.com/canakyuz" },
+          { "icon": "linkedin", "label": "linkedin", "href": "https://linkedin.com/in/canakyuz" },
           { "icon": "mail", "label": "reach me", "href": "/contact" }
         ]
       },
