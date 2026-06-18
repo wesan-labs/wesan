@@ -1,8 +1,9 @@
 import type { ReactNode } from 'react';
+import Link from 'next/link';
 import { Photo, Telemetry, SectionHead } from '../_components/lib';
 import { getContent, type Tone } from '@/lib/content';
 
-interface Product { name: string; version: string; url: string; tagline: string; meta: string; desc: string; status: string }
+interface Product { name: string; version: string; url: string; tagline: string; meta: string; desc: string; status: string; img?: string }
 
 interface SoftwareContent {
   hero: { tags: { label: string; variant: string }[]; fig: string; title: string; photo: { tone: Tone; ratio: string; caption: string; label: string } };
@@ -19,9 +20,16 @@ interface SoftwareContent {
 
 function ProductCard({ p }: { p: Product }) {
   return (
-    <article className="card" style={{ display: 'flex', flexDirection: 'column', minHeight: '420px' }}>
-      <div className="frame frame-cross" style={{ aspectRatio: '4/3', marginBottom: '20px', background: 'var(--paper)' }}>
-        <span className="mono" style={{ fontSize: '10px', letterSpacing: '0.1em' }}>[ {p.name.toUpperCase()} · UI ]</span>
+    <Link href={`/software/${p.name.toLowerCase()}`} className="card" style={{ display: 'flex', flexDirection: 'column', minHeight: '420px', color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}>
+      <div className="photo-cross" style={{ aspectRatio: '4/3', marginBottom: '20px', background: 'var(--ink)', border: '1px solid var(--rule)', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <span className="corners" />
+        {p.img ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={p.img} alt={`${p.name} logo`} style={{ width: '44%', maxWidth: '120px', height: 'auto', objectFit: 'contain', position: 'relative', zIndex: 3, opacity: 0.95 }} />
+        ) : (
+          <span style={{ fontFamily: 'var(--font-display)', fontSize: '92px', fontWeight: 500, color: 'rgba(255,255,255,0.9)', lineHeight: 1, letterSpacing: '-0.02em', position: 'relative', zIndex: 3 }}>{p.name.charAt(0)}</span>
+        )}
+        <span className="mono" style={{ position: 'absolute', left: '14px', bottom: '12px', fontSize: '10px', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', zIndex: 3 }}>{p.name}</span>
       </div>
       <div className="gap-8 mb-2" style={{ alignItems: 'baseline' }}>
         <h3 className="h-3" style={{ fontFamily: 'var(--font-display)', fontWeight: 500, fontSize: '24px' }}>{p.name}</h3>
@@ -34,7 +42,7 @@ function ProductCard({ p }: { p: Product }) {
         <span className="mono" style={{ fontSize: '11.5px', color: 'var(--accent)' }}>{p.url}</span>
         <span className="mono" style={{ fontSize: '11px', color: 'var(--ink-3)' }}>→</span>
       </div>
-    </article>
+    </Link>
   );
 }
 

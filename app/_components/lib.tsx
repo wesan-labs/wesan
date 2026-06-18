@@ -14,7 +14,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 interface PhotoProps {
-  tone?: 'architecture' | 'workstation' | 'stage' | 'industrial' | 'dawn' | 'geology';
+  tone?: 'architecture' | 'workstation' | 'stage' | 'industrial' | 'dawn' | 'geology' | 'systems';
   ratio?: string;
   caption?: ReactNode;
   label?: ReactNode;
@@ -208,8 +208,6 @@ const pageMap: Record<string, string> = {
   '/now': '16',
   '/sitemap': '17',
   '/calendar': '18',
-  '/studio-01': '19',
-  '/studio-02': '20',
 };
 
 function fmtTime() {

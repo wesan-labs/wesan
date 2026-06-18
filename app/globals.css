@@ -887,6 +887,7 @@ li { margin-bottom: 6px; }
 .photo.industrial   { background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1600&q=80&auto=format&fit=crop'); }
 .photo.dawn         { background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=1600&q=80&auto=format&fit=crop'); }
 .photo.geology      { background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&q=80&auto=format&fit=crop'); }
+.photo.systems      { background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80&auto=format&fit=crop'); }
 
 .photo .cap {
   position: absolute; left: 14px; bottom: 14px;

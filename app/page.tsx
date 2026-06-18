@@ -66,9 +66,22 @@ export default async function HomePage() {
             sub={c.divisionsHead.sub}
           />
           <div className="bento mt-8">
-            {c.bento.map((card) => (
-              <SpotlightCard key={card.href} href={card.href} className={`${card.size} photo ${card.tone}`}>
+            {c.bento.map((card) => {
+              const real = !!(card.icons && card.icons.length > 0);
+              return (
+              <SpotlightCard key={card.href} href={card.href} className={`${card.size} photo ${real ? '' : card.tone}`}>
                 <div className="corners" />
+                {real && (
+                  <>
+                    <div aria-hidden style={{ position: 'absolute', inset: 0, zIndex: 0, backgroundImage: `url(${card.icons![0]})`, backgroundSize: 'cover', backgroundPosition: 'center', filter: 'blur(52px) saturate(1.3)', opacity: 0.5, transform: 'scale(1.25)' }} />
+                    <div style={{ position: 'absolute', top: '26px', left: '32px', display: 'flex', gap: '12px', zIndex: 3 }}>
+                      {card.icons!.map((ic) => (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img key={ic} src={ic} alt="" width={58} height={58} style={{ borderRadius: '13px', boxShadow: '0 8px 22px rgba(0,0,0,0.55)', border: '1px solid rgba(255,255,255,0.16)' }} />
+                      ))}
+                    </div>
+                  </>
+                )}
                 <span className="bento-arr">{card.arr}</span>
                 <span className="bento-label">{card.label}</span>
                 <h3 className="bento-title" style={card.titleSize ? { fontSize: `${card.titleSize}px` } : undefined}>{card.title}</h3>
@@ -81,7 +94,8 @@ export default async function HomePage() {
                   </div>
                 )}
               </SpotlightCard>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

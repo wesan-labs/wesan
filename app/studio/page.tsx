@@ -8,7 +8,7 @@ interface StudioContent {
   telemetry: [string, string][];
   manifesto: string;
   projectsHead: { num: string; label: string; title: string };
-  projects: { code: string; name: string; desc: string; meta: string[]; href: string }[];
+  projects: { code: string; name: string; desc: string; meta: string[]; href: string; status?: string; img?: string; external?: boolean }[];
   principlesHead: { num: string; label: string; title: string };
   principles: [string, string][];
   footerStamp: { eyebrow: string; line: string };
@@ -44,23 +44,43 @@ export default async function StudioPage() {
         <div className="container">
           <SectionHead num={c.projectsHead.num} label={c.projectsHead.label} title={c.projectsHead.title} />
           <div className="row row-2">
-            {c.projects.map((p) => (
-              <Link key={p.code} href={p.href} className="card" style={{ background: 'var(--paper-3)', cursor: 'pointer', display: 'block', color: 'inherit', textDecoration: 'none' }}>
-                <div className="frame frame-cross" style={{ aspectRatio: '16/10', marginBottom: '24px' }}>
-                  <span className="mono" style={{ fontSize: '10px', letterSpacing: '0.1em' }}>[ {p.code} · STILL ]</span>
-                </div>
-                <div className="gap-12 mb-4" style={{ alignItems: 'baseline' }}>
-                  <span className="mono" style={{ fontSize: '11px', color: 'var(--ink-3)', letterSpacing: '0.1em' }}>{p.code}</span>
-                  <span className="tag accent">FORMING</span>
-                  <span className="mono" style={{ marginLeft: 'auto', fontSize: '11px', color: 'var(--accent)', letterSpacing: '0.08em' }}>OPEN →</span>
-                </div>
-                <h3 className="h-3" style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 500, marginBottom: '14px' }}>{p.name}</h3>
-                <p style={{ fontSize: '15px', color: 'var(--ink-2)', lineHeight: 1.6, marginBottom: '20px' }}>{p.desc}</p>
-                <div className="gap-wrap">
-                  {p.meta.map((m) => <span key={m} className="tag">{m}</span>)}
-                </div>
-              </Link>
-            ))}
+            {c.projects.map((p) => {
+              const live = p.status === 'LIVE';
+              const cardStyle = { background: 'var(--paper-3)', cursor: 'pointer', display: 'block', color: 'inherit', textDecoration: 'none' } as const;
+              const body = (
+                <>
+                  {p.img ? (
+                    <div style={{ aspectRatio: '16/10', marginBottom: '24px', position: 'relative', overflow: 'hidden', border: '1px solid var(--rule)', background: 'var(--ink)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <div aria-hidden style={{ position: 'absolute', inset: '-20%', backgroundImage: `url(${p.img})`, backgroundSize: 'cover', backgroundPosition: 'center', filter: 'blur(34px) saturate(1.2)', opacity: 0.5 }} />
+                      <div aria-hidden style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(5,7,12,0.22), rgba(5,7,12,0.58))' }} />
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={p.img} alt={`${p.name} app icon`} width={132} height={132} style={{ position: 'relative', borderRadius: '28px', boxShadow: '0 14px 44px rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.14)' }} />
+                      <span className="mono" style={{ position: 'absolute', left: '14px', bottom: '12px', fontSize: '10.5px', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.72)', textTransform: 'uppercase', zIndex: 3 }}>{p.name}</span>
+                      {live && <span className="mono" style={{ position: 'absolute', right: '14px', top: '12px', fontSize: '10px', letterSpacing: '0.14em', color: '#4ade80', textTransform: 'uppercase', zIndex: 3 }}>● {p.status}</span>}
+                    </div>
+                  ) : (
+                    <div className="frame frame-cross" style={{ aspectRatio: '16/10', marginBottom: '24px' }}>
+                      <span className="mono" style={{ fontSize: '10px', letterSpacing: '0.1em' }}>[ {p.code} · STILL ]</span>
+                    </div>
+                  )}
+                  <div className="gap-12 mb-4" style={{ alignItems: 'baseline' }}>
+                    <span className="mono" style={{ fontSize: '11px', color: 'var(--ink-3)', letterSpacing: '0.1em' }}>{p.code}</span>
+                    <span className={`tag ${live ? 'status-on' : 'accent'}`}>{p.status ?? 'FORMING'}</span>
+                    <span className="mono" style={{ marginLeft: 'auto', fontSize: '11px', color: 'var(--accent)', letterSpacing: '0.08em' }}>{live ? 'PLAY →' : 'OPEN →'}</span>
+                  </div>
+                  <h3 className="h-3" style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 500, marginBottom: '14px' }}>{p.name}</h3>
+                  <p style={{ fontSize: '15px', color: 'var(--ink-2)', lineHeight: 1.6, marginBottom: '20px' }}>{p.desc}</p>
+                  <div className="gap-wrap">
+                    {p.meta.map((m) => <span key={m} className="tag">{m}</span>)}
+                  </div>
+                </>
+              );
+              return p.external ? (
+                <a key={p.code} href={p.href} target="_blank" rel="noopener noreferrer" className="card" style={cardStyle}>{body}</a>
+              ) : (
+                <Link key={p.code} href={p.href} className="card" style={cardStyle}>{body}</Link>
+              );
+            })}
           </div>
         </div>
       </section>

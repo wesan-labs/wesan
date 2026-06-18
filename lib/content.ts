@@ -7,7 +7,7 @@ import { deepMerge } from './merge';
 
 export type Lang = 'en';
 
-export type Tone = 'architecture' | 'workstation' | 'stage' | 'industrial' | 'dawn' | 'geology';
+export type Tone = 'architecture' | 'workstation' | 'stage' | 'industrial' | 'dawn' | 'geology' | 'systems';
 
 export interface Tag {
   label: string;
@@ -63,6 +63,9 @@ export interface BentoCard {
   titleSize?: number;
   desc: string;
   tags?: string[];
+  /** Real product app-icon paths. When present, the card renders a dark
+   *  product-showcase tile (real icons + blurred backdrop) instead of a stock photo tone. */
+  icons?: string[];
 }
 
 export type MissionBlock =
@@ -112,6 +115,19 @@ export interface NewsItem {
   contact?: string;
 }
 
+/** Long-form product detail page (mission-style prose). Reuses MissionBlock for the body. */
+export interface ProductPage {
+  slug: string;
+  name: string;
+  status: string;
+  meta: string;
+  url: string;
+  tags: Tag[];
+  title: string;
+  body: MissionBlock[];
+  continue: { label: string; links: NavLink[] };
+}
+
 export interface ContentBundle {
   _meta: { lang: Lang; version: string; updated: string };
   common: {
@@ -146,6 +162,7 @@ export interface ContentBundle {
   collections: {
     careers: Role[];
     newsroom: NewsItem[];
+    products: ProductPage[];
   };
 }
 
@@ -298,4 +315,13 @@ export async function getNewsItems(lang: Lang = 'en'): Promise<NewsItem[]> {
 export async function getNewsBySlugs(slugs: string[], lang: Lang = 'en'): Promise<NewsItem[]> {
   const all = await getNewsItems(lang);
   return slugs.map((s) => all.find((i) => i.slug === s)).filter((x): x is NewsItem => !!x);
+}
+
+export async function getProduct(slug: string, lang: Lang = 'en'): Promise<ProductPage | undefined> {
+  const content = await getContent(lang);
+  return content.collections.products?.find((p) => p.slug === slug);
+}
+
+export async function getProducts(lang: Lang = 'en'): Promise<ProductPage[]> {
+  return (await getContent(lang)).collections.products ?? [];
 }

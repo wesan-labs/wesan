@@ -125,18 +125,20 @@
       "bento": [
         {
           "href": "/software", "size": "b-1", "tone": "workstation",
-          "arr": "01 / SHIPPING →",
+          "arr": "01 / IN BUILD →",
           "label": "DIVISION 01",
           "title": "Software", "titleSize": 44,
-          "desc": "Three apps. One principle: consolidation. Friday is the agent runtime, Dante is one app for six trackers, Notch is the daily log.",
-          "tags": ["FRIDAY", "DANTE", "NOTCH"]
+          "desc": "Four tools, one principle: consolidation. Dante for six trackers, Friday for coding agents, Notch for the daily log, Levios for generating panels.",
+          "tags": ["DANTE", "FRIDAY", "NOTCH", "LEVIOS"],
+          "icons": ["/products/dante-logo.png"]
         },
         {
           "href": "/studio", "size": "b-2", "tone": "stage",
-          "arr": "02 / FORMING →",
+          "arr": "02 / LIVE →",
           "label": "DIVISION 02",
           "title": "Studio",
-          "desc": "Games and interactive video. Ships when the work is done — not before."
+          "desc": "Two games live on the App Store — Empire Inc. and Block Forge. More when they're good.",
+          "icons": ["/products/empire-inc.jpg", "/products/block-forge.jpg"]
         },
         {
           "href": "/industries", "size": "b-3", "tone": "industrial",
@@ -449,21 +451,23 @@
         "tags": [{ "label": "SOFTWARE · A WESAN DIVISION", "variant": "accent" }],
         "fig": "01 / 03 · DIVISIONS",
         "title": "Software for the people who do the work.",
-        "photo": { "tone": "workstation", "ratio": "21/8", "caption": "A QUIET WORKSTATION AT FIRST LIGHT · İZMİR", "label": "FIG · SOFTWARE" }
+        "photo": { "tone": "systems", "ratio": "21/8", "caption": "THE MACHINES THAT RUN THE WORK", "label": "FIG · SOFTWARE" }
       },
-      "telemetry": [["DIVISION", "SOFTWARE"], ["STATUS", "EARLY BETA"], ["PRODUCTS", "03 · IN BUILD"], ["BASE", "İZMİR"]],
-      "manifesto": "Three apps, one principle: consolidation. Friday consolidates the coding agents you already use. Dante consolidates the six trackers nobody wants open at once. Notch consolidates the discipline of a daily log. Each one for a real person doing a real job. Solo development today; small teams tomorrow.",
-      "productsHead": { "num": "02", "label": "PRODUCTS · IN BUILD", "title": "Three apps, in the shaping." },
+      "telemetry": [["DIVISION", "SOFTWARE"], ["STATUS", "EARLY BETA"], ["PRODUCTS", "04 · IN BUILD"], ["BASE", "İZMİR"]],
+      "manifesto": "Four tools, one principle: consolidation. Friday runs the coding agents you already use, Dante folds six trackers into one, Notch keeps the discipline of a daily log, Levios generates the panels you'd otherwise hand-build. Each one for a real person doing a real job. Solo development today; small teams tomorrow.",
+      "productsHead": { "num": "02", "label": "PRODUCTS · IN BUILD", "title": "Four, in the shaping." },
       "products": [
-        { "name": "Friday", "version": "v0.x", "url": "friday.run", "tagline": "Agent runtime, not another agent", "meta": "macOS · Linux · Windows · Mobile companion", "desc": "A daemon that runs your coding agents. Claude Code today, others tomorrow. Detach, attach, ship from anywhere — terminal, desktop, or phone. BYOM, free during beta.", "status": "BETA" },
-        { "name": "Dante", "version": "v0.x", "url": "danteapp.co", "tagline": "One app, six trackers", "meta": "iOS · iPad", "desc": "Tasks, workouts, nutrition, supplements, spending, habits — consolidated into one quiet surface. Turkish food + supplement database built in. Local-first. TestFlight now, App Store soon.", "status": "TESTFLIGHT" },
-        { "name": "Notch", "version": "v0.x", "url": "notch.dev", "tagline": "Habits, in the discipline of a daily log", "meta": "iOS · Mac", "desc": "A habit tracker built for people who already keep a log somewhere. One screen, one tap, end-of-day review. No streaks-as-pressure, no notifications. Just the checkmark, done quietly.", "status": "WIP" }
+        { "name": "Friday", "version": "v0.x", "url": "—", "tagline": "Agent runtime, not another agent", "meta": "macOS · Linux · Windows · Mobile companion", "desc": "A daemon that runs your coding agents. Claude Code today, others tomorrow. Detach, attach, ship from anywhere — terminal, desktop, or phone. BYOM. In development, no public link yet.", "status": "WIP" },
+        { "name": "Dante", "version": "v0.x", "url": "danteapp.co", "tagline": "One app, six trackers", "meta": "iOS · iPad", "desc": "Tasks, workouts, nutrition, supplements, spending, habits — consolidated into one quiet surface. Turkish food + supplement database built in. Local-first. TestFlight now, App Store soon.", "status": "TESTFLIGHT", "img": "/products/dante-logo.png" },
+        { "name": "Notch", "version": "v0.x", "url": "notch.dev", "tagline": "Habits, in the discipline of a daily log", "meta": "iOS · Mac", "desc": "A habit tracker built for people who already keep a log somewhere. One screen, one tap, end-of-day review. No streaks-as-pressure, no notifications. Just the checkmark, done quietly.", "status": "WIP", "img": "/products/notch.svg" },
+        { "name": "Levios", "version": "v0.x", "url": "—", "tagline": "Panels, generated from the domain", "meta": "Web · wesanjs · DDD", "desc": "A system that turns a domain model into working admin and ops panels. Built on the wesanjs runtime with domain-driven design — define the domain once, generate the panels around it. In development.", "status": "WIP" }
       ],
       "releaseLogHead": { "num": "03", "label": "2026 RELEASE LOG" },
       "releases": [
-        ["2026.05.18", "FRIDAY", "Early beta opens", "invite-only, free", "SHIPPED", "#4ade80"],
+        ["2026.05.18", "FRIDAY", "Early build", "in development", "WIP", "#fbbf24"],
         ["2026.05.04", "DANTE", "TestFlight beta opens", "iOS, all-in-one tracker", "SHIPPED", "#4ade80"],
         ["2026.04.22", "NOTCH", "v0.x early build", "habit tracker · iOS", "WIP", "#fbbf24"],
+        ["2026.06", "LEVIOS", "Engine in build", "wesanjs · DDD panels", "WIP", "#fbbf24"],
         ["2026.Q3", "DANTE", "App Store submission", "public launch target", "PLANNED", "#8c9098"],
         ["2026.Q3", "FRIDAY", "Public beta · macOS", "wider invite", "PLANNED", "#8c9098"],
         ["2026.Q4", "NOTCH", "TestFlight beta opens", "first 100 testers", "PLANNED", "#8c9098"]
@@ -484,21 +488,21 @@
         "title": "The work that sits between art and software.",
         "photo": { "tone": "stage", "ratio": "21/8", "caption": "A DARK STAGE, ONE LIGHT, ONE CAMERA", "label": "FIG · STUDIO" }
       },
-      "telemetry": [["DIVISION", "STUDIO"], ["STATUS", "IDEA"], ["FIRST DEMO", "TBD"], ["BASE", "İSTANBUL · FORMING"]],
-      "manifesto": "Wesan Studio is the room where games, interactive video, and the kind of digital work that is more art than tool will live. We don't have a release schedule. We have a first demo, in Q4, on a small stage.",
-      "projectsHead": { "num": "02", "label": "IN FORMATION", "title": "Two projects, both in formation." },
+      "telemetry": [["DIVISION", "STUDIO"], ["STATUS", "2 GAMES LIVE"], ["PLATFORM", "iOS"], ["BASE", "İSTANBUL"]],
+      "manifesto": "Wesan Studio makes games. Two are live on the App Store — Empire Inc., a business simulation, and Block Forge, a single-player puzzle — built by the same hand that builds everything else here. More ship when they're good, not before.",
+      "projectsHead": { "num": "02", "label": "STUDIO · GAMES", "title": "Two games, live." },
       "projects": [
         {
-          "code": "PROJECT 01", "name": "A narrative game",
-          "desc": "A single-player game about return, set in a fictional Anatolian coastal town in the year after a small earthquake. We hope it takes about eight hours to play. We are giving it three years.",
-          "meta": ["ENGINE · CUSTOM", "TARGET · 2028", "TEAM · 6"],
-          "href": "/studio-01"
+          "code": "GAME 01", "name": "Empire Inc.",
+          "desc": "A business-simulation game: build an empire from zero — master markets, compete globally, earn while you sleep. Live on the App Store.",
+          "meta": ["GENRE · BUSINESS SIM", "PLATFORM · iOS", "MODEL · FREE"],
+          "href": "https://apps.apple.com/app/id6757396694", "status": "LIVE", "img": "/products/empire-inc.jpg", "external": true
         },
         {
-          "code": "PROJECT 02", "name": "A short-film series",
-          "desc": "Six interactive shorts, ten minutes each. Documentary form, fictional subject. Built to be watched once and then opened up — every viewer follows a different thread the second time.",
-          "meta": ["FORMAT · WEB", "TARGET · 2027", "TEAM · 4"],
-          "href": "/studio-02"
+          "code": "GAME 02", "name": "Block Forge",
+          "desc": "A single-player block puzzle: arrange blocks, climb the local leaderboard, unlock cosmetics with in-game currency. No account, no real-money purchases. Live on the App Store.",
+          "meta": ["GENRE · PUZZLE", "PLATFORM · iOS", "MODEL · NO IAP"],
+          "href": "https://apps.apple.com/app/id6773540715", "status": "LIVE", "img": "/products/block-forge.jpg", "external": true
         }
       ],
       "principlesHead": { "num": "03", "label": "HOW THE STUDIO WORKS", "title": "Patience is the only schedule." },
@@ -507,7 +511,7 @@
         ["SMALL CREWS", "Each project carries 4–8 people, end-to-end. The same hand that designs the world writes the dialogue and edits the trailer."],
         ["ART OVER PRESSURE", "The studio is funded from the holding, not from the calendar. Nothing about the room is structured to reward looking busy."]
       ],
-      "footerStamp": { "eyebrow": "STUDIO IS A WESAN DIVISION", "line": "Forming · 2026 · İstanbul · First demo Q4" }
+      "footerStamp": { "eyebrow": "STUDIO IS A WESAN DIVISION", "line": "Two games live on the App Store · İstanbul" }
     },
 
     "industries": {
@@ -1145,8 +1149,6 @@
         ],
         "links": [
           { "label": "Studio · division page", "href": "/studio" },
-          { "label": "Project 01 · narrative game", "href": "/studio-01" },
-          { "label": "Project 02 · short films", "href": "/studio-02" },
           { "label": "Careers · Game Director", "href": "/careers/game-director" }
         ],
         "contact": "studio@wesan.co"
@@ -1242,6 +1244,126 @@
           { "label": "About · founder", "href": "/about" }
         ],
         "contact": "press@wesan.co"
+      }
+    ],
+    "products": [
+      {
+        "slug": "friday",
+        "name": "Friday",
+        "status": "IN DEVELOPMENT",
+        "meta": "macOS · Linux · Windows · Mobile companion",
+        "url": "—",
+        "tags": [{ "label": "FRIDAY · WESAN SOFTWARE", "variant": "accent" }, { "label": "IN DEVELOPMENT" }],
+        "title": "An agent runtime,\nnot another agent.",
+        "body": [
+          { "kind": "p", "lead": true, "text": "Everyone is shipping an agent. Friday is the thing the agents run inside." },
+          { "kind": "p", "text": "Friday is a daemon for your coding agents. It runs Claude Code today and whatever comes next tomorrow — start a session in the terminal, detach, and re-attach from your desktop or your phone. Bring your own model; the runtime is free during the beta." },
+          { "kind": "h2", "text": "Built on the Agent Client Protocol." },
+          { "kind": "p", "text": "Friday speaks <strong>ACP</strong> — the Agent Client Protocol, the open standard Zed released in August 2025 to do for coding agents what the Language Server Protocol did for language servers: one JSON-RPC interface between the thing that drives the agent (the <em>client</em> — an editor, a terminal, a phone) and the agent itself." },
+          { "kind": "p", "text": "Before ACP, every editor-and-agent pairing was custom work — N editors times M agents, each integration hand-built, each agent locked to the handful of clients it bothered to support. ACP collapses that to N + M: any ACP client can drive any ACP agent, with no lock-in." },
+          { "kind": "p", "text": "Friday sits on the agent side of that line. It hosts your agents as long-lived sessions and exposes them over ACP — locally as a subprocess speaking JSON-RPC over stdio, and remotely over HTTP and WebSocket. The editor on your laptop and the companion in your pocket are just two ACP clients talking to the same session." },
+          { "kind": "h2", "text": "ACP gives the agent an editor. MCP gives it tools." },
+          { "kind": "p", "text": "They are complementary, not competing. MCP is how an agent reaches tools and data; ACP is how an agent reaches a human and a workspace — diffs to approve, files to read, permissions to grant. Friday reuses MCP's JSON shapes where it can and adds the editor-facing types ACP defines. You keep your MCP tools; Friday owns the client side." },
+          { "kind": "h2", "text": "Detach. Attach. Ship from anywhere." },
+          { "kind": "p", "text": "An agent is just a process, and processes need somewhere to live — to start, persist, recover, and be reached. That somewhere is Friday. Close the laptop and the run keeps going; open your phone on the train and you are in the same session, watching the same diff land." },
+          { "kind": "p", "text": "Friday is built with Friday. The compounding is the whole point — and the reason a runtime, not another agent, is what was missing." },
+          { "kind": "hr" },
+          { "kind": "quote", "text": "The agent is the easy part. The runtime — the thing that keeps it alive and lets you reach it from anywhere — is the product." },
+          { "kind": "sign", "text": "— WESAN SOFTWARE · İZMİR" }
+        ],
+        "continue": {
+          "label": "FRIDAY",
+          "links": [
+            { "href": "mailto:hello@wesan.co?subject=Friday beta", "label": "Request beta access →" },
+            { "href": "/software", "label": "Back to Software →" }
+          ]
+        }
+      },
+      {
+        "slug": "dante",
+        "name": "Dante",
+        "status": "TESTFLIGHT",
+        "meta": "iOS · iPad",
+        "url": "danteapp.co",
+        "tags": [{ "label": "DANTE · WESAN SOFTWARE", "variant": "accent" }, { "label": "TESTFLIGHT" }],
+        "title": "One app,\nsix trackers.",
+        "body": [
+          { "kind": "p", "lead": true, "text": "You don't need six apps to run one day." },
+          { "kind": "p", "text": "Dante folds tasks, workouts, nutrition, supplements, spending, and habits into one quiet surface — opened once a day, holding the basics without asking for your attention." },
+          { "kind": "h2", "text": "Local-first, not cloud-rented." },
+          { "kind": "p", "text": "Your day lives on your device, not on someone's server. Dante is built local-first: every entry is written to a local store first, the app works fully offline, and sync — when it exists — is an enhancement, never a requirement. Nothing to sign up for before you start, and nothing leaves the phone unless you decide it should." },
+          { "kind": "p", "text": "The bet is simple. The most personal data you keep — what you ate, what you spent, what you lifted — should not be the price of using a tracker. Local-first means the data is yours by architecture, not by privacy policy." },
+          { "kind": "h2", "text": "The Turkish gap." },
+          { "kind": "p", "text": "Every nutrition tracker assumes an American pantry. Dante ships with a Turkish food and supplement database built in — the foods people here actually eat, the brands on the actual shelf — so logging a meal isn't a custom entry every single time." },
+          { "kind": "h2", "text": "Consolidation, not features." },
+          { "kind": "p", "text": "Every tracker you install is another notification, another login, another thing to forget. Dante's bet is the opposite: one place, six trackers, no noise. On TestFlight now; App Store soon." },
+          { "kind": "hr" },
+          { "kind": "quote", "text": "The best tracker is the one you actually open — and the one whose data never leaves your hands." },
+          { "kind": "sign", "text": "— WESAN SOFTWARE · İZMİR" }
+        ],
+        "continue": {
+          "label": "DANTE",
+          "links": [
+            { "href": "https://danteapp.co", "label": "danteapp.co →" },
+            { "href": "/software", "label": "Back to Software →" }
+          ]
+        }
+      },
+      {
+        "slug": "notch",
+        "name": "Notch",
+        "status": "IN DEVELOPMENT",
+        "meta": "iOS · Mac",
+        "url": "notch.dev",
+        "tags": [{ "label": "NOTCH · WESAN SOFTWARE", "variant": "accent" }, { "label": "IN DEVELOPMENT" }],
+        "title": "Habits, in the discipline\nof a daily log.",
+        "body": [
+          { "kind": "p", "lead": true, "text": "A habit tracker for people who already keep a log." },
+          { "kind": "p", "text": "One screen, one tap, an end-of-day review. No streak counter, no badges, no 9pm push. Notch is for people who don't need to be nagged into their habits — only to be counted." },
+          { "kind": "h2", "text": "Against the streak." },
+          { "kind": "p", "text": "Most habit apps run on manufactured guilt: the unbroken streak you're afraid to lose, the red day, the notification engineered to pull you back. It works for a while, and then the streak breaks and you delete the app — because the app was never about the habit, it was about the streak." },
+          { "kind": "p", "text": "Notch removes the whole apparatus. No extrinsic pressure, because pressure borrows motivation it can't pay back. What's left is the habit and a record of it. The motivation has to be yours; Notch just keeps the count honest." },
+          { "kind": "h2", "text": "The log is the reward." },
+          { "kind": "p", "text": "Notch treats your habits the way a journal treats your days: an append-only log, one entry at a time, reviewed once at the end of the day. Nothing to optimise, no number to protect — only the quiet satisfaction of a checkmark and a record that's true. The log is the point." },
+          { "kind": "hr" },
+          { "kind": "quote", "text": "Discipline doesn't need a notification. The log is the reward." },
+          { "kind": "sign", "text": "— WESAN SOFTWARE · İZMİR" }
+        ],
+        "continue": {
+          "label": "NOTCH",
+          "links": [
+            { "href": "https://notch.dev", "label": "notch.dev →" },
+            { "href": "/software", "label": "Back to Software →" }
+          ]
+        }
+      },
+      {
+        "slug": "levios",
+        "name": "Levios",
+        "status": "IN DEVELOPMENT",
+        "meta": "Web · wesanjs · DDD",
+        "url": "—",
+        "tags": [{ "label": "LEVIOS · WESAN SOFTWARE", "variant": "accent" }, { "label": "IN DEVELOPMENT" }],
+        "title": "Panels, generated\nfrom the domain.",
+        "body": [
+          { "kind": "p", "lead": true, "text": "Define the domain once. Get the panels." },
+          { "kind": "p", "text": "Levios turns a domain model into working admin and ops panels — the internal tools you'd otherwise hand-build, generated from the model that already describes your business." },
+          { "kind": "h2", "text": "The domain is the single source." },
+          { "kind": "p", "text": "Most internal tools get assembled twice: once as a domain model in the codebase, and again as the screens that read and edit it. The two drift. A field changes in the model; three panels forget. Levios collapses them — the domain model is the single source, and every panel is derived from it. Change the model, the panels follow." },
+          { "kind": "h2", "text": "Domain-Driven Design, made executable." },
+          { "kind": "p", "text": "Levios takes <strong>DDD</strong> literally. Entities, value objects, aggregates, and the invariants between them aren't documentation — they're the input. Levios reads the domain's structure and its rules and emits panels that already respect them: the right fields, the right validation, the right relationships, the right boundaries between aggregates." },
+          { "kind": "h2", "text": "Built on wesanjs." },
+          { "kind": "p", "text": "Underneath is wesanjs — the runtime the rest of Wesan is built on. Levios is the layer that turns a wesanjs domain into a usable surface, so a new internal panel is a description, not a project. It is the tool that builds Wesan's own tools." },
+          { "kind": "hr" },
+          { "kind": "quote", "text": "Stop hand-building the same admin panel. Describe the domain; let the panels follow." },
+          { "kind": "sign", "text": "— WESAN SOFTWARE · İZMİR" }
+        ],
+        "continue": {
+          "label": "LEVIOS",
+          "links": [
+            { "href": "/software", "label": "Back to Software →" }
+          ]
+        }
       }
     ]
   }
