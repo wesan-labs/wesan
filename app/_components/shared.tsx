@@ -123,9 +123,9 @@ export function Footer() {
             {f.blurb}
           </p>
           <div className="gap-8" style={{ color: '#6b6e74' }}>
-            <a href="#" aria-label="GitHub"><Icon name="github" /></a>
-            <a href="#" aria-label="X"><Icon name="twitter" /></a>
-            <a href="#" aria-label="Email"><Icon name="mail" /></a>
+            <a href="https://github.com/wesan-labs" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Icon name="github" /></a>
+            <a href="https://x.com/wesanco" target="_blank" rel="noopener noreferrer" aria-label="X"><Icon name="twitter" /></a>
+            <a href="mailto:hello@wesan.co" aria-label="Email"><Icon name="mail" /></a>
           </div>
         </div>
         {f.columns.map((col) => (
