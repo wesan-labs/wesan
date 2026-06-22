@@ -15,6 +15,14 @@ const jetbrainsMono = JetBrains_Mono({ variable: '--font-jetbrains-mono', subset
 export const metadata: Metadata = {
   title: 'Wesan',
   description: 'The house under which the next century is built. Wesan — software, studio, industries.',
+  icons: {
+    // Dark mark by default (light browser chrome); white mark when the OS/browser is in dark mode.
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/favicon-light.ico', sizes: '32x32', media: '(prefers-color-scheme: dark)' },
+    ],
+    apple: { url: '/logo.png' },
+  },
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -2,21 +2,17 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Icon } from './icons';
 import { useContent } from '@/lib/content-provider';
 
 export function Wordmark({ size = 18, withCrumb = null }: { size?: number; withCrumb?: string | null }) {
   const brand = useContent().common.brand;
+  const mark = size + 10;
   return (
     <Link href="/" className="nav-mark">
-      <svg width={size + 4} height={size + 4} viewBox="0 0 28 28" aria-hidden="true">
-        <g fill="currentColor">
-          <path d="M5 7 L7 7 Q9 7 7.5 11 L4.5 19 L7 19 L11 11 Q12 7 10 7 L8 7 Z" />
-          <path d="M10 7 L12 7 Q14 7 12.5 11 L9.5 19 Q9 20 10 20 L12 20 Q13 20 13.5 19 L16.5 11 Q18 7 16 7 L13 7 Z" opacity="0.85" />
-          <path d="M16 7 L18 7 Q20 7 18.5 11 L14.5 20 L16.5 20 Q18 20 19 18.5 L23 11 Q24 7 22 7 Z" opacity="0.7" />
-        </g>
-      </svg>
+      <Image src="/logo.png" alt={brand} width={mark} height={mark} className="nav-logo" priority />
       <span className="word">{brand}</span>
       {withCrumb && <span className="crumb">/ {withCrumb}</span>}
     </Link>
@@ -118,7 +114,10 @@ export function Footer() {
     <footer className="foot">
       <div className="foot-inner">
         <div>
-          <Link href="/" className="word">{c.common.brand}</Link>
+          <Link href="/" className="foot-mark">
+            <Image src="/logo-light.png" alt={c.common.brand} width={28} height={28} className="foot-logo" />
+            <span className="word">{c.common.brand}</span>
+          </Link>
           <p style={{ color: '#8c9098', fontSize: '13.5px', maxWidth: '300px', marginBottom: '20px' }}>
             {f.blurb}
           </p>

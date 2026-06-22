@@ -168,6 +168,7 @@ li { margin-bottom: 6px; }
   padding-right: 18px; margin-right: 18px;
   border-right: 1px solid var(--rule);
 }
+.nav-logo { display: block; height: auto; }
 .nav-mark .word {
   font-family: var(--font-display);
   font-weight: 600;
@@ -488,6 +489,12 @@ li { margin-bottom: 6px; }
   color: #6b6e74;
   margin-bottom: 18px;
 }
+.foot a.foot-mark {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-bottom: 14px;
+}
+.foot-logo { display: block; height: auto; }
+.foot a.foot-mark .word { margin-bottom: 0; }
 .foot .word {
   font-family: var(--font-display);
   font-weight: 600;
