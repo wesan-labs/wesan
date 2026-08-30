@@ -1,7 +1,7 @@
 import { revalidatePath, revalidateTag } from 'next/cache';
 import { NextRequest, NextResponse } from 'next/server';
 
-/** Helm cms_publish_targets webhook — bust ISR after publish. */
+/** Helm cms_publish_targets webhook - bust ISR after publish. */
 export async function POST(req: NextRequest) {
   const secret = process.env.HELM_REVALIDATE_SECRET?.trim();
   if (!secret) {
@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
       tags = body.tags.filter((t: unknown) => typeof t === 'string');
     }
   } catch {
-    // empty body — full layout revalidate only
+    // empty body - full layout revalidate only
   }
 
   for (const tag of tags) {

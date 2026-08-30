@@ -1,4 +1,4 @@
-# Wesan Labs — Girişim ve Oyun Portföyü Yatırım Sunum Dosyası (Pitch Deck)
+# Wesan Labs - Girişim ve Oyun Portföyü Yatırım Sunum Dosyası (Pitch Deck)
 
 > **Tarih:** 2026-07-08  
 > **Hazırlayan:** Antigravity (AI Mentor)  

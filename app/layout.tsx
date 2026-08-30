@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({ variable: '--font-jetbrains-mono', subset
 
 export const metadata: Metadata = {
   title: 'Wesan',
-  description: 'The house under which the next century is built. Wesan — software, studio, industries.',
+  description: 'The house under which the next century is built. Wesan - software, studio, industries.',
   icons: {
     // Dark mark by default (light browser chrome); white mark when the OS/browser is in dark mode.
     icon: [
@@ -31,7 +31,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en" className={`${inter.variable} ${interTight.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}>
       <body>
-        <ContentProvider value={content}>
+        <ContentProvider style={{height: '100vh'}} value={content}>
           <DraftingFrame />
           <CommandPalette />
           <Nav />

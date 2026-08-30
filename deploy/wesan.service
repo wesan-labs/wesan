@@ -8,7 +8,7 @@ User=canakyuz
 Group=canakyuz
 WorkingDirectory=/var/www/wesan
 EnvironmentFile=/var/www/wesan/.env
-# bun is user-installed — not in /usr/local/bin on ca-serv
+# bun is user-installed - not in /usr/local/bin on ca-serv
 Environment=PATH=/home/canakyuz/.bun/bin:/usr/local/bin:/usr/bin
 ExecStart=/home/canakyuz/.bun/bin/bun run start
 Restart=always

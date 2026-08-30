@@ -1,4 +1,4 @@
-# Wesan Labs — Finansman & Yatırım Master El Kitabı (UK & Global)
+# Wesan Labs - Finansman & Yatırım Master El Kitabı (UK & Global)
 
 > **Tarih:** 2026-07-08  
 > **Hazırlayan:** Antigravity (AI Mentor)  
@@ -51,7 +51,7 @@ Wesan Labs bünyesindeki projelerin (Friday, Levios, Dante, Block Forge) sermaye
 
 Hisse vermeden (non-dilutive) doğrudan nakit alabileceğiniz resmi UK devlet kaynakları.
 
-### 1. UK Games Fund (UKGF) — Prototip Desteği
+### 1. UK Games Fund (UKGF) - Prototip Desteği
 *   **Tutar:** **£30.000 - £50.000** (Karşılıksız hibe).
 *   **Hedef:** *Block Forge* veya yeni başlayacak 8 oyunlu Godot portföyünüzün ilk oynanabilir prototipinin (MVP) geliştirilmesi.
 *   **Şart:** Oyunun UK sınırları içinde geliştirilmesi ve tescilli UK Ltd şirketi olunması.
@@ -85,7 +85,7 @@ UK sınırları içinde kod yazan veya dışarıya (outsource) iş yaptıran şi
 
 Girişimin ilk kurulma aşamasında hem sermaye hem de global melek ağlarına erişim sağlayan hızlandırıcı programlar.
 
-### 1. Entrepreneur First (EF) — Londra Merkezli
+### 1. Entrepreneur First (EF) - Londra Merkezli
 *   **Destek:** **£80.000** civarında yatırım + Aylık maaş/stipend desteği.
 *   **Özellik:** Henüz fikriniz veya co-founder'ınız yokken bile sadece "teknik yeteneğe (talent)" bakarak sizi alırlar. Londra kohortu çok güçlü yatırımcılara sahne olur. *Friday (Zed Fork)* gibi derin teknik projeler için en prestijli çıkış noktalarından biridir.
 
@@ -112,7 +112,7 @@ Girişimin ilk kurulma aşamasında hem sermaye hem de global melek ağlarına e
 
 ---
 
-## Seviye 6: Maksimum Yatırım Sınırı — VC Tohum & Seri A (£500K - £5M+)
+## Seviye 6: Maksimum Yatırım Sınırı - VC Tohum & Seri A (£500K - £5M+)
 
 Wesan Labs projelerini bağımsız veya "Venture Studio" olarak konumlandırıp kurumsal VC'lerden (Venture Capital) alabileceğiniz maksimum fon ölçeği.
 

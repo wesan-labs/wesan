@@ -8,7 +8,11 @@ export default async function CareersPage() {
 
   return (
     <>
-      <section className="section" style={{ paddingTop: '64px', paddingBottom: '32px' }}>
+        <section className="section h-full" style={{ paddingTop: '64px', paddingBottom: '32px' }}>
+            We Don't Have Any Open Roles Right Now
+        </section>
+
+      {/*<section className="section" style={{ paddingTop: '64px', paddingBottom: '32px' }}>
         <div className="container">
           <SectionHead
             num={c.head.num!}
@@ -56,7 +60,7 @@ export default async function CareersPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
     </>
   );
 }

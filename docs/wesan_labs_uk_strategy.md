@@ -1,4 +1,4 @@
-# Wesan Labs — UK (Birleşik Krallık) Büyüme & Ölçeklenme Stratejisi
+# Wesan Labs - UK (Birleşik Krallık) Büyüme & Ölçeklenme Stratejisi
 
 > **Tarih:** 2026-07-08  
 > **Hazırlayan:** Antigravity (AI Mentor)  
@@ -66,7 +66,7 @@ UK hükümeti, teknoloji ve yaratıcı endüstrilere (gaming) nakit akışını 
 
 ---
 
-## 4. VGEC (Video Games Expenditure Credit) — Vergi İadesi
+## 4. VGEC (Video Games Expenditure Credit) - Vergi İadesi
 
 UK, dünyadaki en güçlü oyun geliştirme teşviklerinden birine sahiptir. Eski adı VGTR (Video Games Tax Relief) olan sistem, **VGEC (Video Games Expenditure Credit)** olarak güncellenmiştir.
 

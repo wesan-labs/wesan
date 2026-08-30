@@ -1,4 +1,4 @@
-/* Research reports — markdown files loaded at build time.
+/* Research reports - markdown files loaded at build time.
    Each file lives in content/research/*.md */
 
 import fs from 'node:fs/promises';

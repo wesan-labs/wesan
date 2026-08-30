@@ -261,7 +261,7 @@ export function DraftingFrame() {
       <div className="tb tb-bl">
         <span>İSTANBUL</span>
         <span className="sep" />
-        <span>{time || '—'}</span>
+        <span>{time || '-'}</span>
       </div>
       <div className="tb tb-br">
         <span>SCALE 1:1</span>

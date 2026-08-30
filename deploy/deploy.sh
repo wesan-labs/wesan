@@ -22,12 +22,12 @@ sudo systemctl restart wesan
 # Wait for Next.js to bind
 for i in $(seq 1 15); do
   if curl -sf "http://127.0.0.1:${PORT}/" >/dev/null 2>&1; then
-    echo "Deploy OK — http://127.0.0.1:${PORT}"
+    echo "Deploy OK - http://127.0.0.1:${PORT}"
     exit 0
   fi
   sleep 1
 done
 
-echo "Deploy failed — service did not respond on port ${PORT}" >&2
+echo "Deploy failed - service did not respond on port ${PORT}" >&2
 journalctl -u wesan -n 20 --no-pager >&2 || true
 exit 1

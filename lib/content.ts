@@ -1,4 +1,4 @@
-/* Content loader — static en.json fallback; Helm CMS overrides when published. */
+/* Content loader - static en.json fallback; Helm CMS overrides when published. */
 
 import { cache } from 'react';
 import en from '../content/en.json';
@@ -283,7 +283,7 @@ export interface NewsroomDetailLabels {
 
 const staticBundle = en as unknown as ContentBundle;
 
-/** Build-time / SSG slug lists — always from committed JSON. */
+/** Build-time / SSG slug lists - always from committed JSON. */
 export const staticContent = staticBundle;
 
 export const getContent = cache(async (lang: Lang = 'en'): Promise<ContentBundle> => {

@@ -1,13 +1,13 @@
-# Wesan Holdings — Project Dashboard
+# Wesan Holdings - Project Dashboard
 
 > Date: 2026-05-24
-> Founder: Bekircan Akyuz
+> Founder: Can Akyuz
 > Wesan status: forming (yarı-gerçek, henüz aktif tüzel kişilik değil)
 > Structure: Wesan parent · Friday + Dante divisions · Studio + Industries planned
 
 ---
 
-## 1. Project map — overview
+## 1. Project map - overview
 
 | # | Project | Type | Path | Status | Lines |
 |---|---------|------|------|--------|-------|
@@ -20,13 +20,13 @@
 
 ---
 
-## 2. Wesan corporate site — `priv/wesan-site/`
+## 2. Wesan corporate site - `priv/wesan-site/`
 
-**Purpose:** wesan.com — parent brand site, mission/divisions/about/etc.
+**Purpose:** wesan.com - parent brand site, mission/divisions/about/etc.
 **Status:** ✓ Build clean (34 routes), content/en.json refactor tamamlandı
 **Stack:** Next.js 16 + React 19 + TypeScript + Turbopack + bun · no Tailwind · App Router · SSG
-**Fonts:** Inter, Inter Tight (display), Newsreader (serif), JetBrains Mono — `next/font/google`
-**Aesthetic:** Architectural / draftsman — paper + ink + steel-blue accent + ruler marks + title blocks
+**Fonts:** Inter, Inter Tight (display), Newsreader (serif), JetBrains Mono - `next/font/google`
+**Aesthetic:** Architectural / draftsman - paper + ink + steel-blue accent + ruler marks + title blocks
 
 ### Routes (22 statik + 11 SSG = 34)
 
@@ -35,7 +35,7 @@
 | `/` | `pages.home` | Hero · marquee · manifesto · bento · newsroom strip · founder letter |
 | `/about` | `pages.about` | Founder · story timeline · governance · numbers |
 | `/mission` | `pages.mission` | TracingBeam essay · Pantheon SVG · three commitments |
-| `/now` | `pages.now` | Monthly note — what I'm doing · divisions stand · one thing on mind |
+| `/now` | `pages.now` | Monthly note - what I'm doing · divisions stand · one thing on mind |
 | `/divisions` | `pages.divisions` | 3 div-rows (Software · Studio · Industries) |
 | `/software` | `pages.software` | Hero · 3 products · release log · principles |
 | `/studio` | `pages.studio` | Hero · 2 projects (Studio-01/02) · principles |
@@ -68,32 +68,32 @@
 
 | File | Purpose |
 |---|---|
-| `content/en.json` | **1246 satır** — tüm site content (CMS-ready) |
+| `content/en.json` | **1246 satır** - tüm site content (CMS-ready) |
 | `lib/content.ts` | Typed loader: `getContent()`, `getRole(slug)`, `getNewsItem(slug)`, `getRoles()`, `getNewsItems()` |
 
 ### Yapılması gerekenler (TODO)
 
-- [ ] **CMS entegrasyonu** — `lib/content.ts:getContent()` switch from JSON to CMS fetch (Strapi/Sanity/Payload/custom)
-- [ ] **i18n** — `content/tr.json` ekle, `getContent(lang)` parametresi aktif olsun, Next.js i18n routing veya middleware
-- [ ] **Founder gerçek bilgileri** — S. YILDIZ → Bekircan Akyuz (interview answers incoming)
-- [ ] **Friday/Dante gerçek rakamlar** — site'deki user count, revenue rakamları placeholder
-- [ ] **Wesan tüzel kişilik tamamlanınca** — kayıt no, tax id, gerçek office adres, real cap table
-- [ ] **Studio + Industries** — şu an placeholder/aspirational, real plan oluşunca güncellenecek
-- [ ] **Press kit ZIP** — gerçek logo SVG dosyaları, founder fotoğrafları
-- [ ] **Photo gerçek görseller** — şu an Unsplash CDN hot-link (legal risk; eventually upload to own CDN)
-- [ ] **Domain + deploy** — wesan.com domain, Vercel/Cloudflare Pages deploy
-- [ ] **SEO** — sitemap.xml, robots.txt, OG images per page, Schema.org markup
-- [ ] **Analytics** — placeholder (Plausible/Fathom — site'de "no third-party analytics" diyor; karar)
+- [ ] **CMS entegrasyonu** - `lib/content.ts:getContent()` switch from JSON to CMS fetch (Strapi/Sanity/Payload/custom)
+- [ ] **i18n** - `content/tr.json` ekle, `getContent(lang)` parametresi aktif olsun, Next.js i18n routing veya middleware
+- [ ] **Founder gerçek bilgileri** - S. YILDIZ → Can Akyuz (interview answers incoming)
+- [ ] **Friday/Dante gerçek rakamlar** - site'deki user count, revenue rakamları placeholder
+- [ ] **Wesan tüzel kişilik tamamlanınca** - kayıt no, tax id, gerçek office adres, real cap table
+- [ ] **Studio + Industries** - şu an placeholder/aspirational, real plan oluşunca güncellenecek
+- [ ] **Press kit ZIP** - gerçek logo SVG dosyaları, founder fotoğrafları
+- [ ] **Photo gerçek görseller** - şu an Unsplash CDN hot-link (legal risk; eventually upload to own CDN)
+- [ ] **Domain + deploy** - wesan.com domain, Vercel/Cloudflare Pages deploy
+- [ ] **SEO** - sitemap.xml, robots.txt, OG images per page, Schema.org markup
+- [ ] **Analytics** - placeholder (Plausible/Fathom - site'de "no third-party analytics" diyor; karar)
 
 ---
 
-## 3. Friday marketing site — `priv/friday/web/`
+## 3. Friday marketing site - `priv/friday/web/`
 
-**Purpose:** friday.run — coding agent landing page, downloads, docs preview, pricing
+**Purpose:** friday.run - coding agent landing page, downloads, docs preview, pricing
 **Status:** ✓ Build clean (11 routes), React+Babel mock'tan Next.js'e port edildi
 **Stack:** Next.js 16 + React 19 + TypeScript + Turbopack + bun · no Tailwind · App Router · SSG
-**Fonts:** Geist + Geist Mono — `next/font/google`
-**Aesthetic:** Liquid Glass — translucent panels, backdrop blur, mono ink palette
+**Fonts:** Geist + Geist Mono - `next/font/google`
+**Aesthetic:** Liquid Glass - translucent panels, backdrop blur, mono ink palette
 **Special:** WebGL **silk shader** background (vanilla WebGL, `app/_components/silk-background.tsx`)
 
 ### Routes (11)
@@ -121,19 +121,19 @@
 
 ### Yapılması gerekenler
 
-- [ ] **Content/en.json refactor** — Wesan gibi tüm content JSON'a alınmalı (şu an inline)
-- [ ] **CMS entegrasyonu** — Wesan ile aynı pattern
-- [ ] **Gerçek content** — şu anki "Linear, Supabase, Plausible" customer stories kurgusal; gerçek müşteri toplandığında değiştir
-- [ ] **Gerçek pricing** — şu anki rakamlar ($0/$12/$30/Custom) aspirational
-- [ ] **Gerçek download binary** — friday.run/install henüz yok; daemon+desktop GA'a kadar placeholder
-- [ ] **Domain + deploy** — friday.run satın alma + deploy
-- [ ] **Docs syncing** — şu an placeholder Quickstart; gerçek docs friday-private-docs'tan publish ile sync
-- [ ] **Auth flow** — şu an mock form; daemon'a connect olacak gerçek device-link OAuth gerek
-- [ ] **Blog system** — şu an in-page state; MDX veya CMS'e bağlanmalı
+- [ ] **Content/en.json refactor** - Wesan gibi tüm content JSON'a alınmalı (şu an inline)
+- [ ] **CMS entegrasyonu** - Wesan ile aynı pattern
+- [ ] **Gerçek content** - şu anki "Linear, Supabase, Plausible" customer stories kurgusal; gerçek müşteri toplandığında değiştir
+- [ ] **Gerçek pricing** - şu anki rakamlar ($0/$12/$30/Custom) aspirational
+- [ ] **Gerçek download binary** - friday.run/install henüz yok; daemon+desktop GA'a kadar placeholder
+- [ ] **Domain + deploy** - friday.run satın alma + deploy
+- [ ] **Docs syncing** - şu an placeholder Quickstart; gerçek docs friday-private-docs'tan publish ile sync
+- [ ] **Auth flow** - şu an mock form; daemon'a connect olacak gerçek device-link OAuth gerek
+- [ ] **Blog system** - şu an in-page state; MDX veya CMS'e bağlanmalı
 
 ---
 
-## 4. Friday actual product — `priv/friday/`
+## 4. Friday actual product - `priv/friday/`
 
 **Purpose:** Agent-native development OS. Daemon + thin clients (desktop/CLI/mobile)
 **Status:** Real, in active development (v0.18 working name in marketing site)
@@ -160,20 +160,20 @@ Claude Code CLI / Agent CLIs
 
 ### Directories
 
-- `daemon/` — Rust gRPC server (Tokio + Tonic)
-- `desktop/` — Tauri 2 + SolidJS · React Scan dev mode flag · clipboard/dialog/deep-link/fs plugins
-- `proto/` — `friday.proto` protobuf schema
-- `docs/` — Architecture, roadmap, research
-- `web/` — Marketing site (Next.js, item #3 yukarıda)
-- `friday-private-docs/` (separate dir) — Private architecture docs, full backup bundle
+- `daemon/` - Rust gRPC server (Tokio + Tonic)
+- `desktop/` - Tauri 2 + SolidJS · React Scan dev mode flag · clipboard/dialog/deep-link/fs plugins
+- `proto/` - `friday.proto` protobuf schema
+- `docs/` - Architecture, roadmap, research
+- `web/` - Marketing site (Next.js, item #3 yukarıda)
+- `friday-private-docs/` (separate dir) - Private architecture docs, full backup bundle
 
 ### Yapılması gerekenler
 
 - [ ] v1.0 agent loop (yeniden tasarım sürüyor)
-- [ ] Multi-agent runtime (v0.18 said shipped — verify in code)
+- [ ] Multi-agent runtime (v0.18 said shipped - verify in code)
 - [ ] PTY sandbox primitives
 - [ ] gRPC v1.0 protocol RFC
-- [ ] Mobile client (Expo) — başla
+- [ ] Mobile client (Expo) - başla
 - [ ] Code signing (macOS · Windows)
 - [ ] Install script · friday.run/install
 - [ ] Linux/aarch64 binary
@@ -182,7 +182,7 @@ Claude Code CLI / Agent CLIs
 
 ---
 
-## 5. Dante actual product — `priv/notes/dante/`
+## 5. Dante actual product - `priv/notes/dante/`
 
 **Purpose:** All-in-one daily tracker (tasks, workouts, nutrition, spending, habits)
 **Status:** ✓ Real, RevenueCat 4-tier abonelik aktif, Apple Team ID `AZPJSKX9C9`, Bundle `com.dante.os`, Domain `danteapp.co`
@@ -199,36 +199,36 @@ Claude Code CLI / Agent CLIs
 
 ### Packages
 
-- `packages/contracts/` — TypeScript shared types
-- `packages/core/` — Business logic
-- `packages/knowledge/` — Shared MD knowledge base (AI agents)
-- `packages/ui/` — Shared UI components
+- `packages/contracts/` - TypeScript shared types
+- `packages/core/` - Business logic
+- `packages/knowledge/` - Shared MD knowledge base (AI agents)
+- `packages/ui/` - Shared UI components
 
 ### Native + infra
 
-- `ios/` — Native Xcode project (DanteWidgetExtension included)
-- `supabase/` — DB migrations
-- `deploy/` — Deployment scripts
-- `scripts/` — Build scripts (DSLD supplement fetcher, USDA food DB build)
+- `ios/` - Native Xcode project (DanteWidgetExtension included)
+- `supabase/` - DB migrations
+- `deploy/` - Deployment scripts
+- `scripts/` - Build scripts (DSLD supplement fetcher, USDA food DB build)
 - Reference DB: SQLite ~3.7MB bundled (foods/exercises/supplements FTS5)
 
-### Yapılması gerekenler (genel — kullanıcının kendi todo'su var)
+### Yapılması gerekenler (genel - kullanıcının kendi todo'su var)
 
-- Site refactor: Wesan/Friday pattern ile `apps/web/` Next.js'e content/en.json kur (planlandı, beklemede — Dante UI tasarımı bitmemiş, transkriptte konuştuğumuz)
+- Site refactor: Wesan/Friday pattern ile `apps/web/` Next.js'e content/en.json kur (planlandı, beklemede - Dante UI tasarımı bitmemiş, transkriptte konuştuğumuz)
 - Health app pozisyonlama: General health + mental + earthy/clinical/performance mix paleti üzerinde çalışma
 
 ---
 
-## 6. Legacy designs dir — `priv/wesan/`
+## 6. Legacy designs dir - `priv/wesan/`
 
 **Status:** ⚠ Temizlik bekliyor. Friday & Dante tasarımları zaten port edildi/silindi.
 
 | Kalan | Ne | Aksiyon |
 |---|---|---|
-| `wesan-main/` | Wesan corporate site React+Babel kaynağı | Silinebilir — `priv/wesan-site/`'e port edildi |
+| `wesan-main/` | Wesan corporate site React+Babel kaynağı | Silinebilir - `priv/wesan-site/`'e port edildi |
 | `wesan/` (alt-klasör) + `wesan.html` | Eski v0.1 sketch, 1355 satır designer's document | Arşivle (`_archive/wesan-sketch-v0.1/`) |
 | `dante/` + `dante.html` | Dante landing mock | Dante UI tamamlanınca port edilecek; şimdilik tut |
-| `screens/` + `app.jsx` + `friday.css` + `index.html` | Friday ürün UI mock'u (React) | Arşivle veya sil — Friday gerçek desktop SolidJS, port edilmeyecek |
+| `screens/` + `app.jsx` + `friday.css` + `index.html` | Friday ürün UI mock'u (React) | Arşivle veya sil - Friday gerçek desktop SolidJS, port edilmeyecek |
 | `uploads/` | İçerik bilinmiyor | İçerik kontrol et |
 | `cd.md` | CLAUDE.md kopyası | Sil veya repo'nun CLAUDE.md'si olarak rename |
 | `design-canvas.jsx` + `tweaks-panel.jsx` + `i18n.jsx` + `icons.jsx` | Designer's tooling | Arşivle |
@@ -241,22 +241,23 @@ Claude Code CLI / Agent CLIs
 |---|---|
 | `priv/agent-team/` | Bağımsız agent ekibi projesi |
 | `priv/begahome/` | Levios Fullstack Template tabanlı |
-| `priv/block-forge/` | Audio/data/scenes — multimedia? |
+| `priv/block-forge/` | Audio/data/scenes - multimedia? |
 | `priv/canakyuz.co/` | Kişisel portfolio site |
-| `priv/Empire-Inc/` | empireinc-app + web alt klasörler |
+| `priv/games/empire-inc/` | empireinc-app + web |
 | `priv/helm/` | Bilinmiyor |
 | `priv/levios/` | Fullstack template |
-| `priv/lib/` | company-office, Maestro, medusa-template |
+| `priv/ops/company-office/` | İş operasyonları, strateji, ürün planları |
+| `priv/ref/` | Maestro, medusa-template, zed, gemma-chat |
 | `priv/wops/` | Bilinmiyor |
 
 ---
 
-## 8. Bu seansta yapılanlar — özet
+## 8. Bu seansta yapılanlar - özet
 
 ### Wesan corporate site (priv/wesan-site/)
 1. Next.js 16 bootstrap (TypeScript + App Router + Turbopack, no Tailwind)
 2. 1058 satır custom CSS port (drafting frame, glass aesthetic, bento, tracing beam, marquee, cmdk)
-3. 4 font ailesi (Inter, Inter Tight, Newsreader, JetBrains Mono) — next/font
+3. 4 font ailesi (Inter, Inter Tight, Newsreader, JetBrains Mono) - next/font
 4. 20 sayfa port (home, about, mission, now, divisions, software, studio, studio-01/02, industries, careers, contact, newsroom, reports, trust, legal, investors, press, sitemap, calendar)
 5. ⌘K command palette
 6. DraftingFrame (corner title blocks + ruler marks)
@@ -264,8 +265,8 @@ Claude Code CLI / Agent CLIs
 8. SpotlightCard `href` prop ile broken `display:contents` bug fix
 9. Lightning CSS backdrop-filter dedupe bug fix
 10. `/careers/[slug]` + `/newsroom/[slug]` dynamic detail pages (SSG via generateStaticParams, async params)
-11. **content/en.json refactor** — tüm site content (1246 satır) JSON'da
-12. **lib/content.ts** — typed loader, CMS-ready
+11. **content/en.json refactor** - tüm site content (1246 satır) JSON'da
+12. **lib/content.ts** - typed loader, CMS-ready
 
 ### Friday marketing site (priv/friday/web/)
 1. Next.js 16 bootstrap (aynı stack)
@@ -284,7 +285,7 @@ Claude Code CLI / Agent CLIs
 
 ## 9. CMS dashboard için hazır şema
 
-`content/en.json` yapısı — CMS'in bunu birebir karşılaması yeterli:
+`content/en.json` yapısı - CMS'in bunu birebir karşılaması yeterli:
 
 ```ts
 {
@@ -309,8 +310,8 @@ Claude Code CLI / Agent CLIs
 CMS modeli (Strapi/Sanity/Payload):
 - **Singletons (page documents):** home, mission, now, careers (head + whatYouGet + detail labels), contact, newsroomIndex, newsroomDetail, about, divisions, software, studio, industries, studio01, studio02, calendar, reports, trust, legal, investors, press, sitemap
 - **Collections:**
-  - `careers` — Role schema (slug, div, team, product, name, desc, where, type, lede, responsibilities[], firstSixMonths[], requirements[], niceToHave[], comp, reportingTo, teamMeta)
-  - `newsroom` — NewsItem schema (slug, date, who, what, lede, featured, body[blocks], links[], contact)
+  - `careers` - Role schema (slug, div, team, product, name, desc, where, type, lede, responsibilities[], firstSixMonths[], requirements[], niceToHave[], comp, reportingTo, teamMeta)
+  - `newsroom` - NewsItem schema (slug, date, who, what, lede, featured, body[blocks], links[], contact)
 - **Globals:** common, nav, footer
 - **i18n:** locale switch (en şu an; tr eklenecek)
 
@@ -318,17 +319,17 @@ CMS modeli (Strapi/Sanity/Payload):
 
 ---
 
-## 10. Hemen sırada — öncelik sırası
+## 10. Hemen sırada - öncelik sırası
 
 ### Yüksek öncelik
-1. **Founder profile interview tamamlama** (devam ediyor) — S. YILDIZ → Bekircan Akyuz, gerçek background/projeler/vizyon
-2. **Wesan content gerçekleme** — en.json'daki founder, about, mission, now, contact bilgilerini gerçek bilgilerle güncelle
-3. **CMS seçimi + entegrasyonu** — Sanity / Strapi / Payload / custom karar
+1. **Founder profile interview tamamlama** (devam ediyor) - S. YILDIZ → Can Akyuz, gerçek background/projeler/vizyon
+2. **Wesan content gerçekleme** - en.json'daki founder, about, mission, now, contact bilgilerini gerçek bilgilerle güncelle
+3. **CMS seçimi + entegrasyonu** - Sanity / Strapi / Payload / custom karar
 
 ### Orta öncelik
 4. Friday web için aynı content/en.json refactor pattern
 5. Domain + deploy (wesan.com, friday.run)
-6. i18n (Türkçe destek — content/tr.json)
+6. i18n (Türkçe destek - content/tr.json)
 7. SEO baseline (OG images, structured data, sitemap.xml, robots.txt)
 
 ### Düşük öncelik / planlama

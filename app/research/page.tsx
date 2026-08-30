@@ -15,10 +15,10 @@ export default async function ResearchIndex() {
       <section className="section" style={{ paddingTop: '64px', paddingBottom: '32px' }}>
         <div className="container">
           <SectionHead
-            num="—"
+            num="-"
             label="RESEARCH · INTERNAL NOTES"
             title="What we read before we wrote the rest of this site."
-            sub="Three reports — one on Wesan's brand positioning, one on Friday's competitive landscape, one on Dante's. Not marketing. Working notes, kept honest, dated, with sources at the end."
+            sub="Three reports - one on Wesan's brand positioning, one on Friday's competitive landscape, one on Dante's. Not marketing. Working notes, kept honest, dated, with sources at the end."
           />
         </div>
       </section>

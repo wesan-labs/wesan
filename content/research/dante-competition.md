@@ -1,4 +1,4 @@
-# Dante — Competitive Landscape & GTM Research
+# Dante - Competitive Landscape & GTM Research
 
 **Hazırlayan:** Dante product audit  
 **Tarih:** Mayıs 2026  
@@ -8,11 +8,11 @@
 
 ## TL;DR (3 cümlede)
 
-All-in-one daily tracker pazarı **2026'da büyük bir parçalanmışlıkta**: tek-konu uzmanları (MyFitnessPal nutrition, Habitica/HabitMinder habit, Todoist task), birkaç-konu agregatörleri (TickTick: task+habit+pomodoro+calendar), ve DIY platformlar (Notion). **Dante'nin altı modüllü (tasks + workouts + nutrition + supplements + spending + habits) yaklaşımını birebir yapan kimse yok** — bu özgün ama riskli, çünkü kullanıcılar genelde tek-konu tracker'a alışkın ve consolidation talebi var ama henüz alışkanlık değil. Apple Health'in spring 2026 nutrition + AI Health Agent güncellemesi yakın bir tehdit; **Dante'nin Türkçe reference data avantajı (251 curated Turkish foods + TR supplement brands)** ve **local-first/iOS-native pozisyonu** kısa vade differansiyatörü, uzun vadede ise "consolidation" mesajını net taşıyabilmesi belirleyici.
+All-in-one daily tracker pazarı **2026'da büyük bir parçalanmışlıkta**: tek-konu uzmanları (MyFitnessPal nutrition, Habitica/HabitMinder habit, Todoist task), birkaç-konu agregatörleri (TickTick: task+habit+pomodoro+calendar), ve DIY platformlar (Notion). **Dante'nin altı modüllü (tasks + workouts + nutrition + supplements + spending + habits) yaklaşımını birebir yapan kimse yok** - bu özgün ama riskli, çünkü kullanıcılar genelde tek-konu tracker'a alışkın ve consolidation talebi var ama henüz alışkanlık değil. Apple Health'in spring 2026 nutrition + AI Health Agent güncellemesi yakın bir tehdit; **Dante'nin Türkçe reference data avantajı (251 curated Turkish foods + TR supplement brands)** ve **local-first/iOS-native pozisyonu** kısa vade differansiyatörü, uzun vadede ise "consolidation" mesajını net taşıyabilmesi belirleyici.
 
 ---
 
-## 1. Pazar haritası — 2026 itibariyle
+## 1. Pazar haritası - 2026 itibariyle
 
 ### 1.1 Segmentasyon
 
@@ -26,8 +26,8 @@ All-in-one daily tracker pazarı **2026'da büyük bir parçalanmışlıkta**: t
 | **Tek-konu macro/AI** | MacroFactor ($71.99), Cal AI, Vora ($89.99) | $70-90 | Cal AI/Vora photo-log ile UX devrimi yapıyor; Dante manual entry |
 | **All-in-one productivity** | **TickTick** (task+habit+pomodoro+calendar) | $35.99 | **En yakın felsefe paydaşı** ama health/nutrition yok |
 | **DIY platform** | **Notion** (habit tracker template) | $96+ | Dante'nin tam tersi: Notion DIY, Dante opinionated |
-| **Health platform (built-in)** | **Apple Health** (free) — spring 2026'dan itibaren nutrition + AI Health Agent | Free + Health+ premium (yakında) | Apple platform avantajı çok büyük; Dante onun ÜZERINDE konum almalı |
-| **Ultra all-in-one (6 modül)** | **boş veya yeni** | — | **Dante burada** |
+| **Health platform (built-in)** | **Apple Health** (free) - spring 2026'dan itibaren nutrition + AI Health Agent | Free + Health+ premium (yakında) | Apple platform avantajı çok büyük; Dante onun ÜZERINDE konum almalı |
+| **Ultra all-in-one (6 modül)** | **boş veya yeni** | - | **Dante burada** |
 
 ### 1.2 Dante'nin özgün pozisyonu
 
@@ -44,7 +44,7 @@ Dante 6 modülü tek surface'te birleştiriyor: **tasks + workouts + nutrition +
 
 ---
 
-## 2. Önemli rakipler — derin analiz
+## 2. Önemli rakipler - derin analiz
 
 ### 2.1 TickTick (en yakın felsefe paydaşı)
 
@@ -70,7 +70,7 @@ Dante 6 modülü tek surface'te birleştiriyor: **tasks + workouts + nutrition +
 | UX | Cluttered, ad-heavy in free, paywall agresif | Clean, no ads, no paywall friction |
 | Specialty | Pure nutrition + basic exercise | All-in-one |
 
-**Dante MFP'ye karşı:** "MyFitnessPal'ı bırakmana gerek yok — Dante zaten tasks, habits, money'yi de takip ediyor. Sırf nutrition için 6 app yerine 1." Risk: nutrition derinliği geride.
+**Dante MFP'ye karşı:** "MyFitnessPal'ı bırakmana gerek yok - Dante zaten tasks, habits, money'yi de takip ediyor. Sırf nutrition için 6 app yerine 1." Risk: nutrition derinliği geride.
 
 ### 2.3 Cronometer (data-quality nutrition)
 
@@ -97,7 +97,7 @@ Apple Health spring 2026 update:
 | Modüller | Activity + sleep + nutrition + AI agent | Task + workout + nutrition + supplement + spending + habit |
 | Eksikleri | Task management yok, spending yok, habit tracker primitive | Sleep/biometrics Apple kadar derin değil |
 
-**Dante Apple Health'e karşı:** "Apple Health is your body. Dante is your day." Kategorisi farklı — Apple body/medical, Dante daily life/discipline. **Yapması gereken:** HealthKit integration'ı agresif yap, Apple Health'in nutrition log'unu okuyup yazsın. Apple Health'i tehdit değil, complement haline getir.
+**Dante Apple Health'e karşı:** "Apple Health is your body. Dante is your day." Kategorisi farklı - Apple body/medical, Dante daily life/discipline. **Yapması gereken:** HealthKit integration'ı agresif yap, Apple Health'in nutrition log'unu okuyup yazsın. Apple Health'i tehdit değil, complement haline getir.
 
 ### 2.5 Notion + DIY templates
 
@@ -110,7 +110,7 @@ Notion'da "all-in-one daily tracker" template'leri popüler. Ama:
 
 ### 2.6 Cal AI / Vora (AI photo-log devrimi)
 
-2026'da nutrition tracking'in UX'i değişti — manual entry yerine **photo + AI**.
+2026'da nutrition tracking'in UX'i değişti - manual entry yerine **photo + AI**.
 
 | Boyut | Cal AI / Vora | Dante |
 |---|---|---|
@@ -119,11 +119,11 @@ Notion'da "all-in-one daily tracker" template'leri popüler. Ama:
 | Accuracy | Improving but variable | Depends on database quality |
 | Friction | Çok düşük (photo+tap) | Yüksek (search+select) |
 
-**Risk:** Manual entry "ölmek üzere" — Dante AI photo-log eklemezse nutrition modülü 6-12 ay içinde uncompetitive olur. **Eylem:** Photo-log v1.1 roadmap'ine ekle. Anthropic/OpenAI vision API'sı ile ilk pass kolay.
+**Risk:** Manual entry "ölmek üzere" - Dante AI photo-log eklemezse nutrition modülü 6-12 ay içinde uncompetitive olur. **Eylem:** Photo-log v1.1 roadmap'ine ekle. Anthropic/OpenAI vision API'sı ile ilk pass kolay.
 
 ---
 
-## 3. Türkiye pazarı — Dante'nin öncelikli vatanı
+## 3. Türkiye pazarı - Dante'nin öncelikli vatanı
 
 ### 3.1 TR app pazarı gerçeklik
 
@@ -134,10 +134,10 @@ Notion'da "all-in-one daily tracker" template'leri popüler. Ama:
 
 ### 3.2 Dante'nin TR avantajı
 
-- **251 curated Turkish foods** (sucuk, mercimek çorbası, lahmacun, kuru fasulye, vb. — App Store'da ilk)
+- **251 curated Turkish foods** (sucuk, mercimek çorbası, lahmacun, kuru fasulye, vb. - App Store'da ilk)
 - **66 TR exercise aliases** (calisthenics, koşu, mekik vs.)
 - **TR supplement brands** (Proteinocean, Hardline, BigJoy, Eczacıbaşı/Selfit, Bayer/Supradyn, Suda Collagen, vb.)
-- Bekircan native TR speaker → app copy + customer support TR'de doğal
+- Can native TR speaker → app copy + customer support TR'de doğal
 
 **Strateji:** Önce TR App Store'da viral ol, sonra EN/EU pazara genişle. Bu sırayla yapan iOS app'ler (Vivino early Italy, Headway early Ukraine) başarılı oldu.
 
@@ -168,7 +168,7 @@ EU/US pricing 3-4x yukarıda:
 ### 4.1 Headline alternatifleri (Wesan tone)
 
 > **One app, six trackers. The day, without seven open tabs.**  
-> *Dante is a daily tracker that consolidates the basics — tasks, workouts, nutrition, supplements, spending, habits — into one quiet surface.*
+> *Dante is a daily tracker that consolidates the basics - tasks, workouts, nutrition, supplements, spending, habits - into one quiet surface.*
 
 veya
 
@@ -182,10 +182,10 @@ veya
 | Why not MyFitnessPal? | Because nutrition is one of six things in your day, not the only one. |
 | Why not TickTick? | Because tasks and habits don't show you what you ate or how much you spent. |
 | Why not Notion? | Because building your own tracker takes weeks. Dante is ready in 30 seconds. |
-| Why not Apple Health? | Apple Health tracks your body. Dante tracks your day — and writes back to HealthKit for the nutrition Apple wants. |
+| Why not Apple Health? | Apple Health tracks your body. Dante tracks your day - and writes back to HealthKit for the nutrition Apple wants. |
 | Will the data leave my phone? | No. Local-first by design. Sync coming for those who opt in. |
 | Why iOS only? | Solo developer, picking depth over breadth. Android in time, not soon. |
-| Why Turkish first? | Because the reference data — foods, exercises, supplement brands — should match where the user actually lives. Turkish data first, then English. |
+| Why Turkish first? | Because the reference data - foods, exercises, supplement brands - should match where the user actually lives. Turkish data first, then English. |
 
 ### 4.3 Mesaj-pozisyon matrisi
 
@@ -213,7 +213,7 @@ veya
 
 ---
 
-## 6. Go-to-market — kanallar ve playbook
+## 6. Go-to-market - kanallar ve playbook
 
 ### 6.1 Öncelikli kanallar
 
@@ -222,8 +222,8 @@ veya
 | 1 | **Product Hunt launch** | iOS app + indie + design-led → PH'in tam audience'ı | TestFlight beta sonrası App Store launch ile birlikte PH submit |
 | 2 | **App Store TR optimization** | Türkçe screenshots, TR keywords, TR yorum talebi | ASO için TR-spesifik anahtar kelimeler: "günlük takip", "kalori sayar", "alışkanlık", "egzersiz" |
 | 3 | **TR developer + indie hacker topluluğu** | Webrazzi, KodGemisi, Türkçe Hacker News | Webrazzi'ye launch PR |
-| 4 | **Twitter/X (TR + EN)** | Build-in-public, screenshots, "today's stats" | Bekircan personal account → daily screenshot share |
-| 5 | **Reddit r/iosgaming r/iosapps r/QuantifiedSelf** | Dante target audience burada | "I built X" tarzı post — saygılı, value-first |
+| 4 | **Twitter/X (TR + EN)** | Build-in-public, screenshots, "today's stats" | Can personal account → daily screenshot share |
+| 5 | **Reddit r/iosgaming r/iosapps r/QuantifiedSelf** | Dante target audience burada | "I built X" tarzı post - saygılı, value-first |
 | 6 | **App review siteler (TR)** | Tamindir, Mobilim, App Store TR feature | Outreach |
 | 7 | **YouTube/TikTok demo** | iOS app demo görsel olarak güçlü | 60-sec walkthrough video |
 | 8 | **Yerel TR podcaster outreach** | Türkçe productivity/health podcast'leri | İçeriği TR olan podcast'lere sponsor değil, konuk |
@@ -264,7 +264,7 @@ veya
 | **Free** | Tasks + habits + workouts (limited library) | Daily use hook |
 | **Plus** | + Full nutrition (Turkish + USDA), supplements | "I'm tracking macros" trigger |
 | **Pro** | + Spending + advanced analytics + export | "I want to see patterns" trigger |
-| **Elite** | + Future AI features (photo-log, coach) | "I want the latest" — Apple Health Health+ competitive tier |
+| **Elite** | + Future AI features (photo-log, coach) | "I want the latest" - Apple Health Health+ competitive tier |
 
 **Conversion benchmark:** Health & fitness apps tipik free→paid %2-5. Lokalize fiyat ile %5-7 mümkün.
 
@@ -273,19 +273,19 @@ veya
 ## 7. Roadmap önerileri (kritik özellikler)
 
 ### Q3 2026 (App Store launch öncesi)
-1. **AI photo-log** (nutrition için) — Cal AI/Vora UX devrimini kaçırma
-2. **HealthKit two-way sync** — Apple Health complement pozisyonu
-3. **iOS widget** (zaten var, optimize et) — günlük focus tek bakışta
-4. **Apple Watch companion** — quick log, basic tracking
+1. **AI photo-log** (nutrition için) - Cal AI/Vora UX devrimini kaçırma
+2. **HealthKit two-way sync** - Apple Health complement pozisyonu
+3. **iOS widget** (zaten var, optimize et) - günlük focus tek bakışta
+4. **Apple Watch companion** - quick log, basic tracking
 
 ### Q4 2026
 5. **iPad layout** (multi-column, drag-to-reorder)
 6. **iCloud sync** (opt-in, end-to-end encrypted)
-7. **TR brand expansion** — daha fazla TR supplement brand, TR food chains
+7. **TR brand expansion** - daha fazla TR supplement brand, TR food chains
 
 ### 2027
-8. **macOS companion** — desktop equivalent
-9. **Coach AI** — Elite tier feature, personalized insights
+8. **macOS companion** - desktop equivalent
+9. **Coach AI** - Elite tier feature, personalized insights
 10. **Android** (eğer demand güçlüyse)
 
 ---
@@ -300,7 +300,7 @@ veya
 | TR pazarı küçük, EU/US geçişi yavaş | Orta | Orta | TR sırf launch market, EN paralel hazır olmalı |
 | Notion all-in-one template'leri Dante use-case'i karşılar | Düşük-orta | Düşük | Notion DIY, Dante opinionated; ayrı kitle |
 | RevenueCat subscriber spike App Store review | Düşük | Düşük | Subscription disclosure compliant |
-| Bekircan tek başına 6 modülü maintain edemez | Yüksek | Yüksek | Modülleri prioritize et (tasks/habits/nutrition core), spending/supplements/workouts feature-frozen launch |
+| Can tek başına 6 modülü maintain edemez | Yüksek | Yüksek | Modülleri prioritize et (tasks/habits/nutrition core), spending/supplements/workouts feature-frozen launch |
 
 ---
 
@@ -314,19 +314,19 @@ Doğru execute edilirse TickTick'in productivity-only pozisyonunu daha geniş bi
 
 ## Kaynaklar
 
-- [8 Best MyFitnessPal Alternatives 2026 — AskVora](https://askvora.com/blog/best-myfitnesspal-alternatives-2026)
-- [Cronometer vs MyFitnessPal — Gemma Sampson](https://www.gemmasampson.com/blog/cronometer-vs-myfitnesspal)
-- [5 Best Calorie Counter Apps 2026 — Fortune](https://fortune.com/article/best-calorie-counter-apps/)
-- [Cronometer Alternatives 2026 — Hoot Fitness](https://www.hootfitness.com/blog/cronometer-alternatives-find-the-best-fit-for-your-tracking-style)
-- [Best Free MyFitnessPal Alternatives — Hoot Fitness](https://www.hootfitness.com/blog/free-alternatives-to-myfitnesspal)
-- [Best Macro Tracking Apps 2026 — Fuel Nutrition](https://fuelnutrition.app/blog/best-macro-tracking-apps)
-- [Apple Health overhaul + nutrition tracking — Wareable](https://www.wareable.com/health-and-wellbeing/apple-health-ios-26-4-update-nutrition-tracking-health-plus-tier)
-- [Apple Health vs Calorie Tracker Apps 2026 — Calorie Tracker Lab](https://calorietrackerlab.com/articles/apple-health-vs-calorie-tracker-apps-2026/)
-- [10 Best Habit Tracker Apps 2026 — Reclaim](https://reclaim.ai/blog/habit-tracker-apps)
-- [Health & Fitness App Subscription Benchmarks 2026 — Adapty](https://adapty.io/blog/health-fitness-app-subscription-benchmarks/)
-- [State of Subscription Apps 2026 — RevenueCat](https://www.revenuecat.com/state-of-subscription-apps/)
-- [Subscription App Trends 2026 — RevenueCat](https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026/)
-- [Health & Fitness App Report 2026 — Business of Apps](https://www.businessofapps.com/data/health-fitness-app-report/)
-- [Fitness App Revenue & Usage Statistics 2026 — Business of Apps](https://www.businessofapps.com/data/fitness-app-market/)
-- [26 Best Productivity Apps 2026 — Reclaim](https://reclaim.ai/blog/productivity-apps)
-- [Trends in Corporate Wellness Apps 2026 — TechTimes](https://www.techtimes.com/articles/314669/20260216/trends-corporate-wellness-apps-2026-analytical-perspective.htm)
+- [8 Best MyFitnessPal Alternatives 2026 - AskVora](https://askvora.com/blog/best-myfitnesspal-alternatives-2026)
+- [Cronometer vs MyFitnessPal - Gemma Sampson](https://www.gemmasampson.com/blog/cronometer-vs-myfitnesspal)
+- [5 Best Calorie Counter Apps 2026 - Fortune](https://fortune.com/article/best-calorie-counter-apps/)
+- [Cronometer Alternatives 2026 - Hoot Fitness](https://www.hootfitness.com/blog/cronometer-alternatives-find-the-best-fit-for-your-tracking-style)
+- [Best Free MyFitnessPal Alternatives - Hoot Fitness](https://www.hootfitness.com/blog/free-alternatives-to-myfitnesspal)
+- [Best Macro Tracking Apps 2026 - Fuel Nutrition](https://fuelnutrition.app/blog/best-macro-tracking-apps)
+- [Apple Health overhaul + nutrition tracking - Wareable](https://www.wareable.com/health-and-wellbeing/apple-health-ios-26-4-update-nutrition-tracking-health-plus-tier)
+- [Apple Health vs Calorie Tracker Apps 2026 - Calorie Tracker Lab](https://calorietrackerlab.com/articles/apple-health-vs-calorie-tracker-apps-2026/)
+- [10 Best Habit Tracker Apps 2026 - Reclaim](https://reclaim.ai/blog/habit-tracker-apps)
+- [Health & Fitness App Subscription Benchmarks 2026 - Adapty](https://adapty.io/blog/health-fitness-app-subscription-benchmarks/)
+- [State of Subscription Apps 2026 - RevenueCat](https://www.revenuecat.com/state-of-subscription-apps/)
+- [Subscription App Trends 2026 - RevenueCat](https://www.revenuecat.com/blog/growth/subscription-app-trends-benchmarks-2026/)
+- [Health & Fitness App Report 2026 - Business of Apps](https://www.businessofapps.com/data/health-fitness-app-report/)
+- [Fitness App Revenue & Usage Statistics 2026 - Business of Apps](https://www.businessofapps.com/data/fitness-app-market/)
+- [26 Best Productivity Apps 2026 - Reclaim](https://reclaim.ai/blog/productivity-apps)
+- [Trends in Corporate Wellness Apps 2026 - TechTimes](https://www.techtimes.com/articles/314669/20260216/trends-corporate-wellness-apps-2026-analytical-perspective.htm)
